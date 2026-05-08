@@ -250,12 +250,12 @@ const translations: Record<Language, Translations> = {
     footer: 'uxdigo',
     
     // Qualitative improvements
-    significantImprovement: 'Melhoria Significativa',
-    substantialImprovement: 'Melhoria Substancial',
-    notableImprovement: 'Melhoria Notável',
-    considerableImprovement: 'Melhoria Considerável',
-    significantReduction: 'Redução Significativa',
-    significantIncrease: 'Aumento Significativo',
+    significantImprovement: 'Melhoria significativa',
+    substantialImprovement: 'Melhoria substancial',
+    notableImprovement: 'Melhoria notável',
+    considerableImprovement: 'Melhoria considerável',
+    significantReduction: 'Redução significativa',
+    significantIncrease: 'Aumento significativo',
     notableReduction: 'Redução notável',
     
     // Prototype badge
@@ -416,12 +416,12 @@ const translations: Record<Language, Translations> = {
     footer: 'uxdigo',
     
     // Qualitative improvements
-    significantImprovement: 'Significant Improvement',
-    substantialImprovement: 'Substantial Improvement',
-    notableImprovement: 'Notable Improvement',
-    considerableImprovement: 'Considerable Improvement',
-    significantReduction: 'Significant Reduction',
-    significantIncrease: 'Significant Increase',
+    significantImprovement: 'Significant improvement',
+    substantialImprovement: 'Substantial improvement',
+    notableImprovement: 'Notable improvement',
+    considerableImprovement: 'Considerable improvement',
+    significantReduction: 'Significant reduction',
+    significantIncrease: 'Significant increase',
     notableReduction: 'Notable reduction',
     
     // Prototype badge
@@ -582,12 +582,12 @@ const translations: Record<Language, Translations> = {
     footer: 'uxdigo',
     
     // Qualitative improvements
-    significantImprovement: 'Mejora Significativa',
-    substantialImprovement: 'Mejora Sustancial',
-    notableImprovement: 'Mejora Notable',
-    considerableImprovement: 'Mejora Considerable',
-    significantReduction: 'Reducción Significativa',
-    significantIncrease: 'Aumento Significativo',
+    significantImprovement: 'Mejora significativa',
+    substantialImprovement: 'Mejora sustancial',
+    notableImprovement: 'Mejora notable',
+    considerableImprovement: 'Mejora considerable',
+    significantReduction: 'Reducción significativa',
+    significantIncrease: 'Aumento significativo',
     notableReduction: 'Reducción notable',
     
     // Prototype badge
