@@ -132,7 +132,8 @@ function ProjectsSection() {
   const handshakeMetrics = [
     { value: t.significantReduction, label: t.operationCosts, variant: 'negative' as const },
     { value: t.significantIncrease, label: t.userTrustHandshake, variant: 'positive' as const },
-    { value: t.notableReduction, label: t.savedPerMonth, variant: 'negative' as const }
+    { value: t.notableReduction, label: t.savedPerMonth, variant: 'negative' as const },
+    { value: t.significantImprovement, label: t.eventDocumentation, variant: 'positive' as const }
   ];
   
   const salesMetrics = [

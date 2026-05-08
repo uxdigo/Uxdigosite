@@ -32,6 +32,7 @@ export interface Translations {
   contactRate: string;
   userTrustHandshake: string;
   operationCosts: string;
+  eventDocumentation: string;
   
   // Sales Section
   salesTitle: string;
@@ -201,6 +202,7 @@ const translations: Record<Language, Translations> = {
     contactRate: 'Custos evitados/mês',
     userTrustHandshake: 'Confiança do usuário',
     operationCosts: 'Custos de operação',
+    eventDocumentation: 'Documentação de eventos',
 
     // Sales Section
     salesTitle: 'Seção de vendas',
@@ -368,6 +370,7 @@ const translations: Record<Language, Translations> = {
     contactRate: 'Costs avoided/month',
     userTrustHandshake: 'User trust',
     operationCosts: 'Operation costs',
+    eventDocumentation: 'Event documentation',
 
     // Sales Section
     salesTitle: 'Sales section',
@@ -535,6 +538,7 @@ const translations: Record<Language, Translations> = {
     contactRate: 'Costos evitados/mes',
     userTrustHandshake: 'Confianza del usuario',
     operationCosts: 'Costos de operación',
+    eventDocumentation: 'Documentación de eventos',
 
     // Sales Section
     salesTitle: 'Sección de ventas',
