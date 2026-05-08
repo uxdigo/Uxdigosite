@@ -130,28 +130,29 @@ function ProjectsSection() {
   const { t } = useLanguage();
   
   const handshakeMetrics = [
-    { value: t.notableReduction, label: t.operationCosts, variant: 'negative' as const },
-    { value: t.significantIncrease, label: t.userTrustHandshake, variant: 'positive' as const }
+    { value: t.significantReduction, label: t.operationCosts, variant: 'negative' as const },
+    { value: t.significantIncrease, label: t.userTrustHandshake, variant: 'positive' as const },
+    { value: t.notableReduction, label: t.savedPerMonth, variant: 'negative' as const }
   ];
   
   const salesMetrics = [
-    { value: t.significantImprovement, label: t.dispatchRate, variant: 'positive' as const },
-    { value: t.notableImprovement, label: t.solvedProblems, variant: 'positive' as const },
-    { value: t.considerableImprovement, label: t.userSatisfaction, variant: 'positive' as const },
-    { value: t.significantReduction, label: t.contactRate, variant: 'negative' as const }
+    { value: t.considerableImprovement, label: t.dispatchRate, variant: 'positive' as const },
+    { value: t.significantReduction, label: t.solvedProblems, variant: 'negative' as const },
+    { value: t.significantImprovement, label: t.userSatisfaction, variant: 'positive' as const },
+    { value: t.notableReduction, label: t.contactRate, variant: 'negative' as const }
   ];
   
   const widgetMetrics = [
-    { value: t.significantImprovement, label: t.internalManagement, variant: 'positive' as const },
-    { value: t.notableImprovement, label: t.packageDispatch, variant: 'positive' as const },
-    { value: t.considerableImprovement, label: t.userTrust, variant: 'positive' as const },
-    { value: t.substantialImprovement, label: t.reducedContacts, variant: 'positive' as const }
+    { value: t.substantialImprovement, label: t.internalManagement, variant: 'positive' as const },
+    { value: t.considerableImprovement, label: t.packageDispatch, variant: 'positive' as const },
+    { value: t.significantIncrease, label: t.userTrust, variant: 'positive' as const },
+    { value: t.notableReduction, label: t.reducedContacts, variant: 'negative' as const }
   ];
   
   const riskMetrics = [
-    { value: t.significantImprovement, label: t.documentStandardization, variant: 'positive' as const },
-    { value: t.notableImprovement, label: t.processAgility, variant: 'positive' as const },
-    { value: t.considerableImprovement, label: t.toolUnification, variant: 'positive' as const },
+    { value: t.consolidation, label: t.documentStandardization, variant: 'positive' as const },
+    { value: t.substantialImprovement, label: t.processAgility, variant: 'positive' as const },
+    { value: t.notableImprovement, label: t.toolUnification, variant: 'positive' as const },
     { value: t.significantReduction, label: t.accidentPotential, variant: 'negative' as const }
   ];
   

@@ -89,6 +89,7 @@ export interface Translations {
   significantReduction: string;
   significantIncrease: string;
   notableReduction: string;
+  consolidation: string;
   
   // Prototype badge
   interactivePrototype: string;
@@ -196,11 +197,11 @@ const translations: Record<Language, Translations> = {
     handshakeProcess2: 'colaborativos, entrevistas qualitativas e testes de usabilidade',
     handshakeProcess3: 'iterativos. Contribuí para a criação de fluxos escaláveis que',
     handshakeProcess4: 'entregam informações críticas de forma clara em contextos operacionais dinâmicos.',
-    savedPerMonth: 'Horas poupadas/mês',
+    savedPerMonth: 'Tempo de coleta',
     contactRate: 'Custos evitados/mês',
     userTrustHandshake: 'Confiança do usuário',
     operationCosts: 'Custos de operação',
-    
+
     // Sales Section
     salesTitle: 'Seção de vendas',
     salesDescription1: 'Contribuí para o redesign da experiência de vendas, criando um sistema de',
@@ -209,20 +210,20 @@ const translations: Record<Language, Translations> = {
     salesDescription4: 'criar fluxos adaptativos para diferentes perfis — de vendedores individuais a operações enterprise.',
     salesDescription5: 'Realizamos workshops, mesas de trabalho com muitos outros times, gestionamos grande quantidade de stakeholders e criamos um novo modelo de lógica aplicada ao sistema de gerenciamento de logística, que envolveu refazer grande parte da experiência.',
     dispatchRate: 'Taxa de despacho no prazo',
-    solvedProblems: 'Problemas resolvidos',
+    solvedProblems: 'Problemas operacionais',
     userSatisfaction: 'Satisfação do usuário',
-    
+
     // Widget Section
     widgetTitle: 'Widget de gestão',
     widgetDescription1: 'Desenvolvi em equipe um sistema de widgets contextuais que transforma dados',
     widgetDescription2: 'operacionais em insights acionáveis. O desafio era reduzir sobrecarga',
     widgetDescription3: 'de suporte através de transparência informacional, capacitando vendedores',
     widgetDescription4: 'com visibilidade em tempo real sobre status de coletas e performance operacional.',
-    internalManagement: 'Gestão interna otimizada',
-    packageDispatch: 'Índice de despacho',
+    internalManagement: 'Operação de despacho',
+    packageDispatch: 'Envios realizados',
     userTrust: 'Confiança do usuário',
     reducedContacts: 'Contatos reduzidos',
-    
+
     // Risk Assessment Section
     riskTitle: 'Apreciação de Risco',
     riskDescription1: 'Contribuí para o desenvolvimento de um sistema digital para avaliação e controle',
@@ -230,7 +231,7 @@ const translations: Record<Language, Translations> = {
     riskDescription3: 'e descentralizados. O objetivo era garantir redução de acidentes, padronização,',
     riskDescription4: 'eficiência, e visibilidade no processo de apreciação de riscos em um ambiente corporativo crítico.',
     documentStandardization: 'Padronização dos documentos',
-    processAgility: 'Agilidade no processo',
+    processAgility: 'Processo de apreciação',
     toolUnification: 'Unificação de ferramentas',
     accidentPotential: 'Potencial de acidentes',
     
@@ -250,14 +251,15 @@ const translations: Record<Language, Translations> = {
     footer: 'uxdigo',
     
     // Qualitative improvements
-    significantImprovement: 'Melhoria significativa',
-    substantialImprovement: 'Melhoria substancial',
-    notableImprovement: 'Melhoria notável',
-    considerableImprovement: 'Melhoria considerável',
-    significantReduction: 'Redução significativa',
-    significantIncrease: 'Aumento significativo',
-    notableReduction: 'Redução notável',
-    
+    significantImprovement: 'Melhoria',
+    substantialImprovement: 'Otimização',
+    notableImprovement: 'Integração',
+    considerableImprovement: 'Aumento',
+    significantReduction: 'Redução',
+    significantIncrease: 'Fortalecimento',
+    notableReduction: 'Queda',
+    consolidation: 'Consolidação',
+
     // Prototype badge
     interactivePrototype: 'Protótipo Interativo',
     demonstrativePrototype: 'Protótipo Demonstrativo',
@@ -362,11 +364,11 @@ const translations: Record<Language, Translations> = {
     handshakeProcess2: 'workshops, qualitative interviews, and iterative usability testing.',
     handshakeProcess3: 'I contributed to creating scalable flows that deliver critical',
     handshakeProcess4: 'information clearly within dynamic operational contexts.',
-    savedPerMonth: 'Hours saved/month',
+    savedPerMonth: 'Collection time',
     contactRate: 'Costs avoided/month',
     userTrustHandshake: 'User trust',
     operationCosts: 'Operation costs',
-    
+
     // Sales Section
     salesTitle: 'Sales section',
     salesDescription1: 'I contributed to redesigning the sales experience, creating a self-management',
@@ -375,20 +377,20 @@ const translations: Record<Language, Translations> = {
     salesDescription4: 'flows for different profiles — from individual sellers to enterprise operations.',
     salesDescription5: 'We conducted workshops, work sessions with many other teams, managed a large number of stakeholders, and created a new logic model applied to the logistics management system, which involved redesigning a significant portion of the experience.',
     dispatchRate: 'Dispatch rate on time',
-    solvedProblems: 'Solved problems',
+    solvedProblems: 'Operational problems',
     userSatisfaction: 'User satisfaction',
-    
+
     // Widget Section
     widgetTitle: 'Management widget',
     widgetDescription1: 'I collaborated in developing a contextual widget system that transforms operational',
     widgetDescription2: 'data into actionable insights. The challenge was to reduce support',
     widgetDescription3: 'overhead through informational transparency, empowering sellers',
     widgetDescription4: 'with real-time visibility on pickup status and operational performance.',
-    internalManagement: 'Optimized internal management',
-    packageDispatch: 'Dispatch rate',
+    internalManagement: 'Dispatch operation',
+    packageDispatch: 'Shipments fulfilled',
     userTrust: 'User trust',
     reducedContacts: 'Reduced contacts',
-    
+
     // Risk Assessment Section
     riskTitle: 'Risk Assessment',
     riskDescription1: 'I contributed to developing a digital system for evaluation and control',
@@ -396,7 +398,7 @@ const translations: Record<Language, Translations> = {
     riskDescription3: 'processes. The goal was to ensure accident reduction, standardization,',
     riskDescription4: 'efficiency, and visibility in the risk assessment process within a critical corporate environment.',
     documentStandardization: 'Document standardization',
-    processAgility: 'Process agility',
+    processAgility: 'Assessment process',
     toolUnification: 'Tool unification',
     accidentPotential: 'Accident potential',
     
@@ -416,14 +418,15 @@ const translations: Record<Language, Translations> = {
     footer: 'uxdigo',
     
     // Qualitative improvements
-    significantImprovement: 'Significant improvement',
-    substantialImprovement: 'Substantial improvement',
-    notableImprovement: 'Notable improvement',
-    considerableImprovement: 'Considerable improvement',
-    significantReduction: 'Significant reduction',
-    significantIncrease: 'Significant increase',
-    notableReduction: 'Notable reduction',
-    
+    significantImprovement: 'Improvement',
+    substantialImprovement: 'Optimization',
+    notableImprovement: 'Integration',
+    considerableImprovement: 'Increase',
+    significantReduction: 'Reduction',
+    significantIncrease: 'Strengthening',
+    notableReduction: 'Decrease',
+    consolidation: 'Consolidation',
+
     // Prototype badge
     interactivePrototype: 'Interactive Prototype',
     demonstrativePrototype: 'Demonstrative Prototype',
@@ -528,11 +531,11 @@ const translations: Record<Language, Translations> = {
     handshakeProcess2: 'colaborativos, entrevistas cualitativas y pruebas de usabilidad',
     handshakeProcess3: 'iterativas. Contribuí a crear flujos escalables que entregan',
     handshakeProcess4: 'información crítica de forma clara en contextos operacionales dinámicos.',
-    savedPerMonth: 'Horas ahorradas/mes',
+    savedPerMonth: 'Tiempo de recolección',
     contactRate: 'Costos evitados/mes',
     userTrustHandshake: 'Confianza del usuario',
     operationCosts: 'Costos de operación',
-    
+
     // Sales Section
     salesTitle: 'Sección de ventas',
     salesDescription1: 'Contribuí al rediseño de la experiencia de ventas, creando un sistema de',
@@ -541,20 +544,20 @@ const translations: Record<Language, Translations> = {
     salesDescription4: 'crear flujos adaptativos para diferentes perfiles — desde vendedores individuales hasta operaciones enterprise.',
     salesDescription5: 'Realizamos talleres, mesas de trabajo con muchos otros equipos, gestionamos una gran cantidad de stakeholders y creamos un nuevo modelo de lógica aplicada al sistema de gestión logística, que involucró rediseñar gran parte de la experiencia.',
     dispatchRate: 'Tasa de envío a tiempo',
-    solvedProblems: 'Problemas resueltos',
+    solvedProblems: 'Problemas operacionales',
     userSatisfaction: 'Satisfacción del usuario',
-    
+
     // Widget Section
     widgetTitle: 'Widget de gestión',
     widgetDescription1: 'Colaboré en el desarrollo de un sistema de widgets contextuales que transforma datos',
     widgetDescription2: 'operacionales en insights accionables. El desafío era reducir sobrecarga',
     widgetDescription3: 'de soporte mediante transparencia informacional, capacitando vendedores',
     widgetDescription4: 'con visibilidad en tiempo real sobre estado de colectas y rendimiento operacional.',
-    internalManagement: 'Gestión interna optimizada',
-    packageDispatch: 'Índice de envío',
+    internalManagement: 'Operación de despacho',
+    packageDispatch: 'Envíos realizados',
     userTrust: 'Confianza del usuario',
     reducedContacts: 'Contactos reducidos',
-    
+
     // Risk Assessment Section
     riskTitle: 'Evaluación de Riesgos',
     riskDescription1: 'Contribuí al desarrollo de un sistema digital para evaluación y control',
@@ -562,7 +565,7 @@ const translations: Record<Language, Translations> = {
     riskDescription3: 'y descentralizados. El objetivo era garantizar reducción de accidentes, estandarización,',
     riskDescription4: 'eficiencia, y visibilidad en el proceso de evaluación de riesgos en un ambiente corporativo crítico.',
     documentStandardization: 'Estandarización de documentos',
-    processAgility: 'Agilidad del proceso',
+    processAgility: 'Proceso de apreciación',
     toolUnification: 'Unificación de herramientas',
     accidentPotential: 'Potencial de accidentes',
     
@@ -582,14 +585,15 @@ const translations: Record<Language, Translations> = {
     footer: 'uxdigo',
     
     // Qualitative improvements
-    significantImprovement: 'Mejora significativa',
-    substantialImprovement: 'Mejora sustancial',
-    notableImprovement: 'Mejora notable',
-    considerableImprovement: 'Mejora considerable',
-    significantReduction: 'Reducción significativa',
-    significantIncrease: 'Aumento significativo',
-    notableReduction: 'Reducción notable',
-    
+    significantImprovement: 'Mejora',
+    substantialImprovement: 'Optimización',
+    notableImprovement: 'Integración',
+    considerableImprovement: 'Aumento',
+    significantReduction: 'Reducción',
+    significantIncrease: 'Fortalecimiento',
+    notableReduction: 'Caída',
+    consolidation: 'Consolidación',
+
     // Prototype badge
     interactivePrototype: 'Prototipo Interactivo',
     demonstrativePrototype: 'Prototipo Demostrativo',
