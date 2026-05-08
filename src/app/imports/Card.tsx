@@ -3,7 +3,7 @@ import svgPaths from "./svg-1x509csfvd";
 function Title() {
   return (
     <div
-      className="box-border content-stretch flex flex-row font-['Inter:Regular',_sans-serif] font-normal gap-1 items-center justify-start leading-[0] not-italic p-0 relative shrink-0 text-left text-nowrap w-full"
+      className="box-border content-stretch flex flex-row font-['Inter',_sans-serif] font-normal gap-1 items-center justify-start leading-[0] not-italic p-0 relative shrink-0 text-left text-nowrap w-full"
       data-name="Title"
     >
       <div className="relative shrink-0 text-[#000000] text-[20px]">
@@ -73,7 +73,7 @@ function Upper() {
 function Text() {
   return (
     <div
-      className="box-border content-stretch flex flex-col font-['Inter:Regular',_sans-serif] font-normal gap-2 items-start justify-start leading-[0] not-italic p-0 relative shrink-0 text-[#000000] text-left w-full"
+      className="box-border content-stretch flex flex-col font-['Inter',_sans-serif] font-normal gap-2 items-start justify-start leading-[0] not-italic p-0 relative shrink-0 text-[#000000] text-left w-full"
       data-name="Text"
     >
       <div className="relative shrink-0 text-[16px] w-full">
@@ -84,7 +84,7 @@ function Text() {
       <div className="relative shrink-0 text-[0px] w-full">
         <p className="leading-[22px] text-[16px]">
           <span>{`We collected `}</span>
-          <span className="font-['Inter:Semi_Bold',_sans-serif] font-semibold not-italic">
+          <span className="font-['Inter',_sans-serif] font-semibold not-italic">
             208 packages
           </span>
           .
@@ -141,7 +141,7 @@ function Button() {
       <div className="flex flex-row items-center justify-center relative size-full">
         <div className="box-border content-stretch flex flex-row gap-2 h-[51px] items-center justify-center px-6 py-4 relative w-full">
           <Icons1 />
-          <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#ffffff] text-[16px] text-center text-nowrap tracking-[0.32px]">
+          <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#ffffff] text-[16px] text-center text-nowrap tracking-[0.32px]">
             <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">
               Pick up receipt
             </p>

@@ -6,7 +6,7 @@ function Text() {
       className="basis-0 box-border content-stretch flex flex-col gap-2 grow items-start justify-center min-h-px min-w-px p-0 relative shrink-0"
       data-name="Text"
     >
-      <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#111111] text-[20px] text-left w-full">
+      <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#111111] text-[20px] text-left w-full">
         <p className="block leading-[normal]">Pickup management</p>
       </div>
     </div>
@@ -59,7 +59,7 @@ function Text1() {
       className="basis-0 box-border content-stretch flex flex-col gap-2 grow items-start justify-center min-h-px min-w-px p-0 relative shrink-0"
       data-name="Text"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left w-full">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left w-full">
         <p className="block leading-[22px]">Today</p>
       </div>
     </div>
@@ -109,7 +109,7 @@ function Text2() {
       className="basis-0 box-border content-stretch flex flex-col gap-2 grow items-start justify-center min-h-px min-w-px p-0 relative shrink-0"
       data-name="Text"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left w-full">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left w-full">
         <p className="block leading-[22px]">Canceled</p>
       </div>
     </div>
@@ -168,7 +168,7 @@ function Filter() {
 function Title() {
   return (
     <div
-      className="box-border content-stretch flex flex-row font-['Inter:Regular',_sans-serif] font-normal gap-1 items-center justify-start leading-[0] not-italic p-0 relative shrink-0 text-left text-nowrap w-full"
+      className="box-border content-stretch flex flex-row font-['Inter',_sans-serif] font-normal gap-1 items-center justify-start leading-[0] not-italic p-0 relative shrink-0 text-left text-nowrap w-full"
       data-name="Title"
     >
       <div className="relative shrink-0 text-[#000000] text-[20px]">
@@ -262,7 +262,7 @@ function Text3() {
       className="basis-0 box-border content-stretch flex flex-col gap-2 grow items-start justify-center min-h-px min-w-px p-0 relative shrink-0"
       data-name="Text"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left w-full">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left w-full">
         <p className="block leading-[22px]">Reputation at risk</p>
       </div>
     </div>
@@ -293,7 +293,7 @@ function Button() {
     >
       <div className="flex flex-row items-center justify-center relative size-full">
         <div className="box-border content-stretch flex flex-row gap-2 h-[51px] items-center justify-center px-6 py-4 relative w-full">
-          <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[16px] text-center text-nowrap tracking-[0.32px]">
+          <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[16px] text-center text-nowrap tracking-[0.32px]">
             <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">
               Contact
             </p>
@@ -313,7 +313,7 @@ function Card() {
       <div className="overflow-clip relative size-full">
         <div className="box-border content-stretch flex flex-col gap-4 items-start justify-start p-[24px] relative w-full">
           <Upper />
-          <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[16px] text-left w-full">
+          <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[16px] text-left w-full">
             <p className="block leading-[22px]">
               This pickup was canceled because the location was not open when we
               arrived.
@@ -330,7 +330,7 @@ function Card() {
 function Title1() {
   return (
     <div
-      className="box-border content-stretch flex flex-row font-['Inter:Regular',_sans-serif] font-normal gap-1 items-center justify-start leading-[0] not-italic p-0 relative shrink-0 text-left text-nowrap w-full"
+      className="box-border content-stretch flex flex-row font-['Inter',_sans-serif] font-normal gap-1 items-center justify-start leading-[0] not-italic p-0 relative shrink-0 text-left text-nowrap w-full"
       data-name="Title"
     >
       <div className="relative shrink-0 text-[#000000] text-[20px]">
@@ -433,7 +433,7 @@ function Text4() {
       className="basis-0 box-border content-stretch flex flex-col gap-2 grow items-start justify-center min-h-px min-w-px p-0 relative shrink-0"
       data-name="Text"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left w-full">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left w-full">
         <p className="block leading-[22px]">No risk to reputation</p>
       </div>
     </div>
@@ -465,7 +465,7 @@ function Card1() {
       <div className="overflow-clip relative size-full">
         <div className="box-border content-stretch flex flex-col gap-4 items-start justify-start p-[24px] relative w-full">
           <Upper1 />
-          <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[16px] text-left w-full">
+          <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[16px] text-left w-full">
             <p className="block leading-[22px]">
               This pickup was canceled due to an inconvenience on the route.
             </p>

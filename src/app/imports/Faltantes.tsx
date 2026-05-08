@@ -37,7 +37,7 @@ function Header() {
     >
       <div className="flex flex-row items-center justify-center overflow-clip relative size-full">
         <div className="box-border content-stretch flex flex-row gap-2 h-14 items-center justify-center p-[24px] relative w-full">
-          <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[20px] text-center text-nowrap">
+          <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[20px] text-center text-nowrap">
             <p className="block leading-[26px] whitespace-pre">
               Pending packages
             </p>
@@ -55,7 +55,7 @@ function Text() {
       className="basis-0 box-border content-stretch flex flex-col gap-2 grow items-start justify-center min-h-px min-w-px p-0 relative shrink-0"
       data-name="Text"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[18px] text-left w-full">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[18px] text-left w-full">
         <p className="block leading-[24px]">7 packages</p>
       </div>
     </div>
@@ -80,7 +80,7 @@ function List() {
 function List1() {
   return (
     <div
-      className="box-border content-stretch flex flex-col font-['Inter:Regular',_sans-serif] font-normal gap-4 items-start justify-start leading-[0] not-italic p-0 relative shrink-0 text-[#000000] text-[14px] text-left"
+      className="box-border content-stretch flex flex-col font-['Inter',_sans-serif] font-normal gap-4 items-start justify-start leading-[0] not-italic p-0 relative shrink-0 text-[#000000] text-[14px] text-left"
       data-name="List"
     >
       <div className="relative shrink-0 w-full">
@@ -115,7 +115,7 @@ function ShipIdCol() {
       data-name="Ship ID col"
     >
       <div
-        className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] min-w-full not-italic relative shrink-0 text-[14px] text-[rgba(17,17,17,0.5)] text-left"
+        className="font-['Inter',_sans-serif] font-normal leading-[0] min-w-full not-italic relative shrink-0 text-[14px] text-[rgba(17,17,17,0.5)] text-left"
         style={{ width: "min-content" }}
       >
         <p className="block leading-[20px]">Ship ID</p>
@@ -153,7 +153,7 @@ function IconWithLabel() {
       data-name="Icon with label"
     >
       <Icons2 />
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">Not ready</p>
       </div>
     </div>
@@ -188,7 +188,7 @@ function IconWithLabel4() {
       data-name="Icon with label"
     >
       <Icons6 />
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">Poor condition</p>
       </div>
     </div>
@@ -207,7 +207,7 @@ function List2() {
       {[...Array(2).keys()].map((_, i) => (
         <IconWithLabel4 key={i} />
       ))}
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left w-full">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left w-full">
         <p className="block leading-[20px]">Vehicle full</p>
       </div>
     </div>
@@ -221,7 +221,7 @@ function ReasonCol() {
       data-name="Reason col"
     >
       <div
-        className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] min-w-full not-italic relative shrink-0 text-[14px] text-[rgba(17,17,17,0.5)] text-left"
+        className="font-['Inter',_sans-serif] font-normal leading-[0] min-w-full not-italic relative shrink-0 text-[14px] text-[rgba(17,17,17,0.5)] text-left"
         style={{ width: "min-content" }}
       >
         <p className="block leading-[20px]">Reason</p>
@@ -332,7 +332,7 @@ function Text1() {
       className="basis-0 box-border content-stretch flex flex-col gap-2 grow items-start justify-center min-h-px min-w-px p-0 relative shrink-0"
       data-name="Text"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left w-full">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left w-full">
         <p className="block leading-[22px]">Reputation at risk</p>
       </div>
     </div>
@@ -363,7 +363,7 @@ function Button() {
     >
       <div className="flex flex-row items-center justify-center relative size-full">
         <div className="box-border content-stretch flex flex-row gap-2 items-center justify-center px-6 py-4 relative w-full">
-          <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[18px] text-center text-nowrap tracking-[0.36px]">
+          <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[18px] text-center text-nowrap tracking-[0.36px]">
             <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">
               Change
             </p>

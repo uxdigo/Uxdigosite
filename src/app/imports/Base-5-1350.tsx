@@ -8,7 +8,7 @@ function Header() {
     >
       <div className="flex flex-row items-center justify-center overflow-clip relative size-full">
         <div className="box-border content-stretch flex flex-row gap-2 h-14 items-center justify-center p-[24px] relative w-full">
-          <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[20px] text-center text-nowrap">
+          <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[20px] text-center text-nowrap">
             <p className="block leading-[26px] whitespace-pre">
               Pickup details
             </p>
@@ -25,10 +25,10 @@ function Title() {
       className="box-border content-stretch flex flex-col gap-2 items-start justify-start leading-[0] not-italic p-0 relative shrink-0 text-left w-full"
       data-name="Title"
     >
-      <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold relative shrink-0 text-[#000000] text-[24px] w-full">
+      <div className="font-['Inter',_sans-serif] font-semibold relative shrink-0 text-[#000000] text-[24px] w-full">
         <p className="block leading-[normal]">Review and confirm</p>
       </div>
-      <div className="font-['Inter:Regular',_sans-serif] font-normal relative shrink-0 text-[14px] text-[rgba(17,17,17,0.5)] w-full">
+      <div className="font-['Inter',_sans-serif] font-normal relative shrink-0 text-[14px] text-[rgba(17,17,17,0.5)] w-full">
         <p className="block leading-[20px]">09:40 AM - April 12</p>
       </div>
     </div>
@@ -41,7 +41,7 @@ function Text() {
       className="basis-0 box-border content-stretch flex flex-col gap-2 grow items-start justify-center min-h-px min-w-px p-0 relative shrink-0"
       data-name="Text"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[18px] text-left w-full">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[18px] text-left w-full">
         <p className="block leading-[24px]">185 packages</p>
       </div>
     </div>
@@ -97,7 +97,7 @@ function Text1() {
       className="basis-0 box-border content-stretch flex flex-col gap-2 grow items-start justify-center min-h-px min-w-px p-0 relative shrink-0"
       data-name="Text"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[18px] text-left w-full">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[18px] text-left w-full">
         <p className="block leading-[24px]">7 packages pending</p>
       </div>
     </div>
@@ -174,7 +174,7 @@ function Text2() {
       className="basis-0 box-border content-stretch flex flex-col gap-2 grow items-start justify-center min-h-px min-w-px p-0 relative shrink-0"
       data-name="Text"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left w-full">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left w-full">
         <p className="block leading-[22px]">Reputation at risk</p>
       </div>
     </div>
@@ -261,7 +261,7 @@ function Button() {
     >
       <div className="flex flex-row items-center justify-center relative size-full">
         <div className="box-border content-stretch flex flex-row gap-2 items-center justify-center px-6 py-4 relative w-full">
-          <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#ffffff] text-[18px] text-center text-nowrap tracking-[0.36px]">
+          <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#ffffff] text-[18px] text-center text-nowrap tracking-[0.36px]">
             <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">
               Confirm
             </p>
@@ -280,7 +280,7 @@ function Button1() {
     >
       <div className="flex flex-row items-center justify-center relative size-full">
         <div className="box-border content-stretch flex flex-row gap-2 items-center justify-center px-6 py-4 relative w-full">
-          <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[18px] text-center text-nowrap tracking-[0.36px]">
+          <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[18px] text-center text-nowrap tracking-[0.36px]">
             <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">
               Change
             </p>

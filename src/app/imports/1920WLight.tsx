@@ -10,7 +10,7 @@ function Heading1() {
       className="box-border content-stretch flex flex-col items-start justify-start max-w-[672px] p-0 relative shrink-0 w-full"
       data-name="Heading 1"
     >
-      <div className="flex flex-col font-['Inter:Semi_Bold',_sans-serif] font-semibold justify-center leading-[69px] not-italic relative shrink-0 text-[#111111] text-[60px] text-left tracking-[-1.2px] w-full">
+      <div className="flex flex-col font-['Inter',_sans-serif] font-semibold justify-center leading-[69px] not-italic relative shrink-0 text-[#111111] text-[60px] text-left tracking-[-1.2px] w-full">
         <p className="block mb-0">Welcome to my UX</p>
         <p className="block">Space</p>
       </div>
@@ -82,7 +82,7 @@ function Container() {
       className="h-[86.39px] max-w-[672px] relative shrink-0 w-full"
       data-name="Container"
     >
-      <div className="absolute flex flex-col font-['Inter:Regular',_sans-serif] font-normal h-[87px] justify-center leading-[28.8px] left-0 not-italic text-[#111111] text-[18px] text-left top-[42.295px] translate-y-[-50%] w-[510.171px]">
+      <div className="absolute flex flex-col font-['Inter',_sans-serif] font-normal h-[87px] justify-center leading-[28.8px] left-0 not-italic text-[#111111] text-[18px] text-left top-[42.295px] translate-y-[-50%] w-[510.171px]">
         <p className="block mb-0">
           A space where I blend human-centered design with data,
         </p>
@@ -102,7 +102,7 @@ function Link() {
       className="bg-[#2d48bd] box-border content-stretch flex flex-row items-start justify-center px-[25.994px] py-[14.006px] relative rounded-[32px] shrink-0"
       data-name="Link"
     >
-      <button className="[white-space-collapse:collapse] cursor-pointer flex flex-col font-['Inter:Medium',_sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[#ffffff] text-[18px] text-center text-nowrap">
+      <button className="[white-space-collapse:collapse] cursor-pointer flex flex-col font-['Inter',_sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[#ffffff] text-[18px] text-center text-nowrap">
         <p className="block leading-[28.8px] whitespace-pre">My projects</p>
       </button>
     </div>
@@ -202,7 +202,7 @@ function Heading2() {
       className="box-border content-stretch flex flex-col items-start justify-start max-w-[672px] p-0 relative shrink-0 w-full"
       data-name="Heading 2"
     >
-      <div className="flex flex-col font-['Inter:Semi_Bold',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#111111] text-[48px] text-left tracking-[-0.96px] w-full">
+      <div className="flex flex-col font-['Inter',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#111111] text-[48px] text-left tracking-[-0.96px] w-full">
         <p className="block leading-[55.2px]">Handshake</p>
       </div>
     </div>
@@ -215,7 +215,7 @@ function Container5() {
       className="box-border content-stretch flex flex-col items-start justify-start max-w-[672px] p-0 relative shrink-0 w-full"
       data-name="Container"
     >
-      <div className="flex flex-col font-['Inter:Regular',_sans-serif] font-normal justify-center leading-[28.8px] not-italic relative shrink-0 text-[#111111] text-[18px] text-left text-nowrap w-full whitespace-pre">
+      <div className="flex flex-col font-['Inter',_sans-serif] font-normal justify-center leading-[28.8px] not-italic relative shrink-0 text-[#111111] text-[18px] text-left text-nowrap w-full whitespace-pre">
         <p className="block mb-0">
           Product designed to reduce or eliminate fraud in Mercado
         </p>
@@ -239,7 +239,7 @@ function Container6() {
       className="box-border content-stretch flex flex-col items-start justify-start max-w-[672px] pb-0 pt-[15.995px] px-0 relative shrink-0 w-full"
       data-name="Container"
     >
-      <div className="flex flex-col font-['Inter:Regular',_sans-serif] font-normal justify-center leading-[28.8px] not-italic relative shrink-0 text-[#111111] text-[18px] text-left w-full">
+      <div className="flex flex-col font-['Inter',_sans-serif] font-normal justify-center leading-[28.8px] not-italic relative shrink-0 text-[#111111] text-[18px] text-left w-full">
         <p className="block mb-0">
           Throughout the design process, we conducted several
         </p>
@@ -280,7 +280,7 @@ function Heading3() {
       className="box-border content-stretch flex flex-col items-start justify-start max-w-[672px] p-0 relative shrink-0 w-full"
       data-name="Heading 3"
     >
-      <div className="flex flex-col font-['Inter:Semi_Bold',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[36px] text-left tracking-[-0.72px] w-full">
+      <div className="flex flex-col font-['Inter',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[36px] text-left tracking-[-0.72px] w-full">
         <p className="block leading-[41.4px]">+$XM USD</p>
       </div>
     </div>
@@ -293,7 +293,7 @@ function Heading4() {
       className="box-border content-stretch flex flex-col items-start justify-start max-w-[672px] p-0 relative shrink-0 w-full"
       data-name="Heading 3"
     >
-      <div className="flex flex-col font-['Inter:Semi_Bold',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#111111] text-[20px] text-left tracking-[-0.4px] w-full">
+      <div className="flex flex-col font-['Inter',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#111111] text-[20px] text-left tracking-[-0.4px] w-full">
         <p className="block leading-[23px]">Saved per month</p>
       </div>
     </div>
@@ -333,7 +333,7 @@ function Heading5() {
       className="box-border content-stretch flex flex-col items-start justify-start max-w-[672px] p-0 relative shrink-0 w-full"
       data-name="Heading 3"
     >
-      <div className="flex flex-col font-['Inter:Semi_Bold',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[36px] text-left tracking-[-0.72px] w-full">
+      <div className="flex flex-col font-['Inter',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[36px] text-left tracking-[-0.72px] w-full">
         <p className="block leading-[41.4px]">-X%</p>
       </div>
     </div>
@@ -346,7 +346,7 @@ function Heading6() {
       className="box-border content-stretch flex flex-col items-start justify-start max-w-[672px] p-0 relative shrink-0 w-full"
       data-name="Heading 3"
     >
-      <div className="flex flex-col font-['Inter:Semi_Bold',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#111111] text-[20px] text-left tracking-[-0.4px] w-full">
+      <div className="flex flex-col font-['Inter',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#111111] text-[20px] text-left tracking-[-0.4px] w-full">
         <p className="block leading-[23px]">Contact rate</p>
       </div>
     </div>
@@ -459,7 +459,7 @@ function Heading7() {
       className="box-border content-stretch flex flex-col items-start justify-start max-w-[672px] p-0 relative shrink-0 w-full"
       data-name="Heading 2"
     >
-      <div className="flex flex-col font-['Inter:Semi_Bold',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#111111] text-[48px] text-left tracking-[-0.96px] w-full">
+      <div className="flex flex-col font-['Inter',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#111111] text-[48px] text-left tracking-[-0.96px] w-full">
         <p className="block leading-[55.2px]">Sales section</p>
       </div>
     </div>
@@ -472,7 +472,7 @@ function Container12() {
       className="box-border content-stretch flex flex-col items-start justify-start max-w-[672px] p-0 relative shrink-0 w-full"
       data-name="Container"
     >
-      <div className="flex flex-col font-['Inter:Regular',_sans-serif] font-normal justify-center leading-[28.8px] not-italic relative shrink-0 text-[#111111] text-[18px] text-left w-full">
+      <div className="flex flex-col font-['Inter',_sans-serif] font-normal justify-center leading-[28.8px] not-italic relative shrink-0 text-[#111111] text-[18px] text-left w-full">
         <p className="block mb-0">
           I worked on improving the seller’s sales section by restructuring it
           into a self-
@@ -554,7 +554,7 @@ function Heading8() {
       className="box-border content-stretch flex flex-col items-start justify-start max-w-[672px] p-0 relative shrink-0 w-full"
       data-name="Heading 3"
     >
-      <div className="flex flex-col font-['Inter:Semi_Bold',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[36px] text-left tracking-[-0.72px] w-full">
+      <div className="flex flex-col font-['Inter',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[36px] text-left tracking-[-0.72px] w-full">
         <p className="block leading-[41.4px]">+X%</p>
       </div>
     </div>
@@ -567,7 +567,7 @@ function Heading9() {
       className="box-border content-stretch flex flex-col items-start justify-start max-w-[672px] p-0 relative shrink-0 w-full"
       data-name="Heading 3"
     >
-      <div className="flex flex-col font-['Inter:Semi_Bold',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#111111] text-[20px] text-left tracking-[-0.4px] w-full">
+      <div className="flex flex-col font-['Inter',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#111111] text-[20px] text-left tracking-[-0.4px] w-full">
         <p className="block leading-[23px]">Dispatch rate on time</p>
       </div>
     </div>
@@ -596,7 +596,7 @@ function Heading10() {
       className="box-border content-stretch flex flex-col items-start justify-start max-w-[672px] p-0 relative shrink-0 w-full"
       data-name="Heading 3"
     >
-      <div className="flex flex-col font-['Inter:Semi_Bold',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[36px] text-left tracking-[-0.72px] w-full">
+      <div className="flex flex-col font-['Inter',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[36px] text-left tracking-[-0.72px] w-full">
         <p className="block leading-[41.4px]">+X%</p>
       </div>
     </div>
@@ -609,7 +609,7 @@ function Heading11() {
       className="box-border content-stretch flex flex-col items-start justify-start max-w-[672px] p-0 relative shrink-0 w-full"
       data-name="Heading 3"
     >
-      <div className="flex flex-col font-['Inter:Semi_Bold',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#111111] text-[20px] text-left tracking-[-0.4px] w-full">
+      <div className="flex flex-col font-['Inter',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#111111] text-[20px] text-left tracking-[-0.4px] w-full">
         <p className="block leading-[23px]">Solved problems</p>
       </div>
     </div>
@@ -638,7 +638,7 @@ function Heading12() {
       className="box-border content-stretch flex flex-col items-start justify-start max-w-[672px] p-0 relative shrink-0 w-full"
       data-name="Heading 3"
     >
-      <div className="flex flex-col font-['Inter:Semi_Bold',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[36px] text-left tracking-[-0.72px] w-full">
+      <div className="flex flex-col font-['Inter',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[36px] text-left tracking-[-0.72px] w-full">
         <p className="block leading-[41.4px]">+X%</p>
       </div>
     </div>
@@ -651,7 +651,7 @@ function Heading13() {
       className="box-border content-stretch flex flex-col items-start justify-start max-w-[672px] p-0 relative shrink-0 w-full"
       data-name="Heading 3"
     >
-      <div className="flex flex-col font-['Inter:Semi_Bold',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#111111] text-[20px] text-left tracking-[-0.4px] w-full">
+      <div className="flex flex-col font-['Inter',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#111111] text-[20px] text-left tracking-[-0.4px] w-full">
         <p className="block leading-[23px]">User satisfaction</p>
       </div>
     </div>
@@ -680,7 +680,7 @@ function Heading14() {
       className="box-border content-stretch flex flex-col items-start justify-start max-w-[672px] p-0 relative shrink-0 w-full"
       data-name="Heading 3"
     >
-      <div className="flex flex-col font-['Inter:Semi_Bold',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[36px] text-left tracking-[-0.72px] w-full">
+      <div className="flex flex-col font-['Inter',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[36px] text-left tracking-[-0.72px] w-full">
         <p className="block leading-[41.4px]">-X%</p>
       </div>
     </div>
@@ -693,7 +693,7 @@ function Heading15() {
       className="box-border content-stretch flex flex-col items-start justify-start max-w-[672px] p-0 relative shrink-0 w-full"
       data-name="Heading 3"
     >
-      <div className="flex flex-col font-['Inter:Semi_Bold',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#111111] text-[20px] text-left tracking-[-0.4px] w-full">
+      <div className="flex flex-col font-['Inter',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#111111] text-[20px] text-left tracking-[-0.4px] w-full">
         <p className="block leading-[23px]">Contact rate</p>
       </div>
     </div>
@@ -764,7 +764,7 @@ function Heading16() {
       className="box-border content-stretch flex flex-col items-start justify-start max-w-[672px] p-0 relative shrink-0 w-full"
       data-name="Heading 2"
     >
-      <div className="flex flex-col font-['Inter:Semi_Bold',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#111111] text-[36px] text-left text-nowrap tracking-[-0.72px]">
+      <div className="flex flex-col font-['Inter',_sans-serif] font-semibold justify-center leading-[0] not-italic relative shrink-0 text-[#111111] text-[36px] text-left text-nowrap tracking-[-0.72px]">
         <p className="adjustLetterSpacing block leading-[41.4px] whitespace-pre">
           Contact me
         </p>
@@ -779,7 +779,7 @@ function Container16() {
       className="box-border content-stretch flex flex-col items-start justify-start max-w-[672px] pb-[0.59px] pt-0 px-0 relative shrink-0 w-full"
       data-name="Container"
     >
-      <div className="flex flex-col font-['Inter:Regular',_sans-serif] font-normal justify-center leading-[28.8px] not-italic relative shrink-0 text-[#111111] text-[18px] text-left text-nowrap whitespace-pre">
+      <div className="flex flex-col font-['Inter',_sans-serif] font-normal justify-center leading-[28.8px] not-italic relative shrink-0 text-[#111111] text-[18px] text-left text-nowrap whitespace-pre">
         <p className="block mb-0">
           If my work resonated with you and you believe I can help improve your
           product or
@@ -812,7 +812,7 @@ function Link1() {
       className="bg-[#2d48bd] box-border content-stretch flex flex-row items-start justify-center px-[25.994px] py-[14.006px] relative rounded-[32px] shrink-0"
       data-name="Link"
     >
-      <div className="flex flex-col font-['Inter:Medium',_sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[#ffffff] text-[18px] text-center text-nowrap">
+      <div className="flex flex-col font-['Inter',_sans-serif] font-medium justify-center leading-[0] not-italic relative shrink-0 text-[#ffffff] text-[18px] text-center text-nowrap">
         <p className="block leading-[28.8px] whitespace-pre">Contact</p>
       </div>
     </div>
@@ -888,7 +888,7 @@ function Link2() {
       className="box-border content-stretch flex flex-row items-start justify-start px-0 py-[0.5px] relative shrink-0"
       data-name="Link"
     >
-      <div className="flex flex-col font-['Inter:Regular',_sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap tracking-[-0.32px]">
+      <div className="flex flex-col font-['Inter',_sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap tracking-[-0.32px]">
         <p className="adjustLetterSpacing block leading-[18.4px] whitespace-pre">
           uxdigo
         </p>
@@ -1035,7 +1035,7 @@ function Link5() {
       className="box-border content-stretch flex flex-col items-start justify-start pb-[0.59px] pt-0 px-0 relative shrink-0"
       data-name="Link"
     >
-      <div className="flex flex-col font-['Inter:Regular',_sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
+      <div className="flex flex-col font-['Inter',_sans-serif] font-normal justify-center leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
         <p className="block leading-[25.6px] whitespace-pre">Contact</p>
       </div>
     </div>

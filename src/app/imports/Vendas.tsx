@@ -6,7 +6,7 @@ function Pill() {
       className="bg-[rgba(45,72,189,0.1)] box-border content-stretch flex flex-row gap-2 items-center justify-center min-w-[29px] px-2 py-1 relative rounded-[100px] shrink-0"
       data-name="Pill"
     >
-      <div className="basis-0 font-['Inter:Regular',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#2d48bd] text-[14px] text-center">
+      <div className="basis-0 font-['Inter',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#2d48bd] text-[14px] text-center">
         <p className="block leading-[20px]">284</p>
       </div>
     </div>
@@ -19,7 +19,7 @@ function PillWithLabel() {
       className="box-border content-stretch flex flex-row gap-1 items-center justify-start p-0 relative shrink-0"
       data-name="Pill with label"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
         <p className="block leading-[22px] whitespace-pre">Today</p>
       </div>
       <Pill />
@@ -45,7 +45,7 @@ function Pill1() {
       className="bg-[rgba(45,72,189,0.1)] box-border content-stretch flex flex-row gap-2 items-center justify-center min-w-[29px] px-2 py-1 relative rounded-[100px] shrink-0"
       data-name="Pill"
     >
-      <div className="basis-0 font-['Inter:Regular',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#2d48bd] text-[14px] text-center">
+      <div className="basis-0 font-['Inter',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#2d48bd] text-[14px] text-center">
         <p className="block leading-[20px]">39</p>
       </div>
     </div>
@@ -58,7 +58,7 @@ function PillWithLabel1() {
       className="box-border content-stretch flex flex-row gap-1 items-center justify-start p-0 relative shrink-0"
       data-name="Pill with label"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
         <p className="block leading-[22px] whitespace-pre">Upcoming</p>
       </div>
       <Pill1 />
@@ -83,7 +83,7 @@ function Pill2() {
       className="bg-[rgba(45,72,189,0.1)] box-border content-stretch flex flex-row gap-2 items-center justify-center min-w-[29px] px-2 py-1 relative rounded-[100px] shrink-0"
       data-name="Pill"
     >
-      <div className="basis-0 font-['Inter:Regular',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#2d48bd] text-[14px] text-center">
+      <div className="basis-0 font-['Inter',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#2d48bd] text-[14px] text-center">
         <p className="block leading-[20px]">401</p>
       </div>
     </div>
@@ -96,7 +96,7 @@ function PillWithLabel2() {
       className="box-border content-stretch flex flex-row gap-1 items-center justify-start p-0 relative shrink-0"
       data-name="Pill with label"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
         <p className="block leading-[22px] whitespace-pre">In transit</p>
       </div>
       <Pill2 />
@@ -121,7 +121,7 @@ function Pill3() {
       className="bg-[rgba(45,72,189,0.1)] box-border content-stretch flex flex-row gap-2 items-center justify-center min-w-[29px] px-2 py-1 relative rounded-[100px] shrink-0"
       data-name="Pill"
     >
-      <div className="basis-0 font-['Inter:Regular',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#2d48bd] text-[14px] text-center">
+      <div className="basis-0 font-['Inter',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#2d48bd] text-[14px] text-center">
         <p className="block leading-[20px]">935</p>
       </div>
     </div>
@@ -134,7 +134,7 @@ function PillWithLabel3() {
       className="box-border content-stretch flex flex-row gap-1 items-center justify-start p-0 relative shrink-0"
       data-name="Pill with label"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
         <p className="block leading-[22px] whitespace-pre">Completed</p>
       </div>
       <Pill3 />
@@ -254,12 +254,12 @@ function CodigoFoco() {
       className="box-border content-stretch flex flex-row gap-0.5 items-start justify-start p-0 relative shrink-0"
       data-name="Código foco"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[16px] text-center text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[16px] text-center text-nowrap">
         <p className="block leading-[22px] whitespace-pre">
           Authorization code:
         </p>
       </div>
-      <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[16px] text-center text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[16px] text-center text-nowrap">
         <p className="block leading-[22px] whitespace-pre">A1B2C3D4</p>
       </div>
       <Icons1 />
@@ -285,7 +285,7 @@ function Button() {
       className="bg-[rgba(45,72,189,0.25)] box-border content-stretch flex flex-row gap-2 h-11 items-center justify-center px-6 py-4 relative rounded-3xl shrink-0"
       data-name="Button"
     >
-      <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[16px] text-center text-nowrap tracking-[0.32px]">
+      <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[16px] text-center text-nowrap tracking-[0.32px]">
         <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">
           Pickup management
         </p>
@@ -325,7 +325,7 @@ function Pill4() {
       className="bg-[rgba(45,72,189,0.1)] box-border content-stretch flex flex-row gap-2 items-center justify-center min-w-[29px] px-2 py-1 relative rounded-[100px] shrink-0"
       data-name="Pill"
     >
-      <div className="basis-0 font-['Inter:Regular',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#2d48bd] text-[14px] text-center">
+      <div className="basis-0 font-['Inter',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#2d48bd] text-[14px] text-center">
         <p className="block leading-[20px]">132</p>
       </div>
     </div>
@@ -338,7 +338,7 @@ function Title() {
       className="box-border content-stretch flex flex-row items-center justify-between p-0 relative shrink-0 w-full"
       data-name="Title"
     >
-      <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#6c9434] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#6c9434] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">ON THE WAY</p>
       </div>
       <Pill4 />
@@ -349,7 +349,7 @@ function Title() {
 function Title1() {
   return (
     <div
-      className="box-border content-stretch flex flex-row font-['Inter:Regular',_sans-serif] font-normal gap-1 items-center justify-start leading-[0] not-italic p-0 relative shrink-0 text-left text-nowrap w-full"
+      className="box-border content-stretch flex flex-row font-['Inter',_sans-serif] font-normal gap-1 items-center justify-start leading-[0] not-italic p-0 relative shrink-0 text-left text-nowrap w-full"
       data-name="Title"
     >
       <div className="relative shrink-0 text-[#000000] text-[20px]">
@@ -384,7 +384,7 @@ function Pill5() {
       className="bg-[rgba(0,0,0,0.05)] box-border content-stretch flex flex-row gap-2 items-center justify-center min-w-[29px] px-2 py-1 relative rounded-[100px] shrink-0"
       data-name="Pill"
     >
-      <div className="basis-0 font-['Inter:Regular',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
+      <div className="basis-0 font-['Inter',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
         <p className="block leading-[20px]">3</p>
       </div>
     </div>
@@ -397,7 +397,7 @@ function PillWithLabel4() {
       className="box-border content-stretch flex flex-row items-center justify-between p-0 relative shrink-0 w-full"
       data-name="Pill with label"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
         <p className="block leading-[22px] whitespace-pre">Buyer message</p>
       </div>
       <Pill5 />
@@ -411,7 +411,7 @@ function Pill6() {
       className="bg-[rgba(0,0,0,0.05)] box-border content-stretch flex flex-row gap-2 items-center justify-center min-w-[29px] px-2 py-1 relative rounded-[100px] shrink-0"
       data-name="Pill"
     >
-      <div className="basis-0 font-['Inter:Regular',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
+      <div className="basis-0 font-['Inter',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
         <p className="block leading-[20px]">7</p>
       </div>
     </div>
@@ -424,7 +424,7 @@ function PillWithLabel5() {
       className="box-border content-stretch flex flex-row items-center justify-between p-0 relative shrink-0 w-full"
       data-name="Pill with label"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
         <p className="block leading-[22px] whitespace-pre">Invoice pending</p>
       </div>
       <Pill6 />
@@ -438,7 +438,7 @@ function Pill7() {
       className="bg-[rgba(0,0,0,0.05)] box-border content-stretch flex flex-row gap-2 items-center justify-center min-w-[29px] px-2 py-1 relative rounded-[100px] shrink-0"
       data-name="Pill"
     >
-      <div className="basis-0 font-['Inter:Regular',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
+      <div className="basis-0 font-['Inter',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
         <p className="block leading-[20px]">29</p>
       </div>
     </div>
@@ -451,7 +451,7 @@ function PillWithLabel6() {
       className="box-border content-stretch flex flex-row items-center justify-between p-0 relative shrink-0 w-full"
       data-name="Pill with label"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
         <p className="block leading-[22px] whitespace-pre">Label pending</p>
       </div>
       <Pill7 />
@@ -465,7 +465,7 @@ function Pill8() {
       className="bg-[rgba(0,0,0,0.05)] box-border content-stretch flex flex-row gap-2 items-center justify-center min-w-[29px] px-2 py-1 relative rounded-[100px] shrink-0"
       data-name="Pill"
     >
-      <div className="basis-0 font-['Inter:Regular',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
+      <div className="basis-0 font-['Inter',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
         <p className="block leading-[20px]">93</p>
       </div>
     </div>
@@ -478,7 +478,7 @@ function PillWithLabel7() {
       className="box-border content-stretch flex flex-row items-center justify-between p-0 relative shrink-0 w-full"
       data-name="Pill with label"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
         <p className="block leading-[22px] whitespace-pre">Ready to ship</p>
       </div>
       <Pill8 />
@@ -515,7 +515,7 @@ function Pill9() {
       className="bg-[rgba(45,72,189,0.1)] box-border content-stretch flex flex-row gap-2 items-center justify-center min-w-[29px] px-2 py-1 relative rounded-[100px] shrink-0"
       data-name="Pill"
     >
-      <div className="basis-0 font-['Inter:Regular',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#2d48bd] text-[14px] text-center">
+      <div className="basis-0 font-['Inter',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#2d48bd] text-[14px] text-center">
         <p className="block leading-[20px]">89</p>
       </div>
     </div>
@@ -528,7 +528,7 @@ function Title2() {
       className="box-border content-stretch flex flex-row items-center justify-between p-0 relative shrink-0 w-full"
       data-name="Title"
     >
-      <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#111111] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#111111] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">SCHEDULED</p>
       </div>
       <Pill9 />
@@ -539,7 +539,7 @@ function Title2() {
 function Title3() {
   return (
     <div
-      className="box-border content-stretch flex flex-row font-['Inter:Regular',_sans-serif] font-normal gap-1 items-center justify-start leading-[0] not-italic p-0 relative shrink-0 text-left text-nowrap w-full"
+      className="box-border content-stretch flex flex-row font-['Inter',_sans-serif] font-normal gap-1 items-center justify-start leading-[0] not-italic p-0 relative shrink-0 text-left text-nowrap w-full"
       data-name="Title"
     >
       <div className="relative shrink-0 text-[#000000] text-[20px]">
@@ -574,7 +574,7 @@ function Pill10() {
       className="bg-[rgba(0,0,0,0.05)] box-border content-stretch flex flex-row gap-2 items-center justify-center min-w-[29px] px-2 py-1 relative rounded-[100px] shrink-0"
       data-name="Pill"
     >
-      <div className="basis-0 font-['Inter:Regular',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
+      <div className="basis-0 font-['Inter',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
         <p className="block leading-[20px]">1</p>
       </div>
     </div>
@@ -587,7 +587,7 @@ function PillWithLabel8() {
       className="box-border content-stretch flex flex-row items-center justify-between p-0 relative shrink-0 w-full"
       data-name="Pill with label"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
         <p className="block leading-[22px] whitespace-pre">Buyer message</p>
       </div>
       <Pill10 />
@@ -601,7 +601,7 @@ function Pill11() {
       className="bg-[rgba(0,0,0,0.05)] box-border content-stretch flex flex-row gap-2 items-center justify-center min-w-[29px] px-2 py-1 relative rounded-[100px] shrink-0"
       data-name="Pill"
     >
-      <div className="basis-0 font-['Inter:Regular',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
+      <div className="basis-0 font-['Inter',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
         <p className="block leading-[20px]">9</p>
       </div>
     </div>
@@ -614,7 +614,7 @@ function PillWithLabel9() {
       className="box-border content-stretch flex flex-row items-center justify-between p-0 relative shrink-0 w-full"
       data-name="Pill with label"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
         <p className="block leading-[22px] whitespace-pre">Invoice pending</p>
       </div>
       <Pill11 />
@@ -628,7 +628,7 @@ function Pill12() {
       className="bg-[rgba(0,0,0,0.05)] box-border content-stretch flex flex-row gap-2 items-center justify-center min-w-[29px] px-2 py-1 relative rounded-[100px] shrink-0"
       data-name="Pill"
     >
-      <div className="basis-0 font-['Inter:Regular',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
+      <div className="basis-0 font-['Inter',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
         <p className="block leading-[20px]">49</p>
       </div>
     </div>
@@ -641,7 +641,7 @@ function PillWithLabel10() {
       className="box-border content-stretch flex flex-row items-center justify-between p-0 relative shrink-0 w-full"
       data-name="Pill with label"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
         <p className="block leading-[22px] whitespace-pre">Label pending</p>
       </div>
       <Pill12 />
@@ -655,7 +655,7 @@ function Pill13() {
       className="bg-[rgba(0,0,0,0.05)] box-border content-stretch flex flex-row gap-2 items-center justify-center min-w-[29px] px-2 py-1 relative rounded-[100px] shrink-0"
       data-name="Pill"
     >
-      <div className="basis-0 font-['Inter:Regular',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
+      <div className="basis-0 font-['Inter',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
         <p className="block leading-[20px]">30</p>
       </div>
     </div>
@@ -668,7 +668,7 @@ function PillWithLabel11() {
       className="box-border content-stretch flex flex-row items-center justify-between p-0 relative shrink-0 w-full"
       data-name="Pill with label"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
         <p className="block leading-[22px] whitespace-pre">Ready to ship</p>
       </div>
       <Pill13 />
@@ -705,7 +705,7 @@ function Pill14() {
       className="bg-[rgba(45,72,189,0.1)] box-border content-stretch flex flex-row gap-2 items-center justify-center min-w-[29px] px-2 py-1 relative rounded-[100px] shrink-0"
       data-name="Pill"
     >
-      <div className="basis-0 font-['Inter:Regular',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#2d48bd] text-[14px] text-center">
+      <div className="basis-0 font-['Inter',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#2d48bd] text-[14px] text-center">
         <p className="block leading-[20px]">32</p>
       </div>
     </div>
@@ -718,7 +718,7 @@ function Title4() {
       className="box-border content-stretch flex flex-row items-center justify-between p-0 relative shrink-0 w-full"
       data-name="Title"
     >
-      <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#111111] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#111111] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">PENDING</p>
       </div>
       <Pill14 />
@@ -729,7 +729,7 @@ function Title4() {
 function Title5() {
   return (
     <div
-      className="box-border content-stretch flex flex-row font-['Inter:Regular',_sans-serif] font-normal gap-1 items-center justify-start leading-[0] not-italic p-0 relative shrink-0 text-left text-nowrap w-full"
+      className="box-border content-stretch flex flex-row font-['Inter',_sans-serif] font-normal gap-1 items-center justify-start leading-[0] not-italic p-0 relative shrink-0 text-left text-nowrap w-full"
       data-name="Title"
     >
       <div className="relative shrink-0 text-[#000000] text-[20px]">
@@ -762,7 +762,7 @@ function Pill15() {
       className="bg-[rgba(0,0,0,0.05)] box-border content-stretch flex flex-row gap-2 items-center justify-center min-w-[29px] px-2 py-1 relative rounded-[100px] shrink-0"
       data-name="Pill"
     >
-      <div className="basis-0 font-['Inter:Regular',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
+      <div className="basis-0 font-['Inter',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
         <p className="block leading-[20px]">7</p>
       </div>
     </div>
@@ -775,7 +775,7 @@ function PillWithLabel12() {
       className="box-border content-stretch flex flex-row items-center justify-between p-0 relative shrink-0 w-full"
       data-name="Pill with label"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
         <p className="block leading-[22px] whitespace-pre">Buyer message</p>
       </div>
       <Pill15 />
@@ -789,7 +789,7 @@ function Pill16() {
       className="bg-[rgba(0,0,0,0.05)] box-border content-stretch flex flex-row gap-2 items-center justify-center min-w-[29px] px-2 py-1 relative rounded-[100px] shrink-0"
       data-name="Pill"
     >
-      <div className="basis-0 font-['Inter:Regular',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
+      <div className="basis-0 font-['Inter',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
         <p className="block leading-[20px]">2</p>
       </div>
     </div>
@@ -802,7 +802,7 @@ function PillWithLabel13() {
       className="box-border content-stretch flex flex-row items-center justify-between p-0 relative shrink-0 w-full"
       data-name="Pill with label"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
         <p className="block leading-[22px] whitespace-pre">Invoice pending</p>
       </div>
       <Pill16 />
@@ -816,7 +816,7 @@ function Pill17() {
       className="bg-[rgba(0,0,0,0.05)] box-border content-stretch flex flex-row gap-2 items-center justify-center min-w-[29px] px-2 py-1 relative rounded-[100px] shrink-0"
       data-name="Pill"
     >
-      <div className="basis-0 font-['Inter:Regular',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
+      <div className="basis-0 font-['Inter',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
         <p className="block leading-[20px]">12</p>
       </div>
     </div>
@@ -829,7 +829,7 @@ function PillWithLabel14() {
       className="box-border content-stretch flex flex-row items-center justify-between p-0 relative shrink-0 w-full"
       data-name="Pill with label"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
         <p className="block leading-[22px] whitespace-pre">Label pending</p>
       </div>
       <Pill17 />
@@ -843,7 +843,7 @@ function Pill18() {
       className="bg-[rgba(0,0,0,0.05)] box-border content-stretch flex flex-row gap-2 items-center justify-center min-w-[29px] px-2 py-1 relative rounded-[100px] shrink-0"
       data-name="Pill"
     >
-      <div className="basis-0 font-['Inter:Regular',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
+      <div className="basis-0 font-['Inter',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
         <p className="block leading-[20px]">10</p>
       </div>
     </div>
@@ -856,7 +856,7 @@ function PillWithLabel15() {
       className="box-border content-stretch flex flex-row items-center justify-between p-0 relative shrink-0 w-full"
       data-name="Pill with label"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
         <p className="block leading-[22px] whitespace-pre">Ready to ship</p>
       </div>
       <Pill18 />
@@ -893,7 +893,7 @@ function Pill19() {
       className="bg-[rgba(45,72,189,0.1)] box-border content-stretch flex flex-row gap-2 items-center justify-center min-w-[29px] px-2 py-1 relative rounded-[100px] shrink-0"
       data-name="Pill"
     >
-      <div className="basis-0 font-['Inter:Regular',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#2d48bd] text-[14px] text-center">
+      <div className="basis-0 font-['Inter',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#2d48bd] text-[14px] text-center">
         <p className="block leading-[20px]">74</p>
       </div>
     </div>
@@ -906,7 +906,7 @@ function Title6() {
       className="box-border content-stretch flex flex-row items-center justify-between p-0 relative shrink-0 w-full"
       data-name="Title"
     >
-      <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#111111] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#111111] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">SCHEDULED</p>
       </div>
       <Pill19 />
@@ -917,7 +917,7 @@ function Title6() {
 function Title7() {
   return (
     <div
-      className="box-border content-stretch flex flex-row font-['Inter:Regular',_sans-serif] font-normal gap-1 items-center justify-start leading-[0] not-italic p-0 relative shrink-0 text-left text-nowrap w-full"
+      className="box-border content-stretch flex flex-row font-['Inter',_sans-serif] font-normal gap-1 items-center justify-start leading-[0] not-italic p-0 relative shrink-0 text-left text-nowrap w-full"
       data-name="Title"
     >
       <div className="relative shrink-0 text-[#000000] text-[20px]">
@@ -952,7 +952,7 @@ function Pill20() {
       className="bg-[rgba(0,0,0,0.05)] box-border content-stretch flex flex-row gap-2 items-center justify-center min-w-[29px] px-2 py-1 relative rounded-[100px] shrink-0"
       data-name="Pill"
     >
-      <div className="basis-0 font-['Inter:Regular',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
+      <div className="basis-0 font-['Inter',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
         <p className="block leading-[20px]">1</p>
       </div>
     </div>
@@ -965,7 +965,7 @@ function PillWithLabel16() {
       className="box-border content-stretch flex flex-row items-center justify-between p-0 relative shrink-0 w-full"
       data-name="Pill with label"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
         <p className="block leading-[22px] whitespace-pre">Buyer message</p>
       </div>
       <Pill20 />
@@ -979,7 +979,7 @@ function Pill21() {
       className="bg-[rgba(0,0,0,0.05)] box-border content-stretch flex flex-row gap-2 items-center justify-center min-w-[29px] px-2 py-1 relative rounded-[100px] shrink-0"
       data-name="Pill"
     >
-      <div className="basis-0 font-['Inter:Regular',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
+      <div className="basis-0 font-['Inter',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
         <p className="block leading-[20px]">9</p>
       </div>
     </div>
@@ -992,7 +992,7 @@ function PillWithLabel17() {
       className="box-border content-stretch flex flex-row items-center justify-between p-0 relative shrink-0 w-full"
       data-name="Pill with label"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
         <p className="block leading-[22px] whitespace-pre">Invoice pending</p>
       </div>
       <Pill21 />
@@ -1006,7 +1006,7 @@ function Pill22() {
       className="bg-[rgba(0,0,0,0.05)] box-border content-stretch flex flex-row gap-2 items-center justify-center min-w-[29px] px-2 py-1 relative rounded-[100px] shrink-0"
       data-name="Pill"
     >
-      <div className="basis-0 font-['Inter:Regular',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
+      <div className="basis-0 font-['Inter',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
         <p className="block leading-[20px]">34</p>
       </div>
     </div>
@@ -1019,7 +1019,7 @@ function PillWithLabel18() {
       className="box-border content-stretch flex flex-row items-center justify-between p-0 relative shrink-0 w-full"
       data-name="Pill with label"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
         <p className="block leading-[22px] whitespace-pre">Label pending</p>
       </div>
       <Pill22 />
@@ -1033,7 +1033,7 @@ function Pill23() {
       className="bg-[rgba(0,0,0,0.05)] box-border content-stretch flex flex-row gap-2 items-center justify-center min-w-[29px] px-2 py-1 relative rounded-[100px] shrink-0"
       data-name="Pill"
     >
-      <div className="basis-0 font-['Inter:Regular',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
+      <div className="basis-0 font-['Inter',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
         <p className="block leading-[20px]">30</p>
       </div>
     </div>
@@ -1046,7 +1046,7 @@ function PillWithLabel19() {
       className="box-border content-stretch flex flex-row items-center justify-between p-0 relative shrink-0 w-full"
       data-name="Pill with label"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
         <p className="block leading-[22px] whitespace-pre">Ready to ship</p>
       </div>
       <Pill23 />

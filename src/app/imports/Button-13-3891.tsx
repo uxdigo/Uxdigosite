@@ -30,7 +30,7 @@ export default function Button() {
       <div className="flex flex-row items-center justify-center relative size-full">
         <div className="box-border content-stretch flex flex-row gap-2 items-center justify-center px-6 py-4 relative size-full">
           <Icons />
-          <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#ffffff] text-[16px] text-center text-nowrap tracking-[0.32px]">
+          <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#ffffff] text-[16px] text-center text-nowrap tracking-[0.32px]">
             <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">
               Pick up receipt
             </p>

@@ -112,7 +112,7 @@ function CustomCard({ pickup, isExpanded, onToggle }: CustomCardProps) {
             <div className="basis-0 box-border content-stretch flex flex-col gap-2 grow items-start justify-start min-h-px min-w-px p-0 relative shrink-0">
               {pickup.status !== t.completed.toUpperCase() && pickup.status !== t.canceled.toUpperCase() && (
                 <div 
-                  className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[14px] text-left text-nowrap"
+                  className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[14px] text-left text-nowrap"
                   style={{ color: pickup.statusColor }}
                 >
                   <p className="block leading-[20px] whitespace-pre">{pickup.status}</p>
@@ -120,7 +120,7 @@ function CustomCard({ pickup, isExpanded, onToggle }: CustomCardProps) {
               )}
               
               {/* Title and Time */}
-              <div className="box-border content-stretch flex flex-row font-['Inter:Regular',_sans-serif] font-normal gap-1 items-center justify-start leading-[0] not-italic p-0 relative shrink-0 text-left text-nowrap w-full">
+              <div className="box-border content-stretch flex flex-row font-['Inter',_sans-serif] font-normal gap-1 items-center justify-start leading-[0] not-italic p-0 relative shrink-0 text-left text-nowrap w-full">
                 <div className="relative shrink-0 text-[#000000] text-[20px]">
                   <p className="block leading-[26px] text-nowrap whitespace-pre">{t.pickup}</p>
                 </div>
@@ -143,7 +143,7 @@ function CustomCard({ pickup, isExpanded, onToggle }: CustomCardProps) {
           {isExpanded && pickup.content && (
             <>
               {/* Text Content */}
-              <div className="box-border content-stretch flex flex-col font-['Inter:Regular',_sans-serif] font-normal gap-2 items-start justify-start leading-[0] not-italic p-0 relative shrink-0 text-[#000000] text-left w-full">
+              <div className="box-border content-stretch flex flex-col font-['Inter',_sans-serif] font-normal gap-2 items-start justify-start leading-[0] not-italic p-0 relative shrink-0 text-[#000000] text-left w-full">
                 {pickup.content.split('\n').map((line, index) => {
                   // Regex to match numbers with optional units (packages, items, hours, etc.)
                   const boldNumberRegex = new RegExp('(\\d+(?:\\.\\d+)?(?:\\s*(?:packages?|items?|hours?|minutes?|days?|boxes?|units?|pacotes?|itens?|horas?|minutos?|dias?|caixas?|unidades?|paquetes?|artículos?))?)', 'gi');
@@ -157,7 +157,7 @@ function CustomCard({ pickup, isExpanded, onToggle }: CustomCardProps) {
                           const testRegex = new RegExp('\\d+(?:\\.\\d+)?(?:\\s*(?:packages?|items?|hours?|minutes?|days?|boxes?|units?|pacotes?|itens?|horas?|minutos?|dias?|caixas?|unidades?|paquetes?|artículos?))?', 'i');
                           if (testRegex.test(part)) {
                             return (
-                              <span key={partIndex} className="font-['Inter:Semi_Bold',_sans-serif] font-semibold not-italic">
+                              <span key={partIndex} className="font-['Inter',_sans-serif] font-semibold not-italic">
                                 {part}
                               </span>
                             );
@@ -214,7 +214,7 @@ function CustomCard({ pickup, isExpanded, onToggle }: CustomCardProps) {
                         )}
                       </div>
                       <div className="basis-0 box-border content-stretch flex flex-col gap-2 grow items-start justify-center min-h-px min-w-px p-0 relative shrink-0">
-                        <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left w-full">
+                        <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left w-full">
                           <p className="block leading-[22px]">{pickup.alertText}</p>
                         </div>
                       </div>
@@ -246,7 +246,7 @@ function CustomCard({ pickup, isExpanded, onToggle }: CustomCardProps) {
                         </div>
                       )}
                       <div 
-                        className={`font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[14px] text-center text-nowrap tracking-[0.32px] ${
+                        className={`font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[14px] text-center text-nowrap tracking-[0.32px] ${
                           pickup.buttonColor === '#2d48bd' ? 'text-[#ffffff]' : 'text-[#2d48bd]'
                         }`}
                       >
@@ -304,7 +304,7 @@ export function PickupWidget() {
             <div className="flex flex-row items-center overflow-clip relative size-full">
               <div className="box-border content-stretch flex flex-row gap-2 items-center justify-start px-6 py-5 relative w-full">
                 <div className="basis-0 box-border content-stretch flex flex-col gap-2 grow items-start justify-center min-h-px min-w-px p-0 relative shrink-0">
-                  <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#111111] text-[20px] text-left w-full">
+                  <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#111111] text-[20px] text-left w-full">
                     <p className="block leading-[normal]">{t.pickupManagement}</p>
                   </div>
                 </div>
@@ -355,7 +355,7 @@ export function PickupWidget() {
                   <select
                     value={selectedState}
                     onChange={(e) => handleStateChange(e.target.value as PickupState)}
-                    className="box-border content-stretch flex flex-row gap-2 items-center justify-start overflow-clip px-6 py-4 relative w-full bg-transparent border border-[rgba(0,0,0,0.1)] border-solid rounded-3xl font-['Inter:Regular',_sans-serif] font-normal text-[#111111] text-[16px] appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#2D48BD] focus:ring-opacity-50"
+                    className="box-border content-stretch flex flex-row gap-2 items-center justify-start overflow-clip px-6 py-4 relative w-full bg-transparent border border-[rgba(0,0,0,0.1)] border-solid rounded-3xl font-['Inter',_sans-serif] font-normal text-[#111111] text-[16px] appearance-none cursor-pointer focus:outline-none focus:ring-2 focus:ring-[#2D48BD] focus:ring-opacity-50"
                     style={{
                       backgroundImage: `url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%232D48BD' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e")`,
                       backgroundPosition: 'right 20px center',

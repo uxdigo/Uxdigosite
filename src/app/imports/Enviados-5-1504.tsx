@@ -37,7 +37,7 @@ function Header() {
     >
       <div className="flex flex-row items-center justify-center overflow-clip relative size-full">
         <div className="box-border content-stretch flex flex-row gap-2 h-14 items-center justify-center p-[24px] relative w-full">
-          <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[20px] text-center text-nowrap">
+          <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[20px] text-center text-nowrap">
             <p className="block leading-[26px] whitespace-pre">
               Shipped packages
             </p>
@@ -55,7 +55,7 @@ function Text() {
       className="basis-0 box-border content-stretch flex flex-col gap-2 grow items-start justify-center min-h-px min-w-px p-0 relative shrink-0"
       data-name="Text"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[18px] text-left w-full">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[18px] text-left w-full">
         <p className="block leading-[24px]">185 packages</p>
       </div>
     </div>
@@ -83,7 +83,7 @@ function Id() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123250</p>
       </div>
     </div>
@@ -96,7 +96,7 @@ function Id1() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123251</p>
       </div>
     </div>
@@ -109,7 +109,7 @@ function Id2() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123252</p>
       </div>
     </div>
@@ -122,7 +122,7 @@ function Id3() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123253</p>
       </div>
     </div>
@@ -135,7 +135,7 @@ function Id4() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123254</p>
       </div>
     </div>
@@ -148,7 +148,7 @@ function Id5() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123255</p>
       </div>
     </div>
@@ -161,7 +161,7 @@ function Id6() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123256</p>
       </div>
     </div>
@@ -174,7 +174,7 @@ function Id7() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123257</p>
       </div>
     </div>
@@ -187,7 +187,7 @@ function Id8() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123258</p>
       </div>
     </div>
@@ -200,7 +200,7 @@ function Id9() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123259</p>
       </div>
     </div>
@@ -213,7 +213,7 @@ function Id10() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123260</p>
       </div>
     </div>
@@ -226,7 +226,7 @@ function Id11() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123261</p>
       </div>
     </div>
@@ -239,7 +239,7 @@ function Id12() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123262</p>
       </div>
     </div>
@@ -252,7 +252,7 @@ function Id13() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123263</p>
       </div>
     </div>
@@ -265,7 +265,7 @@ function Id14() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123264</p>
       </div>
     </div>
@@ -278,7 +278,7 @@ function Id15() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123265</p>
       </div>
     </div>
@@ -291,7 +291,7 @@ function Id16() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123266</p>
       </div>
     </div>
@@ -304,7 +304,7 @@ function Id17() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123267</p>
       </div>
     </div>
@@ -317,7 +317,7 @@ function Id18() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123268</p>
       </div>
     </div>
@@ -330,7 +330,7 @@ function Id19() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123269</p>
       </div>
     </div>
@@ -343,7 +343,7 @@ function Id20() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123270</p>
       </div>
     </div>
@@ -356,7 +356,7 @@ function Id21() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123271</p>
       </div>
     </div>
@@ -369,7 +369,7 @@ function Id22() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123272</p>
       </div>
     </div>
@@ -382,7 +382,7 @@ function Id23() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123273</p>
       </div>
     </div>
@@ -395,7 +395,7 @@ function Id24() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123274</p>
       </div>
     </div>
@@ -408,7 +408,7 @@ function Id25() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123275</p>
       </div>
     </div>
@@ -421,7 +421,7 @@ function Id26() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123276</p>
       </div>
     </div>
@@ -434,7 +434,7 @@ function Id27() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123277</p>
       </div>
     </div>
@@ -447,7 +447,7 @@ function Id28() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123278</p>
       </div>
     </div>
@@ -460,7 +460,7 @@ function Id29() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123279</p>
       </div>
     </div>
@@ -473,7 +473,7 @@ function Id30() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123280</p>
       </div>
     </div>
@@ -486,7 +486,7 @@ function Id31() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123281</p>
       </div>
     </div>
@@ -499,7 +499,7 @@ function Id32() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123282</p>
       </div>
     </div>
@@ -512,7 +512,7 @@ function Id33() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123283</p>
       </div>
     </div>
@@ -525,7 +525,7 @@ function Id34() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123284</p>
       </div>
     </div>
@@ -538,7 +538,7 @@ function Id35() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123285</p>
       </div>
     </div>
@@ -551,7 +551,7 @@ function Id36() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123286</p>
       </div>
     </div>
@@ -564,7 +564,7 @@ function Id37() {
       className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative shrink-0"
       data-name="ID"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left text-nowrap">
         <p className="block leading-[20px] whitespace-pre">#200003123287</p>
       </div>
     </div>
@@ -626,7 +626,7 @@ function ShipIdCol() {
       data-name="Ship ID col"
     >
       <div
-        className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] min-w-full not-italic relative shrink-0 text-[14px] text-[rgba(17,17,17,0.5)] text-left"
+        className="font-['Inter',_sans-serif] font-normal leading-[0] min-w-full not-italic relative shrink-0 text-[14px] text-[rgba(17,17,17,0.5)] text-left"
         style={{ width: "min-content" }}
       >
         <p className="block leading-[20px]">Ship ID</p>

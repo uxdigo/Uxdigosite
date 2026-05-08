@@ -66,7 +66,7 @@ function Header() {
         <div className="box-border content-stretch flex flex-row gap-2 h-14 items-center justify-between p-[24px] relative w-full">
           <Icons />
           <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-            <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic text-[#ffffff] text-[20px] text-center text-nowrap">
+            <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic text-[#ffffff] text-[20px] text-center text-nowrap">
               <p className="block leading-[26px] whitespace-pre">Perigos</p>
             </div>
           </div>
@@ -83,10 +83,10 @@ function Text() {
       className="box-border content-stretch flex flex-col items-start justify-center leading-[0] not-italic p-0 relative shrink-0 text-[14px] text-[rgba(17,17,17,0.5)] text-left w-16"
       data-name="Text"
     >
-      <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold relative shrink-0 w-full">
+      <div className="font-['Inter',_sans-serif] font-semibold relative shrink-0 w-full">
         <p className="block leading-[20px]">Tipo</p>
       </div>
-      <div className="font-['Inter:Regular',_sans-serif] font-normal relative shrink-0 w-full">
+      <div className="font-['Inter',_sans-serif] font-normal relative shrink-0 w-full">
         <p className="block leading-[20px]">Perigo</p>
       </div>
     </div>
@@ -99,10 +99,10 @@ function Text1() {
       className="box-border content-stretch flex flex-col items-start justify-center leading-[0] not-italic p-0 relative shrink-0 text-[14px] text-[rgba(17,17,17,0.5)] text-left w-12"
       data-name="Text"
     >
-      <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold relative shrink-0 w-full">
+      <div className="font-['Inter',_sans-serif] font-semibold relative shrink-0 w-full">
         <p className="block leading-[20px]">HRN</p>
       </div>
-      <div className="font-['Inter:Regular',_sans-serif] font-normal relative shrink-0 w-full">
+      <div className="font-['Inter',_sans-serif] font-normal relative shrink-0 w-full">
         <p className="block leading-[20px]">Atual</p>
       </div>
     </div>
@@ -115,10 +115,10 @@ function Text2() {
       className="box-border content-stretch flex flex-col items-start justify-center leading-[0] not-italic p-0 relative shrink-0 text-[14px] text-[rgba(17,17,17,0.5)] text-left w-12"
       data-name="Text"
     >
-      <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold relative shrink-0 w-full">
+      <div className="font-['Inter',_sans-serif] font-semibold relative shrink-0 w-full">
         <p className="block leading-[20px]">HRN</p>
       </div>
-      <div className="font-['Inter:Regular',_sans-serif] font-normal relative shrink-0 w-full">
+      <div className="font-['Inter',_sans-serif] font-normal relative shrink-0 w-full">
         <p className="block leading-[20px]">Meta</p>
       </div>
     </div>
@@ -131,10 +131,10 @@ function Text3() {
       className="basis-0 box-border content-stretch flex flex-col grow items-start justify-center leading-[0] min-h-px min-w-px not-italic p-0 relative shrink-0 text-[14px] text-[rgba(17,17,17,0.5)] text-left"
       data-name="Text"
     >
-      <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold relative shrink-0 w-full">
+      <div className="font-['Inter',_sans-serif] font-semibold relative shrink-0 w-full">
         <p className="block leading-[20px]">Status</p>
       </div>
-      <div className="font-['Inter:Regular',_sans-serif] font-normal relative shrink-0 w-full">
+      <div className="font-['Inter',_sans-serif] font-normal relative shrink-0 w-full">
         <p className="block leading-[20px]">Perigo</p>
       </div>
     </div>
@@ -171,7 +171,7 @@ function Text4() {
       className="box-border content-stretch flex flex-col gap-2 items-start justify-center p-0 relative shrink-0"
       data-name="Text"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[14px] text-left w-16">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[14px] text-left w-16">
         <p className="block leading-[20px]">Mecânico</p>
       </div>
     </div>
@@ -184,7 +184,7 @@ function Text5() {
       className="box-border content-stretch flex flex-col gap-2 items-start justify-center p-0 relative shrink-0 text-[14px] text-left w-12"
       data-name="Text"
     >
-      <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#111111] w-full">
+      <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#111111] w-full">
         <p className="block leading-[20px]">505</p>
       </div>
     </div>
@@ -197,7 +197,7 @@ function Text6() {
       className="box-border content-stretch flex flex-col gap-2 items-start justify-center p-0 relative shrink-0 text-[14px] text-left w-12"
       data-name="Text"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] w-full">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] w-full">
         <p className="block leading-[20px]">15</p>
       </div>
     </div>
@@ -296,7 +296,7 @@ function Text8() {
       className="box-border content-stretch flex flex-col gap-2 items-start justify-center p-0 relative shrink-0"
       data-name="Text"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[14px] text-left w-16">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[14px] text-left w-16">
         <p className="block leading-[20px]">Elétrico</p>
       </div>
     </div>
@@ -309,7 +309,7 @@ function Text9() {
       className="box-border content-stretch flex flex-col gap-2 items-start justify-center p-0 relative shrink-0 text-[14px] text-left w-12"
       data-name="Text"
     >
-      <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#111111] w-full">
+      <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#111111] w-full">
         <p className="block leading-[20px]">505</p>
       </div>
     </div>
@@ -322,7 +322,7 @@ function Text10() {
       className="box-border content-stretch flex flex-col gap-2 items-start justify-center p-0 relative shrink-0 text-[14px] text-left w-12"
       data-name="Text"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] w-full">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] w-full">
         <p className="block leading-[20px]">55</p>
       </div>
     </div>
@@ -421,7 +421,7 @@ function Text12() {
       className="box-border content-stretch flex flex-col gap-2 items-start justify-center p-0 relative shrink-0"
       data-name="Text"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[14px] text-left w-16">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[14px] text-left w-16">
         <p className="block leading-[20px]">Elétrico</p>
       </div>
     </div>
@@ -434,7 +434,7 @@ function Text13() {
       className="box-border content-stretch flex flex-col gap-2 items-start justify-center p-0 relative shrink-0 text-[14px] text-left w-12"
       data-name="Text"
     >
-      <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#111111] w-full">
+      <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#111111] w-full">
         <p className="block leading-[20px]">55</p>
       </div>
     </div>
@@ -447,7 +447,7 @@ function Text14() {
       className="box-border content-stretch flex flex-col gap-2 items-start justify-center p-0 relative shrink-0 text-[14px] text-left w-12"
       data-name="Text"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] w-full">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] w-full">
         <p className="block leading-[20px]">5</p>
       </div>
     </div>
@@ -546,7 +546,7 @@ function Text16() {
       className="box-border content-stretch flex flex-col gap-2 items-start justify-center p-0 relative shrink-0"
       data-name="Text"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[14px] text-left w-16">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[14px] text-left w-16">
         <p className="block leading-[20px]">Mecânico</p>
       </div>
     </div>
@@ -559,7 +559,7 @@ function Text17() {
       className="box-border content-stretch flex flex-col gap-2 items-start justify-center p-0 relative shrink-0 text-[14px] text-left w-12"
       data-name="Text"
     >
-      <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#111111] w-full">
+      <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#111111] w-full">
         <p className="block leading-[20px]">5</p>
       </div>
     </div>
@@ -572,7 +572,7 @@ function Text18() {
       className="box-border content-stretch flex flex-col gap-2 items-start justify-center p-0 relative shrink-0 text-[14px] text-left w-12"
       data-name="Text"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] w-full">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] w-full">
         <p className="block leading-[20px]">5</p>
       </div>
     </div>
@@ -672,7 +672,7 @@ function Text20() {
       className="box-border content-stretch flex flex-col gap-2 items-start justify-center p-0 relative shrink-0"
       data-name="Text"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[14px] text-left w-16">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[14px] text-left w-16">
         <p className="block leading-[20px]">Térmico</p>
       </div>
     </div>
@@ -685,7 +685,7 @@ function Text21() {
       className="box-border content-stretch flex flex-col gap-2 items-start justify-center p-0 relative shrink-0 text-[14px] text-left w-12"
       data-name="Text"
     >
-      <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#111111] w-full">
+      <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#111111] w-full">
         <p className="block leading-[20px]">5</p>
       </div>
     </div>
@@ -698,7 +698,7 @@ function Text22() {
       className="box-border content-stretch flex flex-col gap-2 items-start justify-center p-0 relative shrink-0 text-[14px] text-left w-12"
       data-name="Text"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-nowrap w-full">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-nowrap w-full">
         <p className="block leading-[20px] whitespace-pre">5</p>
       </div>
     </div>
@@ -808,7 +808,7 @@ function Frame134() {
 function Frame135() {
   return (
     <div className="box-border content-stretch flex flex-row gap-2 items-center justify-center p-0 relative rounded-lg shrink-0 w-full">
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[14px] text-[rgba(17,17,17,0.3)] text-center w-[223px]">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[14px] text-[rgba(17,17,17,0.3)] text-center w-[223px]">
         <p className="block leading-[20px]">Máquina 130AB possui 5 perigos</p>
       </div>
     </div>
@@ -851,7 +851,7 @@ function Button() {
     >
       <div className="flex flex-row items-center justify-center relative size-full">
         <div className="box-border content-stretch flex flex-row gap-2 items-center justify-center px-6 py-4 relative w-full">
-          <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#ffffff] text-[18px] text-center text-nowrap tracking-[0.36px]">
+          <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#ffffff] text-[18px] text-center text-nowrap tracking-[0.36px]">
             <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">
               Adicionar perigo
             </p>

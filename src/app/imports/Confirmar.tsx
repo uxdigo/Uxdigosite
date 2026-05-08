@@ -38,12 +38,12 @@ function Frame14() {
 function Frame15() {
   return (
     <div className="box-border content-stretch flex flex-col gap-2 items-center justify-start leading-[0] not-italic p-0 relative shrink-0 text-left text-nowrap">
-      <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold relative shrink-0 text-[#111111] text-[24px]">
+      <div className="font-['Inter',_sans-serif] font-semibold relative shrink-0 text-[#111111] text-[24px]">
         <p className="block leading-[normal] text-nowrap whitespace-pre">
           Pickup confirmed
         </p>
       </div>
-      <div className="font-['Inter:Regular',_sans-serif] font-normal relative shrink-0 text-[#000000] text-[18px]">
+      <div className="font-['Inter',_sans-serif] font-normal relative shrink-0 text-[#000000] text-[18px]">
         <p className="block leading-[24px] text-nowrap whitespace-pre">
           E-mail sent to the administrator
         </p>
@@ -87,7 +87,7 @@ function Button() {
     >
       <div className="flex flex-row items-center justify-center relative size-full">
         <div className="box-border content-stretch flex flex-row gap-2 items-center justify-center px-6 py-4 relative w-full">
-          <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[18px] text-center text-nowrap tracking-[0.36px]">
+          <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[18px] text-center text-nowrap tracking-[0.36px]">
             <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">
               Close
             </p>

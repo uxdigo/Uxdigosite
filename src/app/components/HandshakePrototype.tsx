@@ -49,7 +49,7 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
         <div className="bg-[#ffe600] h-14 relative shrink-0 w-full" data-name="Header">
           <div className="flex flex-row items-center justify-center overflow-clip relative size-full">
             <div className="box-border content-stretch flex flex-row gap-2 h-14 items-center justify-center p-[24px] relative w-full">
-              <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[20px] text-center text-nowrap">
+              <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[20px] text-center text-nowrap">
                 <p className="block leading-[26px] whitespace-pre">{t.pickupDetails}</p>
               </div>
             </div>
@@ -65,10 +65,10 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
                 
                 {/* Title */}
                 <div className="box-border content-stretch flex flex-col gap-2 items-start justify-start leading-[0] not-italic p-0 relative shrink-0 text-left w-full" data-name="Title">
-                  <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold relative shrink-0 text-[#000000] text-[24px] w-full">
+                  <div className="font-['Inter',_sans-serif] font-semibold relative shrink-0 text-[#000000] text-[24px] w-full">
                     <p className="block leading-[normal]">{t.reviewAndConfirm}</p>
                   </div>
-                  <div className="font-['Inter:Regular',_sans-serif] font-normal relative shrink-0 text-[14px] text-[rgba(17,17,17,0.5)] w-full">
+                  <div className="font-['Inter',_sans-serif] font-normal relative shrink-0 text-[14px] text-[rgba(17,17,17,0.5)] w-full">
                     <p className="block leading-[20px]">09:40 AM - April 12</p>
                   </div>
                 </div>
@@ -82,7 +82,7 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
                   <div className="flex flex-row items-center overflow-clip relative size-full">
                     <div className="box-border content-stretch flex flex-row gap-2 items-center justify-start p-[20px] relative w-full">
                       <div className="basis-0 box-border content-stretch flex flex-col gap-2 grow items-start justify-center min-h-px min-w-px p-0 relative shrink-0" data-name="Text">
-                        <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[18px] text-left w-full">
+                        <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[18px] text-left w-full">
                           <p className="block leading-[24px]">{t.packagesCount185}</p>
                         </div>
                       </div>
@@ -113,7 +113,7 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
                     <div className="flex flex-row items-center overflow-clip relative size-full">
                       <div className="box-border content-stretch flex flex-row gap-2 items-center justify-start p-[20px] relative w-full">
                         <div className="basis-0 box-border content-stretch flex flex-col gap-2 grow items-start justify-center min-h-px min-w-px p-0 relative shrink-0" data-name="Text">
-                          <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[18px] text-left w-full">
+                          <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[18px] text-left w-full">
                             <p className="block leading-[24px]">{t.packagesPending7}</p>
                           </div>
                         </div>
@@ -149,7 +149,7 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
                                 </svg>
                               </div>
                               <div className="basis-0 box-border content-stretch flex flex-col gap-2 grow items-start justify-center min-h-px min-w-px p-0 relative shrink-0" data-name="Text">
-                                <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left w-full">
+                                <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left w-full">
                                   <p className="block leading-[22px]">{t.reputationAtRisk}</p>
                                 </div>
                               </div>
@@ -176,7 +176,7 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
               >
                 <div className="flex flex-row items-center justify-center relative size-full">
                   <div className="box-border content-stretch flex flex-row gap-2 items-center justify-center px-6 py-4 relative w-full">
-                    <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#ffffff] text-[18px] text-center text-nowrap tracking-[0.36px]">
+                    <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#ffffff] text-[18px] text-center text-nowrap tracking-[0.36px]">
                       <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">{t.confirm}</p>
                     </div>
                   </div>
@@ -185,7 +185,7 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
               <div className="bg-[rgba(45,72,189,0.25)] relative rounded-3xl shrink-0 w-full" data-name="Button">
                 <div className="flex flex-row items-center justify-center relative size-full">
                   <div className="box-border content-stretch flex flex-row gap-2 items-center justify-center px-6 py-4 relative w-full">
-                    <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[18px] text-center text-nowrap tracking-[0.36px]">
+                    <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[18px] text-center text-nowrap tracking-[0.36px]">
                       <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">{t.change}</p>
                     </div>
                   </div>
@@ -226,7 +226,7 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
                 </svg>
               </button>
               <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic text-[#111111] text-[20px] text-center">
+                <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic text-[#111111] text-[20px] text-center">
                   <p className="block leading-[26px] px-2">{t.shippedPackages}</p>
                 </div>
               </div>
@@ -246,7 +246,7 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
                     <div className="flex flex-row items-center overflow-clip relative size-full">
                       <div className="box-border content-stretch flex flex-row gap-2 items-center justify-start p-[20px] relative w-full">
                         <div className="basis-0 box-border content-stretch flex flex-col gap-2 grow items-start justify-center min-h-px min-w-px p-0 relative shrink-0" data-name="Text">
-                          <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[18px] text-left w-full">
+                          <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[18px] text-left w-full">
                             <p className="block leading-[24px]">{t.packagesCount185}</p>
                           </div>
                         </div>
@@ -266,10 +266,10 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
                     <div className="relative h-full">
                       <div className="box-border content-stretch flex flex-row gap-6 items-start justify-start px-5 py-4 relative w-full h-full">
                         <div className="box-border content-stretch flex flex-col gap-3 items-start justify-start p-0 relative shrink-0" data-name="Ship ID col">
-                          <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] min-w-full not-italic relative shrink-0 text-[14px] text-[rgba(17,17,17,0.5)] text-left" style={{ width: "min-content" }}>
+                          <div className="font-['Inter',_sans-serif] font-normal leading-[0] min-w-full not-italic relative shrink-0 text-[14px] text-[rgba(17,17,17,0.5)] text-left" style={{ width: "min-content" }}>
                             <p className="block leading-[20px]">{t.shipId}</p>
                           </div>
-                          <div className="box-border content-stretch flex flex-col gap-4 items-start justify-start p-0 relative shrink-0 font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic text-[#000000] text-[14px] text-left" data-name="List">
+                          <div className="box-border content-stretch flex flex-col gap-4 items-start justify-start p-0 relative shrink-0 font-['Inter',_sans-serif] font-normal leading-[0] not-italic text-[#000000] text-[14px] text-left" data-name="List">
                             {Array.from({ length: 50 }, (_, i) => (
                               <div key={i} className="relative shrink-0 w-full">
                                 <p className="block leading-[20px]">#{200003123250 + i}</p>
@@ -319,7 +319,7 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
                   </svg>
                 </button>
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                  <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic text-[#111111] text-[20px] text-center">
+                  <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic text-[#111111] text-[20px] text-center">
                     <p className="block leading-[26px] px-2">{t.pendingPackages}</p>
                   </div>
                 </div>
@@ -339,7 +339,7 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
                     <div className="flex flex-row items-center overflow-clip relative size-full">
                       <div className="box-border content-stretch flex flex-row gap-2 items-center justify-start p-[20px] relative w-full">
                         <div className="basis-0 box-border content-stretch flex flex-col gap-2 grow items-start justify-center min-h-px min-w-px p-0 relative shrink-0" data-name="Text">
-                          <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[18px] text-left w-full">
+                          <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[18px] text-left w-full">
                             <p className="block leading-[24px]">{t.packages7}</p>
                           </div>
                         </div>
@@ -362,10 +362,10 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
                       <div className="box-border content-stretch flex flex-row gap-6 items-start justify-start px-5 py-4 relative w-full">
                         {/* Ship ID col */}
                         <div className="box-border content-stretch flex flex-col gap-3 items-start justify-start p-0 relative shrink-0" data-name="Ship ID col">
-                          <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] min-w-full not-italic relative shrink-0 text-[14px] text-[rgba(17,17,17,0.5)] text-left" style={{ width: "min-content" }}>
+                          <div className="font-['Inter',_sans-serif] font-normal leading-[0] min-w-full not-italic relative shrink-0 text-[14px] text-[rgba(17,17,17,0.5)] text-left" style={{ width: "min-content" }}>
                             <p className="block leading-[20px]">{t.shipId}</p>
                           </div>
-                          <div className="box-border content-stretch flex flex-col font-['Inter:Regular',_sans-serif] font-normal gap-4 items-start justify-start leading-[0] not-italic p-0 relative shrink-0 text-[#000000] text-[14px] text-left" data-name="List">
+                          <div className="box-border content-stretch flex flex-col font-['Inter',_sans-serif] font-normal gap-4 items-start justify-start leading-[0] not-italic p-0 relative shrink-0 text-[#000000] text-[14px] text-left" data-name="List">
                             <div className="relative shrink-0 w-full">
                               <p className="block leading-[20px]">#200003123210</p>
                             </div>
@@ -392,7 +392,7 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
                         
                         {/* Reason col */}
                         <div className="box-border content-stretch flex flex-col gap-3 items-start justify-start p-0 relative shrink-0" data-name="Reason col">
-                          <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] min-w-full not-italic relative shrink-0 text-[14px] text-[rgba(17,17,17,0.5)] text-left" style={{ width: "min-content" }}>
+                          <div className="font-['Inter',_sans-serif] font-normal leading-[0] min-w-full not-italic relative shrink-0 text-[14px] text-[rgba(17,17,17,0.5)] text-left" style={{ width: "min-content" }}>
                             <p className="block leading-[20px]">{t.reason}</p>
                           </div>
                           <div className="box-border content-stretch flex flex-col gap-4 items-start justify-start p-0 relative shrink-0" data-name="List">
@@ -406,7 +406,7 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
                                     </g>
                                   </svg>
                                 </div>
-                                <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[14px] text-left text-nowrap">
+                                <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[14px] text-left text-nowrap">
                                   <p className="block leading-[20px] whitespace-pre">{t.notReady}</p>
                                 </div>
                               </div>
@@ -421,13 +421,13 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
                                     </g>
                                   </svg>
                                 </div>
-                                <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[14px] text-left text-nowrap">
+                                <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[14px] text-left text-nowrap">
                                   <p className="block leading-[20px] whitespace-pre">{t.poorCondition}</p>
                                 </div>
                               </div>
                             ))}
                             {/* Vehicle full */}
-                            <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left w-full">
+                            <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#000000] text-[14px] text-left w-full">
                               <p className="block leading-[20px]">{t.vehicleFull}</p>
                             </div>
                           </div>
@@ -457,7 +457,7 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
                       </svg>
                     </div>
                     <div className="basis-0 box-border content-stretch flex flex-col gap-2 grow items-start justify-center min-h-px min-w-px p-0 relative shrink-0" data-name="Text">
-                      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left w-full">
+                      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left w-full">
                         <p className="block leading-[22px]">{t.reputationAtRisk}</p>
                       </div>
                     </div>
@@ -469,7 +469,7 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
               <div className="bg-[rgba(45,72,189,0.25)] relative rounded-3xl shrink-0 w-full" data-name="Button">
                 <div className="flex flex-row items-center justify-center relative size-full">
                   <div className="box-border content-stretch flex flex-row gap-2 items-center justify-center px-6 py-4 relative w-full">
-                    <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[18px] text-center text-nowrap tracking-[0.36px]">
+                    <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[18px] text-center text-nowrap tracking-[0.36px]">
                       <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">{t.change}</p>
                     </div>
                   </div>
@@ -511,10 +511,10 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
 
                 {/* Frame15 - Text content */}
                 <div className="box-border content-stretch flex flex-col gap-2 items-center justify-start leading-[0] not-italic p-0 relative shrink-0 text-left text-nowrap">
-                  <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold relative shrink-0 text-[#111111] text-[24px]">
+                  <div className="font-['Inter',_sans-serif] font-semibold relative shrink-0 text-[#111111] text-[24px]">
                     <p className="block leading-[normal] text-nowrap whitespace-pre">{t.packageSuccessfullyConfirmed}</p>
                   </div>
-                  <div className="font-['Inter:Regular',_sans-serif] font-normal relative shrink-0 text-[#000000] text-[18px]">
+                  <div className="font-['Inter',_sans-serif] font-normal relative shrink-0 text-[#000000] text-[18px]">
                     <p className="block leading-[24px] text-nowrap whitespace-pre">{t.packagesConfirmedDriverNotified}</p>
                   </div>
                 </div>
@@ -535,7 +535,7 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
               >
                 <div className="flex flex-row items-center justify-center relative size-full">
                   <div className="box-border content-stretch flex flex-row gap-2 items-center justify-center px-6 py-4 relative w-full">
-                    <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[18px] text-center text-nowrap tracking-[0.36px]">
+                    <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[18px] text-center text-nowrap tracking-[0.36px]">
                       <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">{t.close}</p>
                     </div>
                   </div>

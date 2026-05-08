@@ -8,7 +8,7 @@ function Pill({ value }: { value: string }) {
       className="bg-[rgba(45,72,189,0.1)] box-border content-stretch flex flex-row gap-2 items-center justify-center min-w-[29px] px-2 py-1 relative rounded-[100px] shrink-0"
       data-name="Pill"
     >
-      <div className="basis-0 font-['Inter:Regular',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#2d48bd] text-[14px] text-center">
+      <div className="basis-0 font-['Inter',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#2d48bd] text-[14px] text-center">
         <p className="block leading-[20px]">{value}</p>
       </div>
     </div>
@@ -21,7 +21,7 @@ function PillWithLabel({ label, value }: { label: string; value: string }) {
       className="box-border content-stretch flex flex-row gap-1 items-center justify-start p-0 relative shrink-0"
       data-name="Pill with label"
     >
-      <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
+      <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
         <p className="block leading-[22px] whitespace-pre">{label}</p>
       </div>
       <Pill value={value} />
@@ -51,7 +51,7 @@ function PickupManagementButton() {
       className="bg-[rgba(45,72,189,0.25)] box-border content-stretch flex flex-row gap-2 h-11 items-center justify-center px-6 py-4 relative rounded-3xl shrink-0"
       data-name="Button"
     >
-      <div className="font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[16px] text-center text-nowrap tracking-[0.32px]">
+      <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[16px] text-center text-nowrap tracking-[0.32px]">
         <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">
           {t.pickupManagement}
         </p>
@@ -104,12 +104,12 @@ function StatusCard({ status, statusColor, count, time, statusBadge, items }: {
     >
       <div className="box-border content-stretch flex flex-col gap-2 items-start justify-start p-0 relative shrink-0 w-full">
         <div className="box-border content-stretch flex flex-row items-center justify-between p-0 relative shrink-0 w-full">
-          <div className={`font-['Inter:Semi_Bold',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[14px] text-left text-nowrap`} style={{ color: statusColor }}>
+          <div className={`font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[14px] text-left text-nowrap`} style={{ color: statusColor }}>
             <p className="block leading-[20px] whitespace-pre">{status}</p>
           </div>
           <Pill value={count} />
         </div>
-        <div className="box-border content-stretch flex flex-row font-['Inter:Regular',_sans-serif] font-normal gap-1 items-center justify-start leading-[0] not-italic p-0 relative shrink-0 text-left text-nowrap w-full">
+        <div className="box-border content-stretch flex flex-row font-['Inter',_sans-serif] font-normal gap-1 items-center justify-start leading-[0] not-italic p-0 relative shrink-0 text-left text-nowrap w-full">
           <div className="relative shrink-0 text-[#000000] text-[20px]">
             <p className="block leading-[26px] text-nowrap whitespace-pre">
               {statusBadge}
@@ -126,11 +126,11 @@ function StatusCard({ status, statusColor, count, time, statusBadge, items }: {
       <div className="box-border content-stretch flex flex-col gap-2 items-start justify-start p-0 relative shrink-0 w-full">
         {items.map((item, index) => (
           <div key={index} className="box-border content-stretch flex flex-row items-center justify-between p-0 relative shrink-0 w-full">
-            <div className="font-['Inter:Regular',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
+            <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
               <p className="block leading-[22px] whitespace-pre">{item.label}</p>
             </div>
             <div className="bg-[rgba(0,0,0,0.05)] box-border content-stretch flex flex-row gap-2 items-center justify-center min-w-[29px] px-2 py-1 relative rounded-[100px] shrink-0">
-              <div className="basis-0 font-['Inter:Regular',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
+              <div className="basis-0 font-['Inter',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
                 <p className="block leading-[20px]">{item.value}</p>
               </div>
             </div>
