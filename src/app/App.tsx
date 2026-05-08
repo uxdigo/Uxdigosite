@@ -137,10 +137,10 @@ function ProjectsSection() {
   ];
   
   const salesMetrics = [
+    { value: t.substantialImprovement, label: t.contactRate, variant: 'positive' as const },
     { value: t.considerableImprovement, label: t.dispatchRate, variant: 'positive' as const },
     { value: t.significantReduction, label: t.solvedProblems, variant: 'negative' as const },
-    { value: t.significantImprovement, label: t.userSatisfaction, variant: 'positive' as const },
-    { value: t.notableReduction, label: t.contactRate, variant: 'negative' as const }
+    { value: t.significantImprovement, label: t.userSatisfaction, variant: 'positive' as const }
   ];
   
   const widgetMetrics = [
