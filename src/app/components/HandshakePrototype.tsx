@@ -16,8 +16,19 @@ interface HandshakePrototypeProps {
 }
 
 export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [currentScreen, setCurrentScreen] = useState<ScreenType>('base');
+
+  const localeMap: Record<string, string> = {
+    pt: 'pt-BR',
+    en: 'en-US',
+    es: 'es-MX'
+  };
+  const pickupDate = new Date(2025, 3, 12); // April 12, 2025
+  const formattedDate = new Intl.DateTimeFormat(localeMap[language], {
+    month: 'long',
+    day: 'numeric'
+  }).format(pickupDate);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   const navigateToScreen = (screen: ScreenType) => {
@@ -69,7 +80,7 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
                     <p className="block leading-[normal]">{t.reviewAndConfirm}</p>
                   </div>
                   <div className="font-['Inter',_sans-serif] font-normal relative shrink-0 text-[14px] text-[rgba(17,17,17,0.5)] w-full">
-                    <p className="block leading-[20px]">09:40 AM - April 12</p>
+                    <p className="block leading-[20px]">09:40 AM - {formattedDate}</p>
                   </div>
                 </div>
 
