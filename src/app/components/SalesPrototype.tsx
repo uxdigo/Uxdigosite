@@ -208,7 +208,7 @@ function CardsSection() {
   ];
   
   return (
-    <div className="relative shrink-0 w-full overflow-x-auto" data-name="Cards section">
+    <div className="relative shrink-0 w-full" data-name="Cards section">
       <div className="box-border content-stretch flex flex-row gap-6 items-start justify-start p-[24px] min-w-max">
         {cards.map((card, index) => (
           <StatusCard key={index} {...card} />
@@ -221,11 +221,15 @@ function CardsSection() {
 export function SalesPrototype() {
   return (
     <div
-      className="bg-[#ffffff] relative rounded-[24px] w-full max-w-[1200px] h-[420px] shadow-[0_8px_30px_rgba(0,0,0,0.12)] overflow-hidden"
+      className="bg-[#ffffff] relative rounded-[24px] w-full max-w-[1200px] h-[420px] shadow-[0_8px_30px_rgba(0,0,0,0.12)]"
+      style={{ overflow: 'clip' }}
       data-name="Sales prototype"
     >
-      <div className="relative size-full overflow-x-auto" style={{ overflowY: 'hidden' }}>
-        <div className="flex flex-col items-start justify-start min-w-[820px] h-full">
+      <div
+        className="relative w-full h-full overscroll-x-contain"
+        style={{ overflowX: 'auto', overflowY: 'hidden' }}
+      >
+        <div className="flex flex-col h-full w-max">
           <TopBar />
           <CardsSection />
         </div>

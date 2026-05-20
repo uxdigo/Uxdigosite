@@ -188,7 +188,7 @@ function ProjectsSection() {
             process={t.riskProcessTab}
             challenges={t.riskChallenges}
             results={t.riskResults}
-            imagePosition="left"
+            imagePosition="right"
             prototypeSlot={<RiskPrototype />}
             prototypeType="demonstrative"
           />
@@ -322,7 +322,7 @@ function Footer() {
 
 function AppContent() {
   return (
-    <div className="bg-white min-h-screen">
+    <div className="bg-white min-h-screen overflow-x-hidden">
       <Header />
       <main>
         <HeroSection />

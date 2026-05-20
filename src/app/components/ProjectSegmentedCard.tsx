@@ -125,12 +125,17 @@ export function ProjectSegmentedCard({
     </div>
   ) : null;
 
-  // Stacked: text above, prototype below
+  // Stacked: text above, prototype below (left-aligned)
   if (imagePosition === 'below' || !protoBlock) {
     return (
       <div className="flex flex-col gap-10">
         {textBlock}
-        {protoBlock}
+        {prototypeSlot ? (
+          <div className="flex flex-col w-full">
+            <div className="w-full">{prototypeSlot}</div>
+            {prototypePill}
+          </div>
+        ) : null}
       </div>
     );
   }
