@@ -1,35 +1,31 @@
 import imgBgArt5Png from "figma:asset/c9409509c1751a1d4a62612d79d28896a1c65aab.png";
 import imgUxdigoFavicon from "figma:asset/78b0abff2f6aea46477ad1cc6e1336a344909729.png";
 import imgRodrigoAvatar from "figma:asset/536348351d2b6fffb0be4983d10057d66341cb73.png";
-import { useLanguage, LanguageProvider } from './contexts/LanguageContext';
-import { ImageWithFallback } from './components/figma/ImageWithFallback';
-import { LanguageSelector } from './components/LanguageSelector';
-import { Button } from './components/Button';
-import { Container } from './components/Container';
-import { ProjectSegmentedCard } from './components/ProjectSegmentedCard';
-import { HandshakePrototype } from './components/HandshakePrototype';
-import { PickupWidget } from './components/PickupWidget';
-import { SalesPrototype } from './components/SalesPrototype';
-import { RiskPrototype } from './components/RiskPrototype';
+import { useNavigate } from 'react-router';
+import { useLanguage } from '../contexts/LanguageContext';
+import { ImageWithFallback } from '../components/figma/ImageWithFallback';
+import { LanguageSelector } from '../components/LanguageSelector';
+import { Button } from '../components/Button';
+import { Container } from '../components/Container';
+import { ClientBadge } from '../components/ClientBadge';
+import { HandshakePrototype } from '../components/HandshakePrototype';
+import { SalesPrototype } from '../components/SalesPrototype';
+import { PickupWidget } from '../components/PickupWidget';
+import { RiskPrototype } from '../components/RiskPrototype';
 import { Linkedin } from 'lucide-react';
 
 function WinkingEmoji() {
   return (
     <span className="inline-block w-5 h-5 ml-1 align-text-bottom">
-      <svg
-        className="w-full h-full"
-        fill="none"
-        preserveAspectRatio="none"
-        viewBox="0 0 18 18"
-      >
-        <g clipPath="url(#clip0_1_128)">
+      <svg className="w-full h-full" fill="none" preserveAspectRatio="none" viewBox="0 0 18 18">
+        <g clipPath="url(#clip0_home_wink)">
           <circle cx="9" cy="9" r="9" fill="#FFCC4D" />
           <path d="M6 7C6 6.45 5.55 6 5 6S4 6.45 4 7" stroke="#664500" strokeWidth="1" fill="none" />
           <circle cx="13" cy="7" r="1" fill="#664500" />
           <path d="M6 11C7 12 8 12.5 9 12.5S11 12 12 11" stroke="#664500" strokeWidth="1" fill="none" />
         </g>
         <defs>
-          <clipPath id="clip0_1_128">
+          <clipPath id="clip0_home_wink">
             <rect fill="white" height="18" width="18" />
           </clipPath>
         </defs>
@@ -40,25 +36,22 @@ function WinkingEmoji() {
 
 function Header() {
   const { t } = useLanguage();
-  
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
-  
   return (
     <header className="bg-white sticky top-0 z-50 border-b border-gray-100">
       <Container>
         <div className="flex items-center justify-between py-4 md:py-6">
           <div className="flex items-center">
-            <ImageWithFallback 
-              src={imgUxdigoFavicon} 
-              alt="UXDigo" 
+            <ImageWithFallback
+              src={imgUxdigoFavicon}
+              alt="UXDigo"
               className="w-8 h-8 md:w-10 md:h-10 object-contain"
             />
           </div>
-          
           <nav className="flex items-center gap-4">
-            <button 
+            <button
               onClick={scrollToContact}
               className="text-sm md:text-base text-[#111111] hover:text-[#2d48bd] transition-colors"
             >
@@ -74,45 +67,38 @@ function Header() {
 
 function HeroSection() {
   const { t } = useLanguage();
-  
   const scrollToProjects = () => {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
   };
-  
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
-  
   return (
     <section className="bg-white py-16 md:py-24">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="space-y-8 order-2 lg:order-1">
             <div>
-              <h1 className="text-5xl font-black text-[#111111] leading-tight mb-6">
-                {t.heroTitle}
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#111111] leading-tight mb-6">
+                {t.heroTitle1}<br />{t.heroTitle2}
               </h1>
-
               <div className="text-lg md:text-xl text-[#111111] leading-relaxed">
-                <p>{t.heroDescription}</p>
+                <p>
+                  {t.heroDescription1} {t.heroDescription2} {t.heroDescription3}
+                  <WinkingEmoji />
+                </p>
               </div>
             </div>
-
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-              <Button onClick={scrollToProjects} size="lg">
-                {t.myProjects}
-              </Button>
-              <Button onClick={scrollToContact} variant="secondary" size="lg">
-                {t.contact}
-              </Button>
+              <Button onClick={scrollToProjects} size="lg">{t.myProjects}</Button>
+              <Button onClick={scrollToContact} variant="secondary" size="lg">{t.contact}</Button>
             </div>
           </div>
-          
           <div className="order-1 lg:order-2">
             <div className="aspect-square w-full max-w-lg mx-auto lg:max-w-none">
-              <ImageWithFallback 
-                src={imgBgArt5Png} 
-                alt="UX Design Illustration" 
+              <ImageWithFallback
+                src={imgBgArt5Png}
+                alt="UX Design Illustration"
                 className="w-full h-full object-contain rounded-3xl"
               />
             </div>
@@ -120,6 +106,40 @@ function HeroSection() {
         </div>
       </Container>
     </section>
+  );
+}
+
+interface ProjectTeaserProps {
+  slug: string;
+  title: string;
+  client: 'mercado-livre' | 'vale';
+  description: string;
+  prototype: React.ReactNode;
+  reversed?: boolean;
+}
+
+function ProjectTeaser({ slug, title, client, description, prototype, reversed }: ProjectTeaserProps) {
+  const navigate = useNavigate();
+  const { t } = useLanguage();
+
+  return (
+    <div className={`grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center ${reversed ? 'lg:flex-row-reverse' : ''}`}>
+      <div className={`space-y-6 ${reversed ? 'lg:order-2' : 'lg:order-1'}`}>
+        <div className="flex items-center gap-3">
+          <ClientBadge client={client} />
+        </div>
+        <h3 className="text-2xl md:text-3xl font-bold text-[#111111]">{title}</h3>
+        <p className="text-base md:text-lg text-gray-600 leading-relaxed">{description}</p>
+        <Button onClick={() => navigate(`/projetos/${slug}`)} size="md">
+          {t.viewCaseStudy}
+        </Button>
+      </div>
+      <div className={`${reversed ? 'lg:order-1' : 'lg:order-2'} flex items-center justify-center`}>
+        <div className="w-full max-w-sm mx-auto">
+          {prototype}
+        </div>
+      </div>
+    </div>
   );
 }
 
@@ -131,66 +151,50 @@ function ProjectsSection() {
       <Container>
         <div className="mb-16 md:mb-20">
           <div className="flex items-center gap-6">
-            <div className="flex-shrink-0">
-              <h2 className="text-sm md:text-base text-gray-400 font-medium tracking-widest uppercase">
-                {t.projectsTitle}
-              </h2>
-            </div>
-            <div className="flex-1 h-px bg-gradient-to-r from-gray-200 to-transparent"></div>
+            <h2 className="text-sm md:text-base text-gray-400 font-medium tracking-widest uppercase flex-shrink-0">
+              {t.projectsTitle}
+            </h2>
+            <div className="flex-1 h-px bg-gradient-to-r from-gray-200 to-transparent" />
           </div>
         </div>
 
-        <div className="space-y-32">
-          <ProjectSegmentedCard
+        <div className="space-y-24 md:space-y-32">
+          <ProjectTeaser
+            slug="handshake"
             title={t.handshakeTitle}
             client="mercado-livre"
-            context={t.handshakeContext}
-            problem={t.handshakeProblem}
-            process={t.handshakeProcessTab}
-            challenges={t.handshakeChallenges}
-            results={t.handshakeResults}
-            imagePosition="right"
-            prototypeSlot={<HandshakePrototype />}
-            prototypeType="interactive"
+            description={t.handshakeTeaserDescription}
+            prototype={<HandshakePrototype />}
           />
-
-          <ProjectSegmentedCard
+          <ProjectTeaser
+            slug="one-bip"
+            title="One Bip"
+            client="mercado-livre"
+            description={t.oneBipTeaserDescription}
+            prototype={<HandshakePrototype />}
+            reversed
+          />
+          <ProjectTeaser
+            slug="sales"
             title={t.salesTitle}
             client="mercado-livre"
-            context={t.salesContext}
-            problem={t.salesProblem}
-            process={t.salesProcessTab}
-            challenges={t.salesChallenges}
-            results={t.salesResults}
-            imagePosition="below"
-            prototypeSlot={<SalesPrototype />}
-            prototypeType="demonstrative"
+            description={t.salesTeaserDescription}
+            prototype={<SalesPrototype />}
           />
-
-          <ProjectSegmentedCard
+          <ProjectTeaser
+            slug="widget"
             title={t.widgetTitle}
             client="mercado-livre"
-            context={t.widgetContext}
-            problem={t.widgetProblem}
-            process={t.widgetProcessTab}
-            challenges={t.widgetChallenges}
-            results={t.widgetResults}
-            imagePosition="right"
-            prototypeSlot={<PickupWidget />}
-            prototypeType="interactive"
+            description={t.widgetTeaserDescription}
+            prototype={<PickupWidget />}
+            reversed
           />
-
-          <ProjectSegmentedCard
+          <ProjectTeaser
+            slug="risk"
             title={t.riskTitle}
             client="vale"
-            context={t.riskContext}
-            problem={t.riskProblem}
-            process={t.riskProcessTab}
-            challenges={t.riskChallenges}
-            results={t.riskResults}
-            imagePosition="left"
-            prototypeSlot={<RiskPrototype />}
-            prototypeType="demonstrative"
+            description={t.riskTeaserDescription}
+            prototype={<RiskPrototype />}
           />
         </div>
 
@@ -206,38 +210,25 @@ function ProjectsSection() {
 
 function AboutSection() {
   const { t } = useLanguage();
-  
   return (
     <section id="about" className="bg-gray-50 py-16 md:py-24">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="order-1">
             <div className="aspect-square w-full max-w-sm mx-auto lg:max-w-md">
-              <ImageWithFallback 
-                src={imgRodrigoAvatar} 
-                alt="Rodrigo Avatar" 
+              <ImageWithFallback
+                src={imgRodrigoAvatar}
+                alt="Rodrigo Avatar"
                 className="w-full h-full object-cover rounded-3xl shadow-2xl"
               />
             </div>
           </div>
-          
           <div className="order-2 space-y-6">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#111111] mb-6">
-                {t.aboutTitle}
-              </h2>
-              
-              <div className="text-lg md:text-xl text-[#111111] leading-relaxed space-y-6">
-                <p>
-                  {t.aboutParagraph1}
-                </p>
-                <p>
-                  {t.aboutParagraph2}
-                </p>
-                <p>
-                  {t.aboutParagraph3}
-                </p>
-              </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#111111]">{t.aboutTitle}</h2>
+            <div className="text-lg md:text-xl text-[#111111] leading-relaxed space-y-6">
+              <p>{t.aboutParagraph1}</p>
+              <p>{t.aboutParagraph2}</p>
+              <p>{t.aboutParagraph3}</p>
             </div>
           </div>
         </div>
@@ -248,34 +239,20 @@ function AboutSection() {
 
 function ContactSection() {
   const { t } = useLanguage();
-  
   const handleContact = () => {
     window.open('https://www.linkedin.com/in/rodrigochavesmagalhaes/', '_blank');
   };
-  
   return (
     <section id="contact" className="bg-white py-16 md:py-24">
       <Container>
-        <div className="max-w-2xl">
-          <div className="space-y-8">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#111111] mb-6">
-                {t.contactTitle}
-              </h2>
-              
-              <div className="text-lg md:text-xl text-[#111111] leading-relaxed">
-                <p>
-                  {t.contactDescription}
-                </p>
-              </div>
-            </div>
-            
-            <div>
-              <Button onClick={handleContact} size="lg">
-                {t.chatOnLinkedIn}
-              </Button>
+        <div className="max-w-2xl space-y-8">
+          <div>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] mb-6">{t.contactTitle}</h2>
+            <div className="text-lg md:text-xl text-[#111111] leading-relaxed">
+              <p>{t.contactDescription1} {t.contactDescription2} {t.contactDescription3}</p>
             </div>
           </div>
+          <Button onClick={handleContact} size="lg">{t.chatOnLinkedIn}</Button>
         </div>
       </Container>
     </section>
@@ -284,23 +261,18 @@ function ContactSection() {
 
 function Footer() {
   const { t } = useLanguage();
-  
   const handleLinkedInClick = () => {
     window.open('https://www.linkedin.com/in/rodrigochavesmagalhaes/', '_blank');
   };
-  
   return (
     <footer className="bg-white border-t border-gray-100 py-8">
       <Container>
         <div className="flex items-center justify-between">
-          <div className="flex items-center">
-            <ImageWithFallback 
-              src={imgUxdigoFavicon} 
-              alt="UXDigo" 
-              className="w-12 h-12 md:w-16 md:h-16 object-contain"
-            />
-          </div>
-          
+          <ImageWithFallback
+            src={imgUxdigoFavicon}
+            alt="UXDigo"
+            className="w-12 h-12 md:w-16 md:h-16 object-contain"
+          />
           <button
             onClick={handleLinkedInClick}
             className="flex items-center justify-center w-12 h-12 md:w-16 md:h-16 text-gray-400 hover:text-gray-600 transition-colors duration-200"
@@ -314,7 +286,7 @@ function Footer() {
   );
 }
 
-function AppContent() {
+export default function Home() {
   return (
     <div className="bg-white min-h-screen">
       <Header />
@@ -326,13 +298,5 @@ function AppContent() {
       </main>
       <Footer />
     </div>
-  );
-}
-
-export default function App() {
-  return (
-    <LanguageProvider>
-      <AppContent />
-    </LanguageProvider>
   );
 }

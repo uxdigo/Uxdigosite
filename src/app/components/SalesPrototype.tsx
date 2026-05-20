@@ -126,10 +126,10 @@ function StatusCard({ status, statusColor, count, time, statusBadge, items }: {
       <div className="box-border content-stretch flex flex-col gap-2 items-start justify-start p-0 relative shrink-0 w-full">
         {items.map((item, index) => (
           <div key={index} className="box-border content-stretch flex flex-row items-center justify-between p-0 relative shrink-0 w-full">
-            <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[16px] text-left text-nowrap">
-              <p className="block leading-[22px] whitespace-pre">{item.label}</p>
+            <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[13px] text-left text-nowrap">
+              <p className="block leading-[18px] whitespace-pre">{item.label}</p>
             </div>
-            <div className="bg-[rgba(0,0,0,0.05)] box-border content-stretch flex flex-row gap-2 items-center justify-center min-w-[29px] px-2 py-1 relative rounded-[100px] shrink-0">
+            <div className="bg-[rgba(0,0,0,0.05)] box-border content-stretch flex flex-row gap-2 items-center justify-center min-w-[29px] px-2 py-1 relative rounded-[100px] shrink-0 ml-6">
               <div className="basis-0 font-['Inter',_sans-serif] font-normal grow leading-[0] min-h-px min-w-px not-italic relative shrink-0 text-[#111111] text-[14px] text-center">
                 <p className="block leading-[20px]">{item.value}</p>
               </div>
@@ -232,10 +232,23 @@ function CardsSection() {
       ]
     },
     {
+      status: t.scheduled.toUpperCase(),
+      statusColor: '#111111',
+      count: '57',
+      time: '04-05 PM',
+      statusBadge: t.pickup.toUpperCase(),
+      items: [
+        { label: t.salesBuyerMessage, value: '2' },
+        { label: t.salesInvoicePending, value: '4' },
+        { label: t.salesLabelPending, value: '21' },
+        { label: t.salesReadyToShip, value: '30' }
+      ]
+    },
+    {
       status: t.salesPending.toUpperCase(),
       statusColor: '#111111',
       count: '32',
-      time: t.salesUntil4PM,
+      time: '06-07 PM',
       statusBadge: 'FLEX',
       items: [
         { label: t.salesBuyerMessage, value: '7' },
