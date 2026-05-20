@@ -342,10 +342,3 @@ export default function App() {
     </LanguageProvider>
   );
 }
-unction App() {
-  return (
-    <LanguageProvider>
-      <AppContent />
-    </LanguageProvider>
-  );
-}
