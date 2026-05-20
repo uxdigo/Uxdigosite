@@ -220,12 +220,12 @@ function CardsSection() {
 
 export function SalesPrototype() {
   return (
-    <div className="w-full overflow-x-auto">
-      <div
-        className="bg-[#ffffff] relative rounded-[24px] min-w-[820px] max-w-[1200px] h-[420px] shadow-[0_8px_30px_rgba(0,0,0,0.12)] overflow-hidden"
-        data-name="Sales prototype"
-      >
-        <div className="box-border content-stretch flex flex-col items-start justify-start p-0 relative size-full">
+    <div
+      className="bg-[#ffffff] relative rounded-[24px] w-full max-w-[1200px] h-[420px] shadow-[0_8px_30px_rgba(0,0,0,0.12)] overflow-hidden"
+      data-name="Sales prototype"
+    >
+      <div className="relative size-full overflow-x-auto" style={{ overflowY: 'hidden' }}>
+        <div className="flex flex-col items-start justify-start min-w-[820px] h-full">
           <TopBar />
           <CardsSection />
         </div>
