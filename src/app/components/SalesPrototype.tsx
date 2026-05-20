@@ -1,6 +1,5 @@
 import svgPaths from "../imports/svg-fch20ohsl7";
 import { useLanguage } from '../contexts/LanguageContext';
-import { useRef, useState, useEffect } from 'react';
 
 function Pill({ value }: { value: string }) {
   return (
@@ -143,7 +142,6 @@ function StatusCard({ status, statusColor, count, time, statusBadge, items }: {
 
 function CardsSection() {
   const { t, language } = useLanguage();
-  const scrollRef = useRef<HTMLDivElement>(null);
 
   function formatPickupTime(startHour: number, endHour: number) {
     if (language === 'pt') return `${startHour}h - ${endHour}h`;
@@ -153,66 +151,7 @@ function CardsSection() {
     const end12 = endHour > 12 ? endHour - 12 : endHour;
     return `${start12}-${end12} ${period}`;
   }
-  const [isDragging, setIsDragging] = useState(false);
-  const [startX, setStartX] = useState(0);
-  const [scrollLeft, setScrollLeft] = useState(0);
-  const [isMobile, setIsMobile] = useState(false);
 
-  // Detect mobile on mount and resize
-  useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-    
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
-  }, []);
-
-  // Mouse/Touch handlers for drag functionality (only on mobile)
-  const handleMouseDown = (e: React.MouseEvent) => {
-    if (!isMobile || !scrollRef.current) return;
-    
-    setIsDragging(true);
-    setStartX(e.pageX - scrollRef.current.offsetLeft);
-    setScrollLeft(scrollRef.current.scrollLeft);
-  };
-
-  const handleTouchStart = (e: React.TouchEvent) => {
-    if (!isMobile || !scrollRef.current) return;
-    
-    setIsDragging(true);
-    setStartX(e.touches[0].pageX - scrollRef.current.offsetLeft);
-    setScrollLeft(scrollRef.current.scrollLeft);
-  };
-
-  const handleMouseMove = (e: React.MouseEvent) => {
-    if (!isMobile || !isDragging || !scrollRef.current) return;
-    
-    e.preventDefault();
-    const x = e.pageX - scrollRef.current.offsetLeft;
-    const walk = (x - startX) * 2;
-    scrollRef.current.scrollLeft = scrollLeft - walk;
-  };
-
-  const handleTouchMove = (e: React.TouchEvent) => {
-    if (!isMobile || !isDragging || !scrollRef.current) return;
-    
-    const x = e.touches[0].pageX - scrollRef.current.offsetLeft;
-    const walk = (x - startX) * 2;
-    scrollRef.current.scrollLeft = scrollLeft - walk;
-  };
-
-  const handleMouseUp = () => {
-    if (!isMobile) return;
-    setIsDragging(false);
-  };
-
-  const handleTouchEnd = () => {
-    if (!isMobile) return;
-    setIsDragging(false);
-  };
-  
   const cards = [
     {
       status: t.salesOnTheWay,
@@ -269,22 +208,8 @@ function CardsSection() {
   ];
   
   return (
-    <div 
-      ref={scrollRef}
-      className={`relative shrink-0 w-full ${isMobile ? 'overflow-x-hidden cursor-grab active:cursor-grabbing sales-mobile-drag' : 'overflow-x-auto'}`}
-      data-name="Cards section"
-      onMouseDown={handleMouseDown}
-      onMouseMove={handleMouseMove}
-      onMouseUp={handleMouseUp}
-      onMouseLeave={handleMouseUp}
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-      onTouchEnd={handleTouchEnd}
-    >
-      <div 
-        className="box-border content-stretch flex flex-row gap-6 items-start justify-start p-[24px] pb-[24px] min-w-max"
-        style={{ userSelect: isDragging && isMobile ? 'none' : 'auto' }}
-      >
+    <div className="relative shrink-0 w-full overflow-x-auto" data-name="Cards section">
+      <div className="box-border content-stretch flex flex-row gap-6 items-start justify-start p-[24px] min-w-max">
         {cards.map((card, index) => (
           <StatusCard key={index} {...card} />
         ))}
@@ -295,13 +220,15 @@ function CardsSection() {
 
 export function SalesPrototype() {
   return (
-    <div
-      className="bg-[#ffffff] relative rounded-[24px] w-full max-w-[1200px] h-[420px] shadow-[0_8px_30px_rgba(0,0,0,0.12)] overflow-hidden"
-      data-name="Sales prototype"
-    >
-      <div className="box-border content-stretch flex flex-col items-start justify-start p-0 relative size-full">
-        <TopBar />
-        <CardsSection />
+    <div className="w-full overflow-x-auto">
+      <div
+        className="bg-[#ffffff] relative rounded-[24px] min-w-[820px] max-w-[1200px] h-[420px] shadow-[0_8px_30px_rgba(0,0,0,0.12)] overflow-hidden"
+        data-name="Sales prototype"
+      >
+        <div className="box-border content-stretch flex flex-col items-start justify-start p-0 relative size-full">
+          <TopBar />
+          <CardsSection />
+        </div>
       </div>
     </div>
   );

@@ -292,22 +292,28 @@ function Footer() {
   return (
     <footer className="bg-white border-t border-gray-100 py-8">
       <Container>
-        <div className="flex items-center justify-between">
+        <div className="grid grid-cols-3 items-center">
           <div className="flex items-center">
-            <ImageWithFallback 
-              src={imgUxdigoFavicon} 
-              alt="UXDigo" 
+            <ImageWithFallback
+              src={imgUxdigoFavicon}
+              alt="UXDigo"
               className="w-12 h-12 md:w-16 md:h-16 object-contain"
             />
           </div>
-          
-          <button
-            onClick={handleLinkedInClick}
-            className="flex items-center justify-center w-12 h-12 md:w-16 md:h-16 text-gray-400 hover:text-gray-600 transition-colors duration-200"
-            aria-label="LinkedIn Profile"
-          >
-            <Linkedin className="w-6 h-6 md:w-8 md:h-8" />
-          </button>
+
+          <p className="text-xs text-gray-400 text-center leading-relaxed">
+            {t.footerCredit}
+          </p>
+
+          <div className="flex justify-end">
+            <button
+              onClick={handleLinkedInClick}
+              className="flex items-center justify-center w-12 h-12 md:w-16 md:h-16 text-gray-400 hover:text-gray-600 transition-colors duration-200"
+              aria-label="LinkedIn Profile"
+            >
+              <Linkedin className="w-6 h-6 md:w-8 md:h-8" />
+            </button>
+          </div>
         </div>
       </Container>
     </footer>

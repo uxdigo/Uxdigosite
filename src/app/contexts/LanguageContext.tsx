@@ -136,6 +136,7 @@ export interface Translations {
   riskAddHazard: string;
   prototypesDisclaimer: string;
   salesFlexTime: string;
+  footerCredit: string;
   heroTitle: string;
   heroDescription: string;
   tabProblem: string;
@@ -307,6 +308,7 @@ const translations: Record<Language, Translations> = {
     riskAddHazard: 'Adicionar perigo',
     prototypesDisclaimer: 'Os protótipos apresentados são simulações conceituais criadas para demonstração de processo.',
     salesFlexTime: 'Até 19h',
+    footerCredit: 'Este site foi feito com pesquisas, Figma e Claude.',
     heroTitle: 'Entendo o usuário para ajudar produtos a performarem melhor',
     heroDescription: 'Com experiência no Mercado Livre e na Vale, transformo comportamento do usuário, contexto de negócio e decisões de produto em experiências mais eficientes e orientadas a resultado. Sou Rodrigo, pode me chamar de Digo. 😉',
     tabProblem: 'Problema',
@@ -477,6 +479,7 @@ const translations: Record<Language, Translations> = {
     riskAddHazard: 'Add hazard',
     prototypesDisclaimer: 'The prototypes presented are conceptual simulations created for process demonstration purposes.',
     salesFlexTime: 'Until 7 PM',
+    footerCredit: 'This site was made with research, Figma and Claude.',
     heroTitle: 'I understand users to help products perform better',
     heroDescription: "With experience at Mercado Livre and Vale, I transform user behavior, business context, and product decisions into more efficient, outcome-oriented experiences. I'm Rodrigo, but you can call me Digo. 😉",
     tabProblem: 'Problem',
@@ -647,6 +650,7 @@ const translations: Record<Language, Translations> = {
     riskAddHazard: 'Agregar peligro',
     prototypesDisclaimer: 'Los prototipos presentados son simulaciones conceptuales creadas para fines de demostración de procesos.',
     salesFlexTime: 'Hasta las 19h',
+    footerCredit: 'Este sitio fue hecho con investigación, Figma y Claude.',
     heroTitle: 'Entiendo al usuario para ayudar a los productos a rendir mejor',
     heroDescription: 'Con experiencia en Mercado Libre y Vale, transformo el comportamiento del usuario, el contexto de negocio y las decisiones de producto en experiencias más eficientes y orientadas a resultado. Soy Rodrigo, pero puedes llamarme Digo. 😉',
     tabProblem: 'Problema',
