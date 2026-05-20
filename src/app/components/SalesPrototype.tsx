@@ -40,11 +40,9 @@ function Segment({ label, value, isActive = false }: { label: string; value: str
   );
 }
 
-
-
 function PickupManagementButton() {
   const { t } = useLanguage();
-  
+
   return (
     <div
       className="bg-[rgba(45,72,189,0.25)] box-border content-stretch flex flex-row gap-2 h-11 items-center justify-center px-6 py-4 relative rounded-3xl shrink-0"
@@ -61,7 +59,7 @@ function PickupManagementButton() {
 
 function TopBar() {
   const { t } = useLanguage();
-  
+
   return (
     <div
       className="bg-[rgba(0,0,0,0.05)] relative shrink-0 w-full"
@@ -98,12 +96,12 @@ function StatusCard({ status, statusColor, count, time, statusBadge, items }: {
 }) {
   return (
     <div
-      className="bg-[rgba(0,0,0,0.05)] box-border content-stretch flex flex-col gap-4 items-start justify-start overflow-clip p-[24px] relative rounded-3xl flex-1"
+      className="bg-[rgba(0,0,0,0.05)] box-border content-stretch flex flex-col gap-4 items-start justify-start overflow-clip p-[24px] relative rounded-3xl flex-1 min-w-[200px]"
       data-name="Card"
     >
       <div className="box-border content-stretch flex flex-col gap-2 items-start justify-start p-0 relative shrink-0 w-full">
         <div className="box-border content-stretch flex flex-row items-center justify-between p-0 relative shrink-0 w-full">
-          <div className={`font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[14px] text-left text-nowrap`} style={{ color: statusColor }}>
+          <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[14px] text-left text-nowrap" style={{ color: statusColor }}>
             <p className="block leading-[20px] whitespace-pre">{status}</p>
           </div>
           <Pill value={count} />
@@ -121,7 +119,7 @@ function StatusCard({ status, statusColor, count, time, statusBadge, items }: {
           </div>
         </div>
       </div>
-      
+
       <div className="box-border content-stretch flex flex-col gap-2 items-start justify-start p-0 relative shrink-0 w-full">
         {items.map((item, index) => (
           <div key={index} className="box-border content-stretch flex flex-row items-center justify-between p-0 relative shrink-0 w-full">
@@ -206,10 +204,10 @@ function CardsSection() {
       ]
     }
   ];
-  
+
   return (
     <div className="relative shrink-0 w-full" data-name="Cards section">
-      <div className="box-border content-stretch flex flex-row gap-6 items-start justify-start p-[24px] min-w-max">
+      <div className="box-border content-stretch flex flex-row gap-6 items-start justify-start p-[24px] w-full">
         {cards.map((card, index) => (
           <StatusCard key={index} {...card} />
         ))}
@@ -221,7 +219,7 @@ function CardsSection() {
 export function SalesPrototype() {
   return (
     <div
-      className="bg-[#ffffff] relative rounded-[24px] w-full max-w-[1200px] h-[420px] shadow-[0_8px_30px_rgba(0,0,0,0.12)]"
+      className="bg-[#ffffff] relative rounded-[24px] w-full max-w-[1180px] h-[420px] shadow-[0_8px_30px_rgba(0,0,0,0.12)]"
       style={{ overflow: 'clip' }}
       data-name="Sales prototype"
     >
@@ -229,7 +227,7 @@ export function SalesPrototype() {
         className="relative w-full h-full overscroll-x-contain"
         style={{ overflowX: 'auto', overflowY: 'hidden' }}
       >
-        <div className="flex flex-col h-full w-max">
+        <div className="flex flex-col h-full w-full">
           <TopBar />
           <CardsSection />
         </div>

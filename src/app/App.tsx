@@ -40,25 +40,25 @@ function WinkingEmoji() {
 
 function Header() {
   const { t } = useLanguage();
-  
+
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
-  
+
   return (
     <header className="bg-white sticky top-0 z-50 border-b border-gray-100">
       <Container>
         <div className="flex items-center justify-between py-4 md:py-6">
           <div className="flex items-center">
-            <ImageWithFallback 
-              src={imgUxdigoFavicon} 
-              alt="UXDigo" 
+            <ImageWithFallback
+              src={imgUxdigoFavicon}
+              alt="UXDigo"
               className="w-8 h-8 md:w-10 md:h-10 object-contain"
             />
           </div>
-          
+
           <nav className="flex items-center gap-4">
-            <button 
+            <button
               onClick={scrollToContact}
               className="text-sm md:text-base text-[#111111] hover:text-[#2d48bd] transition-colors"
             >
@@ -74,15 +74,15 @@ function Header() {
 
 function HeroSection() {
   const { t } = useLanguage();
-  
+
   const scrollToProjects = () => {
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
   };
-  
+
   const scrollToContact = () => {
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
-  
+
   return (
     <section className="bg-white py-16 md:py-24">
       <Container>
@@ -107,12 +107,12 @@ function HeroSection() {
               </Button>
             </div>
           </div>
-          
+
           <div className="order-1 lg:order-2">
             <div className="aspect-square w-full max-w-lg mx-auto lg:max-w-none">
-              <ImageWithFallback 
-                src={imgBgArt5Png} 
-                alt="UX Design Illustration" 
+              <ImageWithFallback
+                src={imgBgArt5Png}
+                alt="UX Design Illustration"
                 className="w-full h-full object-contain rounded-3xl"
               />
             </div>
@@ -206,27 +206,27 @@ function ProjectsSection() {
 
 function AboutSection() {
   const { t } = useLanguage();
-  
+
   return (
     <section id="about" className="bg-gray-50 py-16 md:py-24">
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="order-1">
             <div className="aspect-square w-full max-w-sm mx-auto lg:max-w-md">
-              <ImageWithFallback 
-                src={imgRodrigoAvatar} 
-                alt="Rodrigo Avatar" 
+              <ImageWithFallback
+                src={imgRodrigoAvatar}
+                alt="Rodrigo Avatar"
                 className="w-full h-full object-cover rounded-3xl shadow-2xl"
               />
             </div>
           </div>
-          
+
           <div className="order-2 space-y-6">
             <div>
               <h2 className="text-3xl md:text-4xl font-bold text-[#111111] mb-6">
                 {t.aboutTitle}
               </h2>
-              
+
               <div className="text-base md:text-lg text-[#111111] leading-relaxed space-y-6">
                 <p>
                   {t.aboutParagraph1}
@@ -248,11 +248,11 @@ function AboutSection() {
 
 function ContactSection() {
   const { t } = useLanguage();
-  
+
   const handleContact = () => {
     window.open('https://www.linkedin.com/in/rodrigochavesmagalhaes/', '_blank');
   };
-  
+
   return (
     <section id="contact" className="bg-white py-16 md:py-24">
       <Container>
@@ -262,14 +262,14 @@ function ContactSection() {
               <h2 className="text-3xl md:text-4xl font-bold text-[#111111] mb-6">
                 {t.contactTitle}
               </h2>
-              
+
               <div className="text-lg md:text-xl text-[#111111] leading-relaxed">
                 <p>
                   {t.contactDescription}
                 </p>
               </div>
             </div>
-            
+
             <div>
               <Button onClick={handleContact} size="lg">
                 {t.chatOnLinkedIn}
@@ -284,11 +284,11 @@ function ContactSection() {
 
 function Footer() {
   const { t } = useLanguage();
-  
+
   const handleLinkedInClick = () => {
     window.open('https://www.linkedin.com/in/rodrigochavesmagalhaes/', '_blank');
   };
-  
+
   return (
     <footer className="bg-white border-t border-gray-100 py-8">
       <Container>
@@ -336,6 +336,13 @@ function AppContent() {
 }
 
 export default function App() {
+  return (
+    <LanguageProvider>
+      <AppContent />
+    </LanguageProvider>
+  );
+}
+unction App() {
   return (
     <LanguageProvider>
       <AppContent />
