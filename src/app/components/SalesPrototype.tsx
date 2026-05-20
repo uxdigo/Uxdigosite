@@ -142,8 +142,17 @@ function StatusCard({ status, statusColor, count, time, statusBadge, items }: {
 }
 
 function CardsSection() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const scrollRef = useRef<HTMLDivElement>(null);
+
+  function formatPickupTime(startHour: number, endHour: number) {
+    if (language === 'pt') return `${startHour}h - ${endHour}h`;
+    if (language === 'es') return `${startHour}hs - ${endHour}hs`;
+    const period = startHour >= 12 ? 'PM' : 'AM';
+    const start12 = startHour > 12 ? startHour - 12 : startHour;
+    const end12 = endHour > 12 ? endHour - 12 : endHour;
+    return `${start12}-${end12} ${period}`;
+  }
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
   const [scrollLeft, setScrollLeft] = useState(0);
@@ -209,7 +218,7 @@ function CardsSection() {
       status: t.salesOnTheWay,
       statusColor: '#6c9434',
       count: '132',
-      time: '10-11 AM',
+      time: formatPickupTime(10, 11),
       statusBadge: t.pickup.toUpperCase(),
       items: [
         { label: t.salesBuyerMessage, value: '3' },
@@ -222,7 +231,7 @@ function CardsSection() {
       status: t.scheduled.toUpperCase(),
       statusColor: '#111111',
       count: '89',
-      time: '01-02 PM',
+      time: formatPickupTime(13, 14),
       statusBadge: t.pickup.toUpperCase(),
       items: [
         { label: t.salesBuyerMessage, value: '1' },
@@ -235,7 +244,7 @@ function CardsSection() {
       status: t.scheduled.toUpperCase(),
       statusColor: '#111111',
       count: '57',
-      time: '04-05 PM',
+      time: formatPickupTime(16, 17),
       statusBadge: t.pickup.toUpperCase(),
       items: [
         { label: t.salesBuyerMessage, value: '2' },
@@ -248,7 +257,7 @@ function CardsSection() {
       status: t.salesPending.toUpperCase(),
       statusColor: '#111111',
       count: '32',
-      time: '06-07 PM',
+      time: t.salesFlexTime,
       statusBadge: 'FLEX',
       items: [
         { label: t.salesBuyerMessage, value: '7' },

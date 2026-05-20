@@ -227,7 +227,7 @@ function AboutSection() {
                 {t.aboutTitle}
               </h2>
               
-              <div className="text-lg md:text-xl text-[#111111] leading-relaxed space-y-6">
+              <div className="text-base md:text-lg text-[#111111] leading-relaxed space-y-6">
                 <p>
                   {t.aboutParagraph1}
                 </p>

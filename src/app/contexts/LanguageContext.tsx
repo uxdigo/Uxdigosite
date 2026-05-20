@@ -135,6 +135,7 @@ export interface Translations {
   riskMachineHasHazards: string;
   riskAddHazard: string;
   prototypesDisclaimer: string;
+  salesFlexTime: string;
   heroTitle: string;
   heroDescription: string;
   tabProblem: string;
@@ -305,6 +306,7 @@ const translations: Record<Language, Translations> = {
     riskMachineHasHazards: 'Máquina 130AB possui 5 perigos',
     riskAddHazard: 'Adicionar perigo',
     prototypesDisclaimer: 'Os protótipos apresentados são simulações conceituais criadas para demonstração de processo.',
+    salesFlexTime: 'Até 19h',
     heroTitle: 'Entendo o usuário para ajudar produtos a performarem melhor',
     heroDescription: 'Com experiência no Mercado Livre e na Vale, transformo comportamento do usuário, contexto de negócio e decisões de produto em experiências mais eficientes e orientadas a resultado. Sou Rodrigo, pode me chamar de Digo. 😉',
     tabProblem: 'Problema',
@@ -329,7 +331,7 @@ const translations: Record<Language, Translations> = {
     riskContext: 'Sistema de avaliação, gestão e controle de riscos operacionais em máquinas e equipamentos industriais, com múltiplos atores envolvidos no processo de apreciação e aprovação.',
     riskProblem: 'O processo de apreciação de risco era conduzido de formas diferentes por áreas diferentes: parte em planilhas, parte em papel, sem padronização nem rastreabilidade.\n\nOs registros existiam, mas não se conectavam. O que um usuário documentava não chegava de forma eficiente a quem precisava agir, e o ciclo de avaliação, correção e aprovação dependia de processos manuais e descentralizados.',
     riskProcessTab: 'Assumi um projeto que já estava em andamento mas com muitas definições em aberto. Conduzi pesquisas e entrevistas com os diferentes atores do processo: quem avalia, quem corrige, quem gestiona e quem aprova.\n\nA partir desses insumos, refiz diversas estruturas do sistema para que refletissem como o trabalho realmente acontecia no campo e cobrissem os casos de uso que não tinham sido mapeados.\n\nDurante a construção do produto, participei e contribuí ativamente para a criação de um design system que conectava outros produtos da Vale, garantindo consistência visual e de interação além dos limites deste projeto.',
-    riskChallenges: 'O projeto original estava focado em documentação: registrar o risco, não resolver. Enxerguei uma oportunidade além do que o produto pedia.\n\nO desafio foi transformar o sistema em algo conectado, onde o resultado de cada etapa alimentasse a próxima automaticamente, e convencer o time de que o escopo podia e devia ser maior.',
+    riskChallenges: 'O projeto original estava focado em documentação: registrar o risco, não resolver. Enxerguei uma oportunidade além do que o produto pedia.\n\nO desafio foi transformar o sistema em algo conectado, onde o resultado de cada etapa alimentasse a próxima automaticamente, e convencer o time de que o escopo podia e devia ser maior.\n\nO projeto também envolveu o treinamento de técnicos em diversas regiões do Brasil, Canadá e Ásia, garantindo adoção consistente do novo processo em contextos culturais e operacionais muito diferentes.',
     riskResults: 'O resultado mais significativo foi a redução do potencial de acidentes. Com o índice de perigo controlado e atualizado em tempo real, o risco à vida dos trabalhadores diminuiu de forma concreta e mensurável.\n\nO sistema passou de uma ferramenta de documentação para um fluxo operacional conectado. O avaliador registra o risco, o responsável pela correção atua, o gestor aprova e o índice é atualizado automaticamente.\n\nA ponte entre as etapas se tornou muito mais sólida, eliminando retrabalho e acelerando o processo de apreciação. O resultado foi reconhecido pelo time da Vale como um avanço além do esperado.',
     contactDescription: 'Se você chegou até aqui, provavelmente temos algo a conversar. Adoraria entender o seu produto e ver onde posso ajudar.',
     backToProjects: 'Voltar aos projetos',
@@ -474,6 +476,7 @@ const translations: Record<Language, Translations> = {
     riskMachineHasHazards: 'Machine 130AB has 5 hazards',
     riskAddHazard: 'Add hazard',
     prototypesDisclaimer: 'The prototypes presented are conceptual simulations created for process demonstration purposes.',
+    salesFlexTime: 'Until 7 PM',
     heroTitle: 'I understand users to help products perform better',
     heroDescription: "With experience at Mercado Livre and Vale, I transform user behavior, business context, and product decisions into more efficient, outcome-oriented experiences. I'm Rodrigo, but you can call me Digo. 😉",
     tabProblem: 'Problem',
@@ -498,7 +501,7 @@ const translations: Record<Language, Translations> = {
     riskContext: 'System for evaluating, managing, and controlling operational risks in industrial machinery and equipment, with multiple actors involved in the assessment and approval process.',
     riskProblem: "The risk assessment process was conducted differently by different areas: part in spreadsheets, part on paper, with no standardization or traceability.\n\nRecords existed, but didn't connect. What one user documented didn't efficiently reach those who needed to act, and the evaluation, correction, and approval cycle depended on manual and decentralized processes.",
     riskProcessTab: "I took over a project that was already underway but with many open definitions. I conducted research and interviews with the different actors in the process: those who assess, those who correct, those who manage, and those who approve.\n\nFrom these inputs, I restructured various parts of the system so they reflected how work actually happened in the field and covered the use cases that hadn't been mapped.\n\nDuring product construction, I actively participated and contributed to the creation of a design system that connected other Vale products, ensuring visual and interaction consistency beyond this project's scope.",
-    riskChallenges: "The original project was focused on documentation: recording the risk, not resolving it. I identified an opportunity beyond what the product asked for.\n\nThe challenge was transforming the system into something connected, where the result of each step automatically fed the next, and convincing the team that the scope could and should be larger.",
+    riskChallenges: "The original project was focused on documentation: recording the risk, not resolving it. I identified an opportunity beyond what the product asked for.\n\nThe challenge was transforming the system into something connected, where the result of each step automatically fed the next, and convincing the team that the scope could and should be larger.\n\nThe project also involved training technicians across multiple regions in Brazil, Canada, and Asia, ensuring consistent adoption of the new process across very different cultural and operational contexts.",
     riskResults: "The most significant result was the reduction in accident potential. With the hazard index controlled and updated in real time, the risk to workers' lives decreased in a concrete and measurable way.\n\nThe system went from a documentation tool to a connected operational flow. The assessor records the risk, the person responsible for correction acts, the manager approves, and the index is automatically updated.\n\nThe bridge between steps became much more solid, eliminating rework and accelerating the assessment process. The result was recognized by the Vale team as an advance beyond expectations.",
     contactDescription: "If you made it this far, we probably have something to talk about. I'd love to understand your product and see where I can help.",
     backToProjects: 'Back to projects',
@@ -643,6 +646,7 @@ const translations: Record<Language, Translations> = {
     riskMachineHasHazards: 'Máquina 130AB tiene 5 peligros',
     riskAddHazard: 'Agregar peligro',
     prototypesDisclaimer: 'Los prototipos presentados son simulaciones conceptuales creadas para fines de demostración de procesos.',
+    salesFlexTime: 'Hasta las 19h',
     heroTitle: 'Entiendo al usuario para ayudar a los productos a rendir mejor',
     heroDescription: 'Con experiencia en Mercado Libre y Vale, transformo el comportamiento del usuario, el contexto de negocio y las decisiones de producto en experiencias más eficientes y orientadas a resultado. Soy Rodrigo, pero puedes llamarme Digo. 😉',
     tabProblem: 'Problema',
@@ -667,7 +671,7 @@ const translations: Record<Language, Translations> = {
     riskContext: 'Sistema de evaluación, gestión y control de riesgos operacionales en maquinaria y equipos industriales, con múltiples actores involucrados en el proceso de apreciación y aprobación.',
     riskProblem: 'El proceso de apreciación de riesgos era conducido de formas diferentes por áreas diferentes: parte en planillas, parte en papel, sin estandarización ni trazabilidad.\n\nLos registros existían, pero no se conectaban. Lo que un usuario documentaba no llegaba de forma eficiente a quien necesitaba actuar, y el ciclo de evaluación, corrección y aprobación dependía de procesos manuales y descentralizados.',
     riskProcessTab: 'Asumí un proyecto que ya estaba en marcha pero con muchas definiciones abiertas. Conduje investigaciones y entrevistas con los diferentes actores del proceso: quienes evalúan, quienes corrigen, quienes gestionan y quienes aprueban.\n\nA partir de esos insumos, rehíce diversas estructuras del sistema para que reflejaran cómo el trabajo realmente ocurría en campo y cubrieran los casos de uso que no habían sido mapeados.\n\nDurante la construcción del producto, participé y contribuí activamente a la creación de un design system que conectaba otros productos de Vale, garantizando consistencia visual y de interacción más allá de este proyecto.',
-    riskChallenges: 'El proyecto original estaba enfocado en documentación: registrar el riesgo, no resolverlo. Identifiqué una oportunidad más allá de lo que el producto pedía.\n\nEl desafío fue transformar el sistema en algo conectado, donde el resultado de cada etapa alimentara la siguiente automáticamente, y convencer al equipo de que el alcance podía y debía ser mayor.',
+    riskChallenges: 'El proyecto original estaba enfocado en documentación: registrar el riesgo, no resolverlo. Identifiqué una oportunidad más allá de lo que el producto pedía.\n\nEl desafío fue transformar el sistema en algo conectado, donde el resultado de cada etapa alimentara la siguiente automáticamente, y convencer al equipo de que el alcance podía y debía ser mayor.\n\nEl proyecto también involucró el entrenamiento de técnicos en diversas regiones de Brasil, Canadá y Asia, garantizando una adopción consistente del nuevo proceso en contextos culturales y operacionales muy diferentes.',
     riskResults: 'El resultado más significativo fue la reducción del potencial de accidentes. Con el índice de peligro controlado y actualizado en tiempo real, el riesgo para la vida de los trabajadores disminuyó de forma concreta y mensurable.\n\nEl sistema pasó de ser una herramienta de documentación a un flujo operacional conectado. El evaluador registra el riesgo, el responsable de la corrección actúa, el gestor aprueba y el índice se actualiza automáticamente.\n\nEl puente entre las etapas se volvió mucho más sólido, eliminando retrabajo y acelerando el proceso de apreciación. El resultado fue reconocido por el equipo de Vale como un avance más allá de lo esperado.',
     contactDescription: 'Si llegaste hasta aquí, probablemente tenemos algo que conversar. Me encantaría entender tu producto y ver dónde puedo ayudar.',
     backToProjects: 'Volver a proyectos',
