@@ -42,7 +42,6 @@ function Segment({ label, value, isActive = false }: { label: string; value: str
 
 function PickupManagementButton() {
   const { t } = useLanguage();
-
   return (
     <div
       className="bg-[rgba(45,72,189,0.25)] box-border content-stretch flex flex-row gap-2 h-11 items-center justify-center px-5 py-3 relative rounded-3xl shrink-0"
@@ -59,27 +58,24 @@ function PickupManagementButton() {
 
 function TopBar() {
   const { t } = useLanguage();
-
   return (
     <div
       className="bg-[rgba(0,0,0,0.05)] relative shrink-0 w-full"
       data-name="Top bar"
     >
-      <div className="flex flex-row items-center overflow-clip relative size-full">
-        <div className="box-border content-stretch flex flex-row gap-2 items-center justify-start p-[16px] relative w-full">
-          <div
-            className="bg-[rgba(0,0,0,0.05)] box-border content-stretch flex flex-row gap-1 items-center justify-start p-[6px] relative rounded-3xl shrink-0"
-            data-name="Segmented control"
-          >
-            <div className="absolute border border-[rgba(0,0,0,0.1)] border-solid inset-0 pointer-events-none rounded-3xl" />
-            <Segment label={t.salesToday} value="284" isActive={true} />
-            <Segment label={t.salesUpcoming} value="39" />
-            <Segment label={t.salesInTransit} value="401" />
-            <Segment label={t.salesCompleted} value="935" />
-          </div>
-          <div className="basis-0 box-border content-stretch flex flex-row gap-4 grow items-center justify-end min-h-px min-w-px p-0 relative shrink-0">
-            <PickupManagementButton />
-          </div>
+      <div className="box-border content-stretch flex flex-row gap-2 items-center justify-start p-[16px] relative w-full">
+        <div
+          className="bg-[rgba(0,0,0,0.05)] box-border content-stretch flex flex-row gap-1 items-center justify-start p-[6px] relative rounded-3xl shrink-0"
+          data-name="Segmented control"
+        >
+          <div className="absolute border border-[rgba(0,0,0,0.1)] border-solid inset-0 pointer-events-none rounded-3xl" />
+          <Segment label={t.salesToday} value="284" isActive={true} />
+          <Segment label={t.salesUpcoming} value="39" />
+          <Segment label={t.salesInTransit} value="401" />
+          <Segment label={t.salesCompleted} value="935" />
+        </div>
+        <div className="basis-0 box-border content-stretch flex flex-row gap-4 grow items-center justify-end min-h-px min-w-px p-0 relative shrink-0">
+          <PickupManagementButton />
         </div>
       </div>
     </div>
@@ -108,18 +104,13 @@ function StatusCard({ status, statusColor, count, time, statusBadge, items }: {
         </div>
         <div className="box-border content-stretch flex flex-row font-['Inter',_sans-serif] font-normal gap-1 items-center justify-start leading-[0] not-italic p-0 relative shrink-0 text-left text-nowrap w-full">
           <div className="relative shrink-0 text-[#000000] text-[20px]">
-            <p className="block leading-[26px] text-nowrap whitespace-pre">
-              {statusBadge}
-            </p>
+            <p className="block leading-[26px] text-nowrap whitespace-pre">{statusBadge}</p>
           </div>
           <div className="relative shrink-0 text-[14px] text-[rgba(17,17,17,0.5)]">
-            <p className="block leading-[20px] text-nowrap whitespace-pre">
-              {time}
-            </p>
+            <p className="block leading-[20px] text-nowrap whitespace-pre">{time}</p>
           </div>
         </div>
       </div>
-
       <div className="box-border content-stretch flex flex-col gap-2 items-start justify-start p-0 relative shrink-0 w-full">
         {items.map((item, index) => (
           <div key={index} className="box-border content-stretch flex flex-row items-center justify-between p-0 relative shrink-0 w-full">
@@ -206,12 +197,10 @@ function CardsSection() {
   ];
 
   return (
-    <div className="relative shrink-0 w-full" data-name="Cards section">
-      <div className="box-border content-stretch flex flex-row gap-4 items-start justify-start p-[16px] w-full">
-        {cards.map((card, index) => (
-          <StatusCard key={index} {...card} />
-        ))}
-      </div>
+    <div className="flex flex-row gap-4 p-[16px]">
+      {cards.map((card, index) => (
+        <StatusCard key={index} {...card} />
+      ))}
     </div>
   );
 }
@@ -219,15 +208,11 @@ function CardsSection() {
 export function SalesPrototype() {
   return (
     <div
-      className="bg-[#ffffff] relative rounded-[24px] w-full max-w-[1180px] h-[420px] shadow-[0_8px_30px_rgba(0,0,0,0.12)]"
-      style={{ overflow: 'clip' }}
+      className="bg-[#ffffff] relative rounded-[24px] w-full max-w-[1180px] shadow-[0_8px_30px_rgba(0,0,0,0.12)] overflow-hidden"
       data-name="Sales prototype"
     >
-      <div
-        className="relative w-full h-full overscroll-x-contain"
-        style={{ overflowX: 'auto', overflowY: 'hidden' }}
-      >
-        <div className="flex flex-col h-full w-full">
+      <div className="w-full overflow-x-auto overscroll-x-contain">
+        <div style={{ width: 'max-content', minWidth: '100%', boxSizing: 'border-box' }}>
           <TopBar />
           <CardsSection />
         </div>
