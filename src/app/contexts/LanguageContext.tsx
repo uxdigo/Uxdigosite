@@ -310,7 +310,7 @@ const translations: Record<Language, Translations> = {
     salesFlexTime: 'Até 19h',
     footerCredit: 'Este site foi feito com pesquisas, Figma e Claude.',
     heroTitle: 'Experiências eficientes para pessoas e produtos',
-    heroDescription: 'Com experiência no Mercado Livre e na Vale, transformo comportamento do usuário, contexto de negócio e decisões de produto em experiências mais eficientes e orientadas a resultado. Sou Rodrigo, pode me chamar de Digo. 😉',
+    heroDescription: 'Com experiência no Mercado Livre e na Vale, transformo comportamento do usuário, contexto de negócio e decisões de produto em experiências mais eficientes e orientadas a resultado. Sou Rodrigo, mas pode me chamar de Digo. 😉',
     tabProblem: 'Problema',
     tabProcess: 'Processo',
     tabChallenges: 'Desafios',
