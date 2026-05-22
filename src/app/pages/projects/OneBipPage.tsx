@@ -7,7 +7,6 @@ import { BackButton } from '../../components/BackButton';
 import { ImagePlaceholder } from '../../components/ImagePlaceholder';
 import { Container } from '../../components/Container';
 import { OneBipPrototype } from '../../components/OneBipPrototype';
-import { ClientBadge } from '../../components/ClientBadge';
 import { Linkedin } from 'lucide-react';
 
 function Header() {
@@ -78,7 +77,6 @@ function OneBipContent() {
         <section className="bg-white pt-12 pb-8 md:pt-20 md:pb-12">
           <Container>
             <div className="max-w-3xl space-y-4">
-              <ClientBadge client="mercado-livre" />
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-black text-[#111111] leading-tight">
                 One Bip
               </h1>

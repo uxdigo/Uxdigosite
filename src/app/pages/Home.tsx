@@ -7,7 +7,6 @@ import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import { LanguageSelector } from '../components/LanguageSelector';
 import { Button } from '../components/Button';
 import { Container } from '../components/Container';
-import { ClientBadge } from '../components/ClientBadge';
 import { HandshakePrototype } from '../components/HandshakePrototype';
 import { SalesPrototype } from '../components/SalesPrototype';
 import { PickupWidget } from '../components/PickupWidget';
@@ -118,16 +117,13 @@ interface ProjectTeaserProps {
   reversed?: boolean;
 }
 
-function ProjectTeaser({ slug, title, client, description, prototype, reversed }: ProjectTeaserProps) {
+function ProjectTeaser({ slug, title, description, prototype, reversed }: ProjectTeaserProps) {
   const navigate = useNavigate();
   const { t } = useLanguage();
 
   return (
     <div className={`grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center ${reversed ? 'lg:flex-row-reverse' : ''}`}>
       <div className={`space-y-6 ${reversed ? 'lg:order-2' : 'lg:order-1'}`}>
-        <div className="flex items-center gap-3">
-          <ClientBadge client={client} />
-        </div>
         <h3 className="text-2xl md:text-3xl font-bold text-[#111111]">{title}</h3>
         <p className="text-base md:text-lg text-gray-600 leading-relaxed">{description}</p>
         <Button onClick={() => navigate(`/projetos/${slug}`)} size="md">

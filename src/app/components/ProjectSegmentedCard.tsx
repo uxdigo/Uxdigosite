@@ -1,6 +1,5 @@
 import { useState, useRef, useLayoutEffect } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
-import { ClientBadge } from './ClientBadge';
 
 interface ProjectSegmentedCardProps {
   title: string;
@@ -25,7 +24,6 @@ function formatText(text: string) {
 
 export function ProjectSegmentedCard({
   title,
-  client,
   context,
   problem,
   process,
@@ -62,8 +60,6 @@ export function ProjectSegmentedCard({
 
   const textBlock = (
     <div className="flex flex-col gap-6">
-      {client && <ClientBadge client={client} />}
-
       <h3 className="text-3xl md:text-4xl font-black text-[#111111] leading-tight">
         {title}
       </h3>
