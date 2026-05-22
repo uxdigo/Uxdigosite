@@ -8,19 +8,8 @@ import {
   PrototypeSecondaryButton,
 } from './PrototypeChrome';
 
-const SVG_CHEVRON_RIGHT = "M7.38 21.01C7.87 21.5 8.66 21.5 9.15 21.01L17.46 12.7C17.85 12.31 17.85 11.68 17.46 11.29L9.15 2.98C8.66 2.49 7.87 2.49 7.38 2.98C6.89 3.47 6.89 4.26 7.38 4.75L14.62 12L7.37 19.25C6.89 19.73 6.89 20.53 7.38 21.01Z";
-
-interface Group {
-  id: number;
-  packages: number;
-  status: 'in_preparation' | 'ready_to_send' | 'finished';
-}
-
 type ScreenType =
   | 'home'
-  | 'groups-in-prep'
-  | 'groups-ready'
-  | 'groups-finished'
   | 'scan'
   | 'review'
   | 'generating'
@@ -30,31 +19,13 @@ interface OneBipPrototypeProps {
   className?: string;
 }
 
-const INITIAL_GROUPS: Group[] = [
-  { id: 36, packages: 127, status: 'in_preparation' },
-  { id: 35, packages: 132, status: 'in_preparation' },
-  { id: 34, packages: 155, status: 'in_preparation' },
-  { id: 33, packages: 90, status: 'in_preparation' },
-  { id: 32, packages: 128, status: 'in_preparation' },
-  { id: 31, packages: 151, status: 'ready_to_send' },
-  { id: 30, packages: 162, status: 'ready_to_send' },
-];
-
-const FINISHED_SENT_GROUPS: Group[] = [
-  { id: 29, packages: 151, status: 'finished' },
-  { id: 28, packages: 162, status: 'finished' },
-  { id: 27, packages: 145, status: 'finished' },
-  { id: 26, packages: 155, status: 'finished' },
-  { id: 25, packages: 140, status: 'finished' },
-];
-
-const FINISHED_CANCELED_GROUPS: Group[] = [
-  { id: 24, packages: 118, status: 'finished' },
-  { id: 23, packages: 104, status: 'finished' },
-];
-
 const NEW_GROUP_ID = 37;
 const SCAN_TARGET = 150;
+const HOME_GROUP_COUNTS = {
+  inPreparation: 5,
+  readyToSend: 3,
+  finished: 7,
+};
 const localeMap = {
   pt: 'pt-BR',
   en: 'en-US',
@@ -65,12 +36,9 @@ export function OneBipPrototype({ className = '' }: OneBipPrototypeProps) {
   const { language } = useLanguage();
   const [screen, setScreen] = useState<ScreenType>('home');
   const [showCreateSheet, setShowCreateSheet] = useState(false);
-  const [showConfirmSheet, setShowConfirmSheet] = useState(false);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [packages, setPackages] = useState(0);
   const [progress, setProgress] = useState(0);
-  const [groups, setGroups] = useState<Group[]>(INITIAL_GROUPS);
-  const [finishedTab, setFinishedTab] = useState<'sent' | 'canceled'>('sent');
 
   const currentDate = useMemo(() => {
     const baseDate = new Date(2025, 3, 12);
@@ -115,6 +83,12 @@ export function OneBipPrototype({ className = '' }: OneBipPrototypeProps) {
           : language === 'es'
             ? 'Ingresa el nombre del grupo'
             : 'Insira o nome do grupo',
+      creationIntro:
+        language === 'en'
+          ? 'Create a package group before pickup and generate its final label.'
+          : language === 'es'
+            ? 'Crea un grupo de paquetes antes de la colecta y genera su etiqueta final.'
+            : 'Crie um grupo de pacotes antes da coleta e gere a etiqueta final.',
       scanner:
         language === 'en' ? 'Scanner' : language === 'es' ? 'Escáner' : 'Scanner',
       camera:
@@ -167,30 +141,6 @@ export function OneBipPrototype({ className = '' }: OneBipPrototypeProps) {
           : language === 'es'
             ? 'Generar etiqueta'
             : 'Gerar etiqueta',
-      saveGroup:
-        language === 'en'
-          ? 'Save group'
-          : language === 'es'
-            ? 'Guardar grupo'
-            : 'Salvar grupo',
-      confirmAction:
-        language === 'en'
-          ? 'Confirm the action'
-          : language === 'es'
-            ? 'Confirma la acción'
-            : 'Confirme a ação',
-      confirmCopy:
-        language === 'en'
-          ? 'After generating the label, the group can no longer be edited.'
-          : language === 'es'
-            ? 'Después de generar la etiqueta, ya no será posible editar el grupo.'
-            : 'Ao gerar a etiqueta não será mais possível editar o grupo.',
-      confirmAndGenerate:
-        language === 'en'
-          ? 'Confirm and generate'
-          : language === 'es'
-            ? 'Confirmar y generar'
-            : 'Confirmar e gerar',
       generatingLabel:
         language === 'en'
           ? 'Generating label'
@@ -215,11 +165,6 @@ export function OneBipPrototype({ className = '' }: OneBipPrototypeProps) {
           : language === 'es'
             ? 'Volver al inicio'
             : 'Voltar ao início',
-      sent: language === 'en' ? 'Shipped' : language === 'es' ? 'Enviados' : 'Enviados',
-      canceled:
-        language === 'en' ? 'Canceled' : language === 'es' ? 'Cancelados' : 'Cancelados',
-      packagesWord:
-        language === 'en' ? 'packages' : language === 'es' ? 'paquetes' : 'pacotes',
       groupPrefix: language === 'en' ? 'Group' : 'Grupo',
     }),
     [language],
@@ -230,25 +175,11 @@ export function OneBipPrototype({ className = '' }: OneBipPrototypeProps) {
     [labels.groupPrefix],
   );
 
-  const inPrep = useMemo(
-    () => groups.filter((group) => group.status === 'in_preparation'),
-    [groups],
-  );
-  const readyToSend = useMemo(
-    () => groups.filter((group) => group.status === 'ready_to_send'),
-    [groups],
-  );
-  const visibleFinishedGroups = useMemo(
-    () => (finishedTab === 'sent' ? FINISHED_SENT_GROUPS : FINISHED_CANCELED_GROUPS),
-    [finishedTab],
-  );
-
   const go = useCallback(
     (nextScreen: ScreenType) => {
       if (isTransitioning || nextScreen === screen) return;
       setIsTransitioning(true);
       setShowCreateSheet(false);
-      setShowConfirmSheet(false);
       window.setTimeout(() => {
         setScreen(nextScreen);
         setIsTransitioning(false);
@@ -257,26 +188,9 @@ export function OneBipPrototype({ className = '' }: OneBipPrototypeProps) {
     [isTransitioning, screen],
   );
 
-  const upsertDraftGroup = useCallback((status: Group['status']) => {
-    setGroups((prev) => {
-      const nextGroup: Group = {
-        id: NEW_GROUP_ID,
-        packages: SCAN_TARGET,
-        status,
-      };
-      return [nextGroup, ...prev.filter((group) => group.id !== NEW_GROUP_ID)];
-    });
-  }, []);
-
-  const saveDraftGroup = useCallback(() => {
-    upsertDraftGroup('in_preparation');
-    go('home');
-  }, [go, upsertDraftGroup]);
-
   const finishDraftGroup = useCallback(() => {
-    upsertDraftGroup('ready_to_send');
     go('home');
-  }, [go, upsertDraftGroup]);
+  }, [go]);
 
   useEffect(() => {
     if (screen !== 'scan') return;
@@ -321,7 +235,6 @@ export function OneBipPrototype({ className = '' }: OneBipPrototypeProps) {
 
     const navigationTimer = window.setTimeout(() => {
       setShowCreateSheet(false);
-      setShowConfirmSheet(false);
       setScreen('done');
       setIsTransitioning(false);
     }, duration + 400);
@@ -332,6 +245,12 @@ export function OneBipPrototype({ className = '' }: OneBipPrototypeProps) {
     };
   }, [screen]);
 
+  const SectionCard = ({ children }: { children: React.ReactNode }) => (
+    <div className="relative rounded-3xl w-full overflow-hidden bg-white border border-[rgba(0,0,0,0.1)]">
+      {children}
+    </div>
+  );
+
   const Pill = ({ count }: { count: number }) => (
     <div className="bg-[rgba(45,72,189,0.1)] flex h-6 min-w-6 items-center justify-center px-1 rounded-full shrink-0">
       <p className="text-[#2d48bd] text-sm font-normal leading-5 text-center whitespace-nowrap">
@@ -340,36 +259,16 @@ export function OneBipPrototype({ className = '' }: OneBipPrototypeProps) {
     </div>
   );
 
-  const ChevronRight = () => (
-    <div className="size-6 shrink-0 overflow-clip relative">
-      <svg className="absolute inset-0 size-full" fill="none" viewBox="0 0 24 24">
-        <path d={SVG_CHEVRON_RIGHT} fill="#2D48BD" />
-      </svg>
-    </div>
-  );
-
-  const SectionCard = ({ children }: { children: React.ReactNode }) => (
-    <div className="relative rounded-3xl w-full overflow-hidden bg-white border border-[rgba(0,0,0,0.1)]">
-      {children}
-    </div>
-  );
-
-  const GroupRow = ({ group, showDivider = false }: { group: Group; showDivider?: boolean }) => (
-    <div className="relative w-full">
+  const StaticGroupSummaryRow = ({ label, count }: { label: string; count: number }) => (
+    <div className="bg-[rgba(0,0,0,0.05)] relative rounded-3xl shrink-0 w-full">
       <div className="flex items-center gap-2 p-5">
         <div className="flex flex-1 flex-col gap-2 items-start">
           <p className="text-[#111111] text-[18px] font-normal leading-[24px] text-left w-full">
-            {formatGroupName(group.id)}
-          </p>
-          <p className="text-base text-[rgba(17,17,17,0.5)] leading-[22px] text-left w-full">
-            {group.packages} {labels.packagesWord}
+            {label}
           </p>
         </div>
-        <ChevronRight />
+        <Pill count={count} />
       </div>
-      {showDivider ? (
-        <div className="absolute bottom-0 left-5 right-5 h-px bg-[rgba(0,0,0,0.08)]" />
-      ) : null}
     </div>
   );
 
@@ -383,50 +282,9 @@ export function OneBipPrototype({ className = '' }: OneBipPrototypeProps) {
             <p className="text-sm text-[rgba(17,17,17,0.5)] leading-5">{currentDate}</p>
           </div>
 
-          <button
-            onClick={() => go('groups-in-prep')}
-            className="bg-[rgba(0,0,0,0.05)] relative rounded-3xl shrink-0 w-full hover:bg-[rgba(0,0,0,0.08)] active:bg-[rgba(0,0,0,0.1)] transition-colors duration-200"
-          >
-            <div className="flex items-center gap-2 p-5">
-              <div className="flex flex-1 flex-col gap-2 items-start">
-                <p className="text-[#111111] text-[18px] font-normal leading-[24px] text-left w-full">
-                  {labels.inPreparation}
-                </p>
-              </div>
-              <Pill count={inPrep.length} />
-              <ChevronRight />
-            </div>
-          </button>
-
-          <button
-            onClick={() => go('groups-ready')}
-            className="bg-[rgba(0,0,0,0.05)] relative rounded-3xl shrink-0 w-full hover:bg-[rgba(0,0,0,0.08)] active:bg-[rgba(0,0,0,0.1)] transition-colors duration-200"
-          >
-            <div className="flex items-center gap-2 p-5">
-              <div className="flex flex-1 flex-col gap-2 items-start">
-                <p className="text-[#111111] text-[18px] font-normal leading-[24px] text-left w-full">
-                  {labels.readyToSend}
-                </p>
-              </div>
-              <Pill count={readyToSend.length} />
-              <ChevronRight />
-            </div>
-          </button>
-
-          <button
-            onClick={() => go('groups-finished')}
-            className="bg-[rgba(0,0,0,0.05)] relative rounded-3xl shrink-0 w-full hover:bg-[rgba(0,0,0,0.08)] active:bg-[rgba(0,0,0,0.1)] transition-colors duration-200"
-          >
-            <div className="flex items-center gap-2 p-5">
-              <div className="flex flex-1 flex-col gap-2 items-start">
-                <p className="text-[#111111] text-[18px] font-normal leading-[24px] text-left w-full">
-                  {labels.finished}
-                </p>
-              </div>
-              <Pill count={FINISHED_SENT_GROUPS.length + FINISHED_CANCELED_GROUPS.length} />
-              <ChevronRight />
-            </div>
-          </button>
+          <StaticGroupSummaryRow label={labels.inPreparation} count={HOME_GROUP_COUNTS.inPreparation} />
+          <StaticGroupSummaryRow label={labels.readyToSend} count={HOME_GROUP_COUNTS.readyToSend} />
+          <StaticGroupSummaryRow label={labels.finished} count={HOME_GROUP_COUNTS.finished} />
         </div>
       </div>
       <div className="shrink-0 p-5">
@@ -453,118 +311,6 @@ export function OneBipPrototype({ className = '' }: OneBipPrototypeProps) {
           </div>
         </PrototypeBottomSheet>
       ) : null}
-    </div>
-  );
-
-  const GroupsInPrepScreen = () => (
-    <div className="flex flex-col size-full relative">
-      <PrototypeHeader title={labels.inPreparation} onBack={() => go('home')} showBack showMenu />
-      <div className="flex-1 overflow-hidden relative">
-        <div className="flex flex-col p-5 size-full overflow-y-auto widget-scroll">
-          <SectionCard>
-            {inPrep.map((group, index) => (
-              <GroupRow
-                key={group.id}
-                group={group}
-                showDivider={index < inPrep.length - 1}
-              />
-            ))}
-          </SectionCard>
-        </div>
-      </div>
-
-      <div className="shrink-0 p-5">
-        <PrototypePrimaryButton label={labels.createGroup} onClick={() => setShowCreateSheet(true)} />
-      </div>
-
-      {showCreateSheet ? (
-        <PrototypeBottomSheet
-          title={labels.enterGroupName}
-          onClose={() => setShowCreateSheet(false)}
-          cta={
-            <PrototypePrimaryButton
-              label={labels.createGroup}
-              onClick={() => {
-                setShowCreateSheet(false);
-                go('scan');
-              }}
-            />
-          }
-        >
-          <div className="flex items-center px-3 py-4 border border-[rgba(0,0,0,0.1)] rounded-xl">
-            <p className="flex-1 text-[#111111] text-lg font-normal leading-6">
-              {formatGroupName(NEW_GROUP_ID)}
-            </p>
-          </div>
-        </PrototypeBottomSheet>
-      ) : null}
-    </div>
-  );
-
-  const GroupsReadyScreen = () => (
-    <div className="flex flex-col size-full">
-      <PrototypeHeader title={labels.readyToSend} onBack={() => go('home')} showBack showMenu />
-      <div className="flex-1 overflow-hidden relative">
-        <div className="flex flex-col p-5 size-full overflow-y-auto widget-scroll">
-          <SectionCard>
-            {readyToSend.map((group, index) => (
-              <GroupRow
-                key={group.id}
-                group={group}
-                showDivider={index < readyToSend.length - 1}
-              />
-            ))}
-          </SectionCard>
-        </div>
-      </div>
-    </div>
-  );
-
-  const GroupsFinishedScreen = () => (
-    <div className="flex flex-col size-full">
-      <PrototypeHeader title={labels.finished} onBack={() => go('home')} showBack showMenu />
-      <div className="flex-1 overflow-hidden relative">
-          <div className="flex flex-col gap-6 p-5 size-full overflow-y-auto widget-scroll">
-            <div className="bg-[rgba(0,0,0,0.05)] relative rounded-3xl shrink-0 w-full border border-[rgba(0,0,0,0.1)]">
-              <div className="relative grid grid-cols-2 gap-1 p-2" role="tablist">
-                <div
-                  className="absolute top-2 bottom-2 left-2 rounded-3xl bg-white border border-[rgba(0,0,0,0.1)] shadow-sm pointer-events-none"
-                  style={{
-                    width: 'calc(50% - 10px)',
-                    left: finishedTab === 'canceled' ? 'calc(50% + 2px)' : '8px',
-                    transition: 'left 220ms cubic-bezier(0.2, 0, 0, 1)',
-                    willChange: 'left',
-                  }}
-                />
-                {(['sent', 'canceled'] as const).map((tab) => (
-                  <button
-                    key={tab}
-                    onClick={() => setFinishedTab(tab)}
-                    role="tab"
-                    aria-selected={finishedTab === tab}
-                    className={`relative z-10 rounded-3xl px-3 py-2 transition-colors duration-200 ${
-                      finishedTab === tab ? 'text-[#111111]' : 'text-[rgba(17,17,17,0.65)]'
-                    }`}
-                  >
-                    <p className="text-base font-normal leading-[22px] text-center whitespace-nowrap">
-                      {tab === 'sent' ? labels.sent : labels.canceled}
-                    </p>
-                  </button>
-                ))}
-              </div>
-            </div>
-
-          <SectionCard>
-            {visibleFinishedGroups.map((group, index) => (
-              <GroupRow
-                key={group.id}
-                group={group}
-                showDivider={index < visibleFinishedGroups.length - 1}
-              />
-            ))}
-          </SectionCard>
-        </div>
-      </div>
     </div>
   );
 
@@ -573,7 +319,7 @@ export function OneBipPrototype({ className = '' }: OneBipPrototypeProps) {
 
     return (
       <div className="flex flex-col size-full">
-        <PrototypeHeader title={labels.createGroup} onBack={() => go('groups-in-prep')} showBack showMenu />
+        <PrototypeHeader title={labels.createGroup} onBack={() => go('home')} showBack showMenu />
         <div className="flex-1 overflow-hidden relative">
           <div className="flex flex-col gap-6 p-5 size-full">
             <div className="bg-[rgba(0,0,0,0.05)] relative rounded-3xl shrink-0 w-full border border-[rgba(0,0,0,0.1)]">
@@ -695,30 +441,9 @@ export function OneBipPrototype({ className = '' }: OneBipPrototypeProps) {
         </div>
       </div>
 
-      <div className="shrink-0 flex flex-col gap-2 p-5">
-        <PrototypePrimaryButton label={labels.generateLabel} onClick={() => setShowConfirmSheet(true)} />
-        <PrototypeSecondaryButton label={labels.saveGroup} onClick={saveDraftGroup} />
+      <div className="shrink-0 p-5">
+        <PrototypePrimaryButton label={labels.generateLabel} onClick={() => go('generating')} />
       </div>
-
-      {showConfirmSheet ? (
-        <PrototypeBottomSheet
-          title={labels.confirmAction}
-          onClose={() => setShowConfirmSheet(false)}
-          cta={
-            <PrototypePrimaryButton
-              label={labels.confirmAndGenerate}
-              onClick={() => {
-                setShowConfirmSheet(false);
-                go('generating');
-              }}
-            />
-          }
-        >
-          <p className="text-[#111111] text-base font-normal leading-[22px]">
-            {labels.confirmCopy}
-          </p>
-        </PrototypeBottomSheet>
-      ) : null}
     </div>
   );
 
@@ -777,12 +502,6 @@ export function OneBipPrototype({ className = '' }: OneBipPrototypeProps) {
     switch (screen) {
       case 'home':
         return HomeScreen();
-      case 'groups-in-prep':
-        return GroupsInPrepScreen();
-      case 'groups-ready':
-        return GroupsReadyScreen();
-      case 'groups-finished':
-        return GroupsFinishedScreen();
       case 'scan':
         return ScanScreen();
       case 'review':

@@ -129,10 +129,34 @@ export function PrototypeBottomSheet({
     <div
       onClick={onClose}
       className="absolute inset-0 bg-[rgba(17,17,17,0.3)] rounded-3xl overflow-hidden z-20"
+      style={{ animation: 'prototypeBottomSheetScrimIn 90ms linear both' }}
     >
+      <style>
+        {`
+          @keyframes prototypeBottomSheetScrimIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+          }
+
+          @keyframes prototypeBottomSheetIn {
+            from {
+              opacity: 0.96;
+              transform: translateY(100%);
+            }
+            to {
+              opacity: 1;
+              transform: translateY(0);
+            }
+          }
+        `}
+      </style>
       <div
         onClick={(event) => event.stopPropagation()}
         className="absolute bottom-0 left-0 right-0 bg-white rounded-t-3xl"
+        style={{
+          animation: 'prototypeBottomSheetIn 180ms cubic-bezier(0, 0, 0.2, 1) 35ms both',
+          willChange: 'transform',
+        }}
       >
         <div className="flex flex-col p-5 gap-6">
           <div className="flex items-start justify-between">
