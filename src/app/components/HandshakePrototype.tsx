@@ -69,10 +69,10 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
               <div className="box-border content-stretch flex flex-col gap-6 items-start justify-start p-[20px] relative size-full">
                 
                 {/* Title */}
-                <div className="box-border content-stretch flex flex-col gap-2 items-start justify-start leading-[0] not-italic p-0 relative shrink-0 text-left w-full" data-name="Title">
-                  <div className="font-['Inter',_sans-serif] font-semibold relative shrink-0 text-[#000000] text-[24px] w-full">
-                    <p className="block leading-[normal]">{t.reviewAndConfirm}</p>
-                  </div>
+                <div className="box-border content-stretch flex flex-col gap-2 items-start justify-start not-italic p-0 relative shrink-0 text-left w-full" data-name="Title">
+                  <p className="font-['Inter',_sans-serif] text-2xl font-semibold text-black leading-normal w-full">
+                    {t.reviewAndConfirm}
+                  </p>
                   <div className="font-['Inter',_sans-serif] font-normal relative shrink-0 text-[14px] text-[rgba(17,17,17,0.5)] w-full">
                     <p className="block leading-[20px]">09:40 AM - {formattedDate}</p>
                   </div>

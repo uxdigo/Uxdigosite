@@ -8,7 +8,7 @@ import {
   PrototypeSecondaryButton,
 } from './PrototypeChrome';
 
-const SVG_CHEVRON_RIGHT = "M0.36876 18.3975C0.85876 18.8875 1.64876 18.8875 2.13876 18.3975L10.4488 10.0875C10.8388 9.6975 10.8388 9.0675 10.4488 8.6775L2.13876 0.3675C1.64876 -0.1225 0.85876 -0.1225 0.36876 0.3675C-0.12124 0.8575 -0.12124 1.6475 0.36876 2.1375L7.60876 9.3875L0.35876 16.6375C-0.12124 17.1175 -0.12124 17.9175 0.36876 18.3975Z";
+const SVG_CHEVRON_RIGHT = "M7.38 21.01C7.87 21.5 8.66 21.5 9.15 21.01L17.46 12.7C17.85 12.31 17.85 11.68 17.46 11.29L9.15 2.98C8.66 2.49 7.87 2.49 7.38 2.98C6.89 3.47 6.89 4.26 7.38 4.75L14.62 12L7.37 19.25C6.89 19.73 6.89 20.53 7.38 21.01Z";
 
 interface Group {
   id: number;
@@ -342,7 +342,7 @@ export function OneBipPrototype({ className = '' }: OneBipPrototypeProps) {
 
   const ChevronRight = () => (
     <div className="size-6 shrink-0 overflow-clip relative">
-      <svg className="absolute inset-0 size-full" fill="none" viewBox="0 0 19 20">
+      <svg className="absolute inset-0 size-full" fill="none" viewBox="0 0 24 24">
         <path d={SVG_CHEVRON_RIGHT} fill="#2D48BD" />
       </svg>
     </div>
@@ -358,7 +358,7 @@ export function OneBipPrototype({ className = '' }: OneBipPrototypeProps) {
     <div className="relative w-full">
       <div className="flex items-center gap-2 p-5">
         <div className="flex flex-1 flex-col gap-2 items-start">
-          <p className="text-[#111111] text-lg font-normal leading-6 text-left w-full">
+          <p className="text-[#111111] text-[18px] font-normal leading-[24px] text-left w-full">
             {formatGroupName(group.id)}
           </p>
           <p className="text-base text-[rgba(17,17,17,0.5)] leading-[22px] text-left w-full">
@@ -389,7 +389,7 @@ export function OneBipPrototype({ className = '' }: OneBipPrototypeProps) {
           >
             <div className="flex items-center gap-2 p-5">
               <div className="flex flex-1 flex-col gap-2 items-start">
-                <p className="text-[#111111] text-lg font-normal leading-6 text-left w-full">
+                <p className="text-[#111111] text-[18px] font-normal leading-[24px] text-left w-full">
                   {labels.inPreparation}
                 </p>
               </div>
@@ -404,7 +404,7 @@ export function OneBipPrototype({ className = '' }: OneBipPrototypeProps) {
           >
             <div className="flex items-center gap-2 p-5">
               <div className="flex flex-1 flex-col gap-2 items-start">
-                <p className="text-[#111111] text-lg font-normal leading-6 text-left w-full">
+                <p className="text-[#111111] text-[18px] font-normal leading-[24px] text-left w-full">
                   {labels.readyToSend}
                 </p>
               </div>
@@ -419,7 +419,7 @@ export function OneBipPrototype({ className = '' }: OneBipPrototypeProps) {
           >
             <div className="flex items-center gap-2 p-5">
               <div className="flex flex-1 flex-col gap-2 items-start">
-                <p className="text-[#111111] text-lg font-normal leading-6 text-left w-full">
+                <p className="text-[#111111] text-[18px] font-normal leading-[24px] text-left w-full">
                   {labels.finished}
                 </p>
               </div>
