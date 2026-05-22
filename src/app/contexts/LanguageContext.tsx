@@ -171,6 +171,29 @@ export interface Translations {
   userFlow: string;
   usabilityTest: string;
   iterationProcess: string;
+  stakeholderMap: string;
+  viewCaseStudy: string;
+  handshakeTeaserDescription: string;
+  oneBipTeaserDescription: string;
+  salesTeaserDescription: string;
+  widgetTeaserDescription: string;
+  riskTeaserDescription: string;
+  oneBipDescription: string;
+  oneBipProcess: string;
+  oneBipPrototypeNote: string;
+  oneBipCollectionTime: string;
+  oneBipGrouping: string;
+  oneBipDriverExperience: string;
+  oneBipOperationalVisibility: string;
+  feasibilityAnalysis: string;
+  useCaseMapping: string;
+  designSystemAdaptation: string;
+  handoffAndIterations: string;
+  oneBipContext: string;
+  oneBipProblem: string;
+  oneBipProcessTab: string;
+  oneBipChallenges: string;
+  oneBipResults: string;
 }
 
 const translations: Record<Language, Translations> = {
@@ -343,6 +366,29 @@ const translations: Record<Language, Translations> = {
     userFlow: 'Fluxo do usuário',
     usabilityTest: 'Teste de usabilidade',
     iterationProcess: 'Processo de iteração',
+    stakeholderMap: 'Mapa de stakeholders',
+    viewCaseStudy: 'Ver case',
+    handshakeTeaserDescription: 'Participei do design de uma solução anti-fraude que elimina discrepâncias entre vendedores e motoristas no momento da coleta, com verificação digital em tempo real.',
+    oneBipTeaserDescription: 'Liderei o design de um web app multi-dispositivo que transformou o processo de coleta de pacotes: de horas de trabalho para poucos minutos, com a perda de pacotes praticamente eliminada.',
+    salesTeaserDescription: 'Contribuí para o redesign da experiência de vendas, criando uma lógica de priorização que orienta ativamente o vendedor sobre o que fazer e quando.',
+    widgetTeaserDescription: 'Desenvolvi em equipe um widget contextual que centraliza informações operacionais em tempo real, reduzindo contatos com suporte e aumentando a autonomia do vendedor.',
+    riskTeaserDescription: 'Contribuí para um sistema digital de apreciação de riscos industriais para a Vale, transformando processos manuais e descentralizados em um fluxo conectado e rastreável.',
+    oneBipDescription: 'Liderei o design de uma solução para transformar a forma como vendedores e suas equipes realizam grandes coletas. O One Bip é um web app multi-dispositivo que substitui a bipagem manual e caótica de milhares de pacotes por um processo estruturado, rastreável e dramaticamente mais rápido.',
+    oneBipProcess: 'Liderei o projeto do discovery ao delivery. Começamos com uma análise exploratória junto ao produto, testes preliminares para validar valor e viabilidade, e benchmarks internos para calibrar a direção. Conduzi workshops, reuniões com outras equipes para aprender e definir regras de negócio, e fui responsável por mapear casos de uso e definir comportamentos e situações críticas.\n\nUm dos maiores desafios foi a adaptação a um Design System operacional completamente distinto do que a equipe estava acostumada. Reuni com referentes e especialistas para absorver as diretrizes e aplicá-las com qualidade em tempo reduzido. A IA foi uma parceira fundamental nesse processo: ajudou a mapear cenários e a encontrar soluções para edge cases complexos. Desenhei todas as telas, documentei regras e comportamentos, conduzi o handoff com desenvolvimento e acompanhei as iterações até a entrega final.',
+    oneBipPrototypeNote: 'Experimente o protótipo interativo para entender o fluxo central do One Bip: criação de grupo, bipagem dos pacotes e geração da etiqueta final.',
+    oneBipCollectionTime: 'Tempo de coleta',
+    oneBipGrouping: 'Agrupamento de pacotes',
+    oneBipDriverExperience: 'Eficiência na coleta',
+    oneBipOperationalVisibility: 'Rastreabilidade',
+    feasibilityAnalysis: 'Análise de viabilidade',
+    useCaseMapping: 'Mapeamento de casos de uso',
+    designSystemAdaptation: 'Adaptação ao Design System',
+    handoffAndIterations: 'Handoff e iterações',
+    oneBipContext: 'Grandes vendedores do Mercado Livre despacham milhares de pacotes por coleta. Antes do One Bip, cada visita do motorista exigia uma conferência manual: pacote por pacote, um a um.\n\nO One Bip mudou essa dinâmica ao permitir que vendedores agrupassem pacotes antes da coleta, criando volumes identificados, lacrados e mais fáceis de rastrear.',
+    oneBipProblem: 'Com milhares de pacotes para bipar, grandes coletas podiam durar horas. O motorista bipava pacote por pacote enquanto a equipe do vendedor conferia junto, criando trabalho dobrado em um processo manual e repetitivo.\n\nEsse tempo parado não afetava só vendedor e motorista. Para o Mercado Livre, coletas longas reduziam a capacidade da operação: menos visitas podiam ser realizadas no dia, e pacotes que poderiam entrar antes na malha logística acabavam sendo coletados mais tarde.\n\nAlém do tempo, havia pouca visibilidade. Em volumes tão altos, era difícil saber o que já tinha sido coletado, o que ainda faltava e o que podia ter se perdido no fluxo.\n\nO custo operacional crescia junto com o volume de vendas: mais pacotes significavam mais esforço, mais espera e mais risco de falhas durante a coleta.',
+    oneBipProcessTab: 'Atuei como referência de Design do discovery ao delivery, levando a iniciativa adiante junto ao time de Produto e Desenvolvimento.\n\nNa fase inicial, analisamos caminhos possíveis, testamos valor e viabilidade e buscamos referências internas para entender como a solução deveria funcionar na operação real. A partir disso, conduzi o mapeamento de casos de uso, regras de negócio, comportamentos esperados e situações críticas.\n\nA IA também apoiou essa etapa, ajudando a organizar cenários complexos e explorar edge cases difíceis de cobrir manualmente.\n\nDepois, desenhei a experiência completa: fluxos, telas, estados, regras de comportamento e documentação para handoff. Acompanhei o desenvolvimento e as iterações até a entrega final.',
+    oneBipChallenges: 'O projeto recebeu atenção de diferentes níveis do Mercado Livre. Mudar o modelo de grandes coletas impactava uma cadeia inteira: menos tempo parado na coleta podia significar mais capacidade operacional, pacotes chegando antes aos hubs e entregas mais rápidas para compradores.\n\nNo Design, o desafio era transformar essa complexidade em um fluxo simples o suficiente para funcionar em operação. O web app precisava rodar bem em celular, computador e handhelds, com casos de uso que iam da criação do grupo ao cancelamento, passando por conferência, edição, erros de leitura e geração de etiqueta.\n\nTambém havia a adaptação a um Design System operacional que o time ainda estava conhecendo. O tempo era curto, a exigência era alta e cada decisão precisava equilibrar velocidade, clareza e segurança operacional.',
+    oneBipResults: 'Coletas que antes podiam levar horas passaram a ser concluídas em poucos minutos. Motoristas deixaram de esperar por longas conferências, e equipes dos vendedores passaram a operar com muito mais eficiência.\n\nCom os pacotes agrupados em caixas, sacas ou pallets lacrados antes da coleta, a chance de perda durante o processo foi drasticamente reduzida. Rastrear o que foi entregue se tornou mais simples, confiável e documentado.\n\nPara o Mercado Livre, o impacto foi além da coleta. Processos mais rápidos aumentam a previsibilidade da operação, ajudam pacotes a chegar antes aos hubs e contribuem para entregas mais ágeis aos compradores.',
   },
 
   en: {
@@ -514,6 +560,29 @@ const translations: Record<Language, Translations> = {
     userFlow: 'User flow',
     usabilityTest: 'Usability test',
     iterationProcess: 'Iteration process',
+    stakeholderMap: 'Stakeholder map',
+    viewCaseStudy: 'View case',
+    handshakeTeaserDescription: 'I participated in the design of an anti-fraud solution that eliminates discrepancies between sellers and drivers at pickup time, with real-time digital verification.',
+    oneBipTeaserDescription: 'I led the design of a multi-device web app that transformed the package pickup process: from hours of work to just minutes, with package loss virtually eliminated.',
+    salesTeaserDescription: 'I contributed to redesigning the sales experience, creating a prioritization logic that actively guides sellers on what to do and when.',
+    widgetTeaserDescription: 'I co-developed a contextual widget that centralizes real-time operational information, reducing support contacts and increasing seller autonomy.',
+    riskTeaserDescription: 'I contributed to a digital industrial risk assessment system for Vale, transforming manual and decentralized processes into a connected and traceable flow.',
+    oneBipDescription: 'I led the design of a solution to transform how sellers and their teams handle large-scale pickups. One Bip is a multi-device web app that replaces the manual, chaotic scanning of thousands of packages with a structured, traceable, and dramatically faster process.',
+    oneBipProcess: 'I led the project from discovery to delivery. We started with exploratory analysis alongside the product team, preliminary tests to validate value and feasibility, and internal benchmarks to calibrate direction. I ran workshops, met with other teams to learn and define business rules, and was responsible for mapping use cases and defining behaviors and critical situations.\n\nOne of the biggest challenges was adapting to an operational Design System completely different from anything the team had worked with before. I met with specialists to absorb the guidelines and apply them with quality under time pressure. AI was a key partner throughout: it helped map scenarios and find solutions for complex edge cases. I designed every screen, documented rules and behaviors, ran the handoff with development, and followed through on iterations until final delivery.',
+    oneBipPrototypeNote: 'Try the interactive prototype to understand the core flow of One Bip: group creation, package scanning, and final label generation.',
+    oneBipCollectionTime: 'Collection time',
+    oneBipGrouping: 'Package grouping',
+    oneBipDriverExperience: 'Collection efficiency',
+    oneBipOperationalVisibility: 'Traceability',
+    feasibilityAnalysis: 'Feasibility analysis',
+    useCaseMapping: 'Use case mapping',
+    designSystemAdaptation: 'Design System adaptation',
+    handoffAndIterations: 'Handoff and iterations',
+    oneBipContext: 'Large Mercado Livre sellers dispatch thousands of packages per pickup. Before One Bip, each driver visit required a manual check: package by package, one by one.\n\nOne Bip changed that dynamic by allowing sellers to group packages before pickup, creating identified, sealed volumes that were easier to track.',
+    oneBipProblem: 'With thousands of packages to scan, large pickups could take hours. The driver scanned package by package while the seller\'s team checked the count alongside them, creating duplicated work in a manual, repetitive process.\n\nThat idle time did not affect only the seller and the driver. For Mercado Livre, long pickups reduced operational capacity: fewer visits could be completed in a day, and packages that could have entered the logistics network earlier ended up being collected later.\n\nBeyond time, visibility was limited. At such high volumes, it was difficult to know what had already been collected, what was still missing, and what might have been lost in the flow.\n\nOperational cost grew alongside sales volume: more packages meant more effort, more waiting, and more risk of failures during pickup.',
+    oneBipProcessTab: 'I acted as the Design reference from discovery to delivery, moving the initiative forward alongside Product and Development.\n\nIn the initial phase, we analyzed possible paths, tested value and feasibility, and looked for internal references to understand how the solution should work in the real operation. From there, I led the mapping of use cases, business rules, expected behaviors, and critical situations.\n\nAI also supported this stage, helping organize complex scenarios and explore edge cases that would be difficult to cover manually.\n\nAfter that, I designed the full experience: flows, screens, states, behavior rules, and handoff documentation. I followed development and iterations through to final delivery.',
+    oneBipChallenges: 'The project received attention from different levels of Mercado Livre. Changing the model for large pickups impacted an entire chain: less idle time during pickup could mean more operational capacity, packages reaching hubs earlier, and faster deliveries for buyers.\n\nIn Design, the challenge was turning that complexity into a flow simple enough to work in operation. The web app needed to run well on mobile, desktop, and handhelds, with use cases ranging from group creation to cancellation, including checking, editing, scan errors, and label generation.\n\nThere was also the adaptation to an operational Design System that the team was still getting to know. Time was short, expectations were high, and every decision had to balance speed, clarity, and operational safety.',
+    oneBipResults: 'Pickups that used to take hours could now be completed in a few minutes. Drivers no longer had to wait through long checks, and sellers\' teams began operating much more efficiently.\n\nWith packages grouped into sealed boxes, sacks, or pallets before pickup, the chance of loss during the process was drastically reduced. Tracking what had been delivered became simpler, more reliable, and better documented.\n\nFor Mercado Livre, the impact went beyond pickup. Faster processes increase operational predictability, help packages reach hubs earlier, and contribute to faster deliveries for buyers.',
   },
 
   es: {
@@ -685,8 +754,31 @@ const translations: Record<Language, Translations> = {
     userFlow: 'Flujo del usuario',
     usabilityTest: 'Prueba de usabilidad',
     iterationProcess: 'Proceso de iteración',
+    stakeholderMap: 'Mapa de stakeholders',
+    viewCaseStudy: 'Ver caso',
+    handshakeTeaserDescription: 'Participé en el diseño de una solución antifraude que elimina discrepancias entre vendedores y conductores en el momento de la colecta, con verificación digital en tiempo real.',
+    oneBipTeaserDescription: 'Lideré el diseño de una aplicación web multidispositivo que transformó el proceso de colecta de paquetes: de horas de trabajo a pocos minutos, con la pérdida de paquetes prácticamente eliminada.',
+    salesTeaserDescription: 'Contribuí al rediseño de la experiencia de ventas, creando una lógica de priorización que orienta activamente al vendedor sobre qué hacer y cuándo.',
+    widgetTeaserDescription: 'Desarrollé en equipo un widget contextual que centraliza información operacional en tiempo real, reduciendo contactos con soporte y aumentando la autonomía del vendedor.',
+    riskTeaserDescription: 'Contribuí a un sistema digital de apreciación de riesgos industriales para Vale, transformando procesos manuales y descentralizados en un flujo conectado y trazable.',
+    oneBipDescription: 'Lideré el diseño de una solución para transformar la forma en que vendedores y sus equipos realizan grandes colectas. One Bip es una aplicación web multidispositivo que sustituye el escaneo manual y caótico de miles de paquetes por un proceso estructurado, trazable y dramáticamente más rápido.',
+    oneBipProcess: 'Lideré el proyecto desde el discovery hasta el delivery. Comenzamos con un análisis exploratorio junto al equipo de producto, tests preliminares para validar el valor y la viabilidad, y benchmarks internos para calibrar la dirección. Conduje talleres, me reuní con otros equipos para aprender y con mi propio equipo para definir reglas de negocio. Mapeé casos de uso, definí comportamientos, situaciones críticas y sus soluciones.\n\nUno de los mayores desafíos fue la adaptación a un Design System operacional completamente distinto al que el equipo estaba acostumbrado. Me reuní con referentes y especialistas para absorber las directrices y aplicarlas con calidad bajo presión de tiempo. La IA fue una socia clave en este proceso: ayudó a mapear escenarios y encontrar soluciones para edge cases complejos. Diseñé todas las pantallas, documenté reglas y comportamientos, conduje el handoff con desarrollo y acompañé las iteraciones hasta la entrega final.',
+    oneBipPrototypeNote: 'Prueba el prototipo interactivo para entender el flujo central del One Bip: creación de grupo, escaneo de paquetes y generación de la etiqueta final.',
+    oneBipCollectionTime: 'Tiempo de colecta',
+    oneBipGrouping: 'Agrupación de paquetes',
+    oneBipDriverExperience: 'Eficiencia en la colecta',
+    oneBipOperationalVisibility: 'Trazabilidad',
+    feasibilityAnalysis: 'Análisis de viabilidad',
+    useCaseMapping: 'Mapeo de casos de uso',
+    designSystemAdaptation: 'Adaptación al Design System',
+    handoffAndIterations: 'Handoff e iteraciones',
+    oneBipContext: 'Los grandes vendedores de Mercado Libre despachan miles de paquetes por colecta. Antes de One Bip, cada visita del conductor exigía una verificación manual: paquete por paquete, uno a uno.\n\nOne Bip cambió esa dinámica al permitir que los vendedores agruparan paquetes antes de la colecta, creando volúmenes identificados, sellados y más fáciles de rastrear.',
+    oneBipProblem: 'Con miles de paquetes para escanear, las grandes colectas podían durar horas. El conductor escaneaba paquete por paquete mientras el equipo del vendedor verificaba junto a él, creando trabajo duplicado en un proceso manual y repetitivo.\n\nEse tiempo detenido no afectaba solo al vendedor y al conductor. Para Mercado Libre, las colectas largas reducían la capacidad de la operación: se podían realizar menos visitas en el día, y paquetes que podrían haber entrado antes en la red logística terminaban siendo recolectados más tarde.\n\nAdemás del tiempo, había poca visibilidad. En volúmenes tan altos, era difícil saber qué ya había sido recolectado, qué seguía faltando y qué podía haberse perdido en el flujo.\n\nEl costo operacional crecía junto con el volumen de ventas: más paquetes significaban más esfuerzo, más espera y más riesgo de fallas durante la colecta.',
+    oneBipProcessTab: 'Actué como referencia de Diseño desde el discovery hasta el delivery, llevando la iniciativa adelante junto al equipo de Producto y Desarrollo.\n\nEn la fase inicial, analizamos caminos posibles, probamos valor y viabilidad, y buscamos referencias internas para entender cómo debía funcionar la solución en la operación real. A partir de eso, conduje el mapeo de casos de uso, reglas de negocio, comportamientos esperados y situaciones críticas.\n\nLa IA también apoyó esta etapa, ayudando a organizar escenarios complejos y explorar edge cases difíciles de cubrir manualmente.\n\nDespués, diseñé la experiencia completa: flujos, pantallas, estados, reglas de comportamiento y documentación para handoff. Acompañé el desarrollo y las iteraciones hasta la entrega final.',
+    oneBipChallenges: 'El proyecto recibió atención de diferentes niveles de Mercado Libre. Cambiar el modelo de grandes colectas impactaba una cadena completa: menos tiempo detenido en la colecta podía significar más capacidad operacional, paquetes llegando antes a los hubs y entregas más rápidas para compradores.\n\nEn Diseño, el desafío era transformar esa complejidad en un flujo lo suficientemente simple para funcionar en operación. La aplicación web debía correr bien en celular, computadora y handhelds, con casos de uso que iban desde la creación del grupo hasta la cancelación, pasando por verificación, edición, errores de lectura y generación de etiqueta.\n\nTambién estaba la adaptación a un Design System operacional que el equipo todavía estaba conociendo. El tiempo era corto, la exigencia era alta y cada decisión debía equilibrar velocidad, claridad y seguridad operacional.',
+    oneBipResults: 'Colectas que antes podían llevar horas pasaron a completarse en pocos minutos. Los conductores dejaron de esperar largas verificaciones, y los equipos de los vendedores pasaron a operar con mucha más eficiencia.\n\nCon los paquetes agrupados en cajas, sacas o pallets sellados antes de la colecta, la posibilidad de pérdida durante el proceso se redujo drásticamente. Rastrear lo que fue entregado se volvió más simple, confiable y documentado.\n\nPara Mercado Libre, el impacto fue más allá de la colecta. Procesos más rápidos aumentan la previsibilidad de la operación, ayudan a que los paquetes lleguen antes a los hubs y contribuyen a entregas más ágiles para los compradores.',
   }
-};
+}
 
 interface LanguageContextType {
   language: Language;

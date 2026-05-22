@@ -79,7 +79,6 @@ export function ProjectSegmentedCard({
         style={{ background: 'rgba(0,0,0,0.05)' }}
         role="tablist"
       >
-        {/* Sliding indicator */}
         <div
           className="absolute top-1 bottom-1 bg-white rounded-lg shadow-sm pointer-events-none transition-all duration-200 ease-in-out"
           style={{ left: indicatorStyle.left, width: indicatorStyle.width }}

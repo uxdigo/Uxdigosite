@@ -1,13 +1,15 @@
 import { useState } from 'react';
-import Base from '../imports/Base-5-1350';
-import Enviados from '../imports/Enviados-5-1504';
-import Faltantes from '../imports/Faltantes-13-3512';
-import Confirmar from '../imports/Confirmar-13-3241';
 import svgPathsBase from '../imports/svg-z3lrr0l6d3';
 import svgPathsEnviados from '../imports/svg-7mycvkczh6';
 import svgPathsFaltantes from '../imports/svg-jf9suoh31a';
 import svgPathsConfirmar from '../imports/svg-juzgyc1dn4';
 import { useLanguage } from '../contexts/LanguageContext';
+import {
+  PrototypeHeader,
+  PrototypePhoneFrame,
+  PrototypePrimaryButton,
+  PrototypeSecondaryButton,
+} from './PrototypeChrome';
 
 type ScreenType = 'base' | 'enviados' | 'faltantes' | 'confirmation';
 
@@ -57,15 +59,7 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
         data-name="Base"
       >
         {/* Header */}
-        <div className="bg-[#ffe600] h-14 relative shrink-0 w-full" data-name="Header">
-          <div className="flex flex-row items-center justify-center overflow-clip relative size-full">
-            <div className="box-border content-stretch flex flex-row gap-2 h-14 items-center justify-center p-[24px] relative w-full">
-              <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic relative shrink-0 text-[#111111] text-[20px] text-center text-nowrap">
-                <p className="block leading-[26px] whitespace-pre">{t.pickupDetails}</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <PrototypeHeader title={t.pickupDetails} />
 
         {/* Screen */}
         <div className="basis-0 box-border content-stretch flex flex-col grow items-start justify-start min-h-px min-w-px overflow-clip p-0 relative shrink-0 w-full" data-name="Screen">
@@ -180,28 +174,8 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
         <div className="relative shrink-0 w-full" data-name="Action area">
           <div className="relative size-full">
             <div className="box-border content-stretch flex flex-col gap-3 items-start justify-start p-[20px] relative w-full">
-              <button 
-                onClick={() => navigateToScreen('confirmation')}
-                className="bg-[#2d48bd] relative rounded-3xl shrink-0 w-full cursor-pointer hover:bg-[#2640a3] transition-colors duration-200" 
-                data-name="Button"
-              >
-                <div className="flex flex-row items-center justify-center relative size-full">
-                  <div className="box-border content-stretch flex flex-row gap-2 items-center justify-center px-6 py-4 relative w-full">
-                    <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#ffffff] text-[18px] text-center text-nowrap tracking-[0.36px]">
-                      <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">{t.confirm}</p>
-                    </div>
-                  </div>
-                </div>
-              </button>
-              <div className="bg-[rgba(45,72,189,0.25)] relative rounded-3xl shrink-0 w-full" data-name="Button">
-                <div className="flex flex-row items-center justify-center relative size-full">
-                  <div className="box-border content-stretch flex flex-row gap-2 items-center justify-center px-6 py-4 relative w-full">
-                    <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[18px] text-center text-nowrap tracking-[0.36px]">
-                      <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">{t.change}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <PrototypePrimaryButton label={t.confirm} onClick={() => navigateToScreen('confirmation')} />
+              <PrototypeSecondaryButton label={t.change} onClick={() => {}} />
             </div>
           </div>
         </div>
@@ -214,37 +188,7 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
     return (
       <div className="bg-[#ffffff] box-border content-stretch flex flex-col items-start justify-start overflow-clip p-0 relative rounded-3xl size-full" data-name="Enviados">
         {/* Fixed Header with back button on right */}
-        <div className="bg-[#ffe600] h-14 relative shrink-0 w-full sticky top-0 z-20" data-name="Header">
-          <div className="flex flex-row items-center justify-center overflow-clip relative size-full">
-            <div className="box-border content-stretch flex flex-row gap-2 h-14 items-center justify-between p-[24px] relative w-full">
-              <button 
-                onClick={goBack}
-                className="relative shrink-0 size-6 cursor-pointer hover:opacity-70 transition-opacity duration-200" 
-                data-name="Icons"
-              >
-                <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
-                  <g clipPath="url(#clip0_5_811)" id="Icons">
-                    <g id="Vector"></g>
-                    <g id="Group">
-                      <path d={svgPathsEnviados.p326f7500} fill="#111111" id="Vector_2" />
-                    </g>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_5_811">
-                      <rect fill="white" height="24" width="24" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </button>
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic text-[#111111] text-[20px] text-center">
-                  <p className="block leading-[26px] px-2">{t.shippedPackages}</p>
-                </div>
-              </div>
-              <div className="relative shrink-0 size-6"></div>
-            </div>
-          </div>
-        </div>
+        <PrototypeHeader title={t.shippedPackages} onBack={goBack} showBack />
 
         {/* Scrollable Screen */}
         <div className="flex-1 box-border content-stretch flex flex-col items-start justify-start overflow-hidden p-0 relative w-full" data-name="Screen">
@@ -307,37 +251,7 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
         {/* Screen */}
         <div className="basis-0 box-border content-stretch flex flex-col grow items-start justify-start min-h-px min-w-px overflow-clip p-0 relative shrink-0 w-full" data-name="Screen">
           {/* Header */}
-          <div className="bg-[#ffe600] h-14 relative shrink-0 w-full" data-name="Header">
-            <div className="flex flex-row items-center justify-center overflow-clip relative size-full">
-              <div className="box-border content-stretch flex flex-row gap-2 h-14 items-center justify-between p-[24px] relative w-full">
-                <button 
-                  onClick={goBack}
-                  className="relative shrink-0 size-6 cursor-pointer hover:opacity-70 transition-opacity duration-200" 
-                  data-name="Icons"
-                >
-                  <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 24 24">
-                    <g clipPath="url(#clip0_13_3519)" id="Icons">
-                      <g id="Vector"></g>
-                      <g id="Group">
-                        <path d={svgPathsFaltantes.p326f7500} fill="#111111" id="Vector_2" />
-                      </g>
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_13_3519">
-                        <rect fill="white" height="24" width="24" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </button>
-                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                  <div className="font-['Inter',_sans-serif] font-normal leading-[0] not-italic text-[#111111] text-[20px] text-center">
-                    <p className="block leading-[26px] px-2">{t.pendingPackages}</p>
-                  </div>
-                </div>
-                <div className="relative shrink-0 size-6"></div>
-              </div>
-            </div>
-          </div>
+          <PrototypeHeader title={t.pendingPackages} onBack={goBack} showBack />
 
           {/* Body */}
           <div className="basis-0 grow min-h-px min-w-px relative shrink-0 w-full" data-name="Body">
@@ -477,15 +391,7 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
               </div>
               
               {/* Change button */}
-              <div className="bg-[rgba(45,72,189,0.25)] relative rounded-3xl shrink-0 w-full" data-name="Button">
-                <div className="flex flex-row items-center justify-center relative size-full">
-                  <div className="box-border content-stretch flex flex-row gap-2 items-center justify-center px-6 py-4 relative w-full">
-                    <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[18px] text-center text-nowrap tracking-[0.36px]">
-                      <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">{t.change}</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <PrototypeSecondaryButton label={t.change} onClick={() => {}} />
             </div>
           </div>
         </div>
@@ -539,19 +445,7 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
           <div className="relative size-full">
             <div className="box-border content-stretch flex flex-col gap-3 items-start justify-start p-[20px] relative w-full">
               {/* Close Button */}
-              <button 
-                onClick={goBack}
-                className="bg-[rgba(45,72,189,0.25)] relative rounded-3xl shrink-0 w-full cursor-pointer hover:bg-[rgba(45,72,189,0.35)] transition-colors duration-200" 
-                data-name="Button"
-              >
-                <div className="flex flex-row items-center justify-center relative size-full">
-                  <div className="box-border content-stretch flex flex-row gap-2 items-center justify-center px-6 py-4 relative w-full">
-                    <div className="font-['Inter',_sans-serif] font-semibold leading-[0] not-italic relative shrink-0 text-[#2d48bd] text-[18px] text-center text-nowrap tracking-[0.36px]">
-                      <p className="adjustLetterSpacing block leading-[normal] whitespace-pre">{t.close}</p>
-                    </div>
-                  </div>
-                </div>
-              </button>
+              <PrototypeSecondaryButton label={t.close} onClick={goBack} />
             </div>
           </div>
         </div>
@@ -575,10 +469,8 @@ export function HandshakePrototype({ className = "" }: HandshakePrototypeProps) 
   };
 
   return (
-    <div 
-      className={`w-[360px] max-w-full h-[600px] mx-auto transition-all duration-150 ease-in-out shadow-[0_8px_30px_rgba(0,0,0,0.12)] rounded-3xl overflow-hidden ${isTransitioning ? 'opacity-50' : 'opacity-100'} ${className}`}
-    >
+    <PrototypePhoneFrame className={className} isTransitioning={isTransitioning}>
       {renderCurrentScreen()}
-    </div>
+    </PrototypePhoneFrame>
   );
 }

@@ -6,7 +6,7 @@ import { LanguageSelector } from '../../components/LanguageSelector';
 import { BackButton } from '../../components/BackButton';
 import { ImagePlaceholder } from '../../components/ImagePlaceholder';
 import { Container } from '../../components/Container';
-import { HandshakePrototype } from '../../components/HandshakePrototype';
+import { OneBipPrototype } from '../../components/OneBipPrototype';
 import { ClientBadge } from '../../components/ClientBadge';
 import { Linkedin } from 'lucide-react';
 
@@ -103,14 +103,14 @@ function OneBipContent() {
           <Container>
             <div className="space-y-6">
               <h2 className="text-xl md:text-2xl font-bold text-[#111111]">{t.contextAndDiscovery}</h2>
-              <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-2xl">
+              <p className="text-base md:text-lg text-gray-600 leading-relaxed max-w-2xl whitespace-pre-line">
                 {t.oneBipProcess}
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
-                <ImagePlaceholder label={t.discoveryWorkshop} aspectRatio="16/9" />
-                <ImagePlaceholder label={t.userFlow} aspectRatio="16/9" />
-                <ImagePlaceholder label={t.usabilityTest} aspectRatio="16/9" />
-                <ImagePlaceholder label={t.iterationProcess} aspectRatio="16/9" />
+                <ImagePlaceholder label={t.feasibilityAnalysis} aspectRatio="16/9" />
+                <ImagePlaceholder label={t.useCaseMapping} aspectRatio="16/9" />
+                <ImagePlaceholder label={t.designSystemAdaptation} aspectRatio="16/9" />
+                <ImagePlaceholder label={t.handoffAndIterations} aspectRatio="16/9" />
               </div>
             </div>
           </Container>
@@ -128,7 +128,7 @@ function OneBipContent() {
               </div>
               <div className="flex justify-center">
                 <div className="w-full max-w-sm">
-                  <HandshakePrototype />
+                  <OneBipPrototype />
                 </div>
               </div>
             </div>

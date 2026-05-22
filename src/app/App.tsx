@@ -8,6 +8,7 @@ import { Button } from './components/Button';
 import { Container } from './components/Container';
 import { ProjectSegmentedCard } from './components/ProjectSegmentedCard';
 import { HandshakePrototype } from './components/HandshakePrototype';
+import { OneBipPrototype } from './components/OneBipPrototype';
 import { PickupWidget } from './components/PickupWidget';
 import { SalesPrototype } from './components/SalesPrototype';
 import { RiskPrototype } from './components/RiskPrototype';
@@ -155,6 +156,19 @@ function ProjectsSection() {
           />
 
           <ProjectSegmentedCard
+            title="One Bip"
+            client="mercado-livre"
+            context={t.oneBipContext}
+            problem={t.oneBipProblem}
+            process={t.oneBipProcessTab}
+            challenges={t.oneBipChallenges}
+            results={t.oneBipResults}
+            imagePosition="right"
+            prototypeSlot={<OneBipPrototype />}
+            prototypeType="interactive"
+          />
+
+          <ProjectSegmentedCard
             title={t.salesTitle}
             client="mercado-livre"
             context={t.salesContext}
@@ -228,15 +242,9 @@ function AboutSection() {
               </h2>
 
               <div className="text-base md:text-lg text-[#111111] leading-relaxed space-y-6">
-                <p>
-                  {t.aboutParagraph1}
-                </p>
-                <p>
-                  {t.aboutParagraph2}
-                </p>
-                <p>
-                  {t.aboutParagraph3}
-                </p>
+                <p>{t.aboutParagraph1}</p>
+                <p>{t.aboutParagraph2}</p>
+                <p>{t.aboutParagraph3}</p>
               </div>
             </div>
           </div>
@@ -264,9 +272,7 @@ function ContactSection() {
               </h2>
 
               <div className="text-lg md:text-xl text-[#111111] leading-relaxed">
-                <p>
-                  {t.contactDescription}
-                </p>
+                <p>{t.contactDescription}</p>
               </div>
             </div>
 
