@@ -263,7 +263,7 @@ export function OneBipPrototype({ className = '' }: OneBipPrototypeProps) {
     <div className="bg-[rgba(0,0,0,0.05)] relative rounded-3xl shrink-0 w-full">
       <div className="flex items-center gap-2 p-5">
         <div className="flex flex-1 flex-col gap-2 items-start">
-          <p className="text-[#111111] text-[18px] font-normal leading-[24px] text-left w-full">
+          <p className="font-['Inter',_sans-serif] text-[#111111] text-[18px] font-normal leading-[24px] text-left w-full">
             {label}
           </p>
         </div>
@@ -278,8 +278,12 @@ export function OneBipPrototype({ className = '' }: OneBipPrototypeProps) {
       <div className="flex-1 overflow-hidden relative">
         <div className="flex flex-col gap-6 p-5 size-full overflow-y-auto widget-scroll">
           <div className="flex flex-col gap-2 shrink-0">
-            <p className="text-2xl font-semibold text-black leading-normal">{labels.packageGroups}</p>
-            <p className="text-sm text-[rgba(17,17,17,0.5)] leading-5">{currentDate}</p>
+            <p className="font-['Inter',_sans-serif] text-2xl font-semibold text-black leading-normal w-full">
+              {labels.packageGroups}
+            </p>
+            <div className="font-['Inter',_sans-serif] font-normal relative shrink-0 text-[14px] text-[rgba(17,17,17,0.5)] w-full">
+              <p className="block leading-[20px]">{currentDate}</p>
+            </div>
           </div>
 
           <StaticGroupSummaryRow label={labels.inPreparation} count={HOME_GROUP_COUNTS.inPreparation} />
