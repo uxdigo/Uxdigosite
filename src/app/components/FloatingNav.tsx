@@ -6,6 +6,9 @@ type NavItem =
   | { type: 'section'; id: string; label: string }
   | { type: 'group'; id: string; label: string; children: { id: string; label: string }[] };
 
+const SPRING = 'cubic-bezier(0.34, 1.56, 0.64, 1)';
+const FAST   = 'cubic-bezier(0.25, 0, 0.5, 1)';
+
 export function FloatingNav() {
   const { t, language } = useLanguage();
   const [isOpen, setIsOpen] = useState(false);
@@ -14,9 +17,8 @@ export function FloatingNav() {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-
   const navItems: NavItem[] = [
-    { type: 'section', id: 'hero', label: language === 'en' ? 'Home' : language === 'es' ? 'Inicio' : 'Início' },
+    { type: 'section', id: 'hero', label: language === 'en' ? 'Home' : language === 'es' ? 'Inicio' : 'Inicio' },
     {
       type: 'group',
       id: 'projects',
@@ -98,13 +100,50 @@ export function FloatingNav() {
   }, [isLocked]);
 
   const scrollTo = (id: string) => {
-    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+    const el = document.getElementById(id);
+    if (el) {
+      if (id.startsWith('project-')) {
+        const rect = el.getBoundingClientRect();
+        const offset = window.scrollY + rect.top - window.innerHeight / 2 + rect.height / 2;
+        window.scrollTo({ top: Math.max(0, offset), behavior: 'smooth' });
+
+        const titleEl = el.querySelector('[data-nav-title]') as HTMLElement | null;
+        if (titleEl) {
+          titleEl.classList.remove('nav-sweep');
+          void titleEl.offsetWidth;
+          titleEl.classList.add('nav-sweep');
+          setTimeout(() => titleEl.classList.remove('nav-sweep'), 2500);
+        }
+      } else {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
     setIsLocked(false);
     setIsOpen(false);
   };
 
   const groupItem = navItems.find((i) => i.type === 'group') as Extract<NavItem, { type: 'group' }>;
   const isAnyProjectActive = groupItem?.children.some((c) => c.id === activeSection);
+
+  const totalItems = navItems.reduce((acc, item) =>
+    acc + (item.type === 'group' ? 1 + item.children.length : 1), 0
+  );
+
+  let staggerIdx = 0;
+  const itemStyle = (): React.CSSProperties => {
+    const delay = isOpen ? (totalItems - 1 - staggerIdx++) * 22 : 0;
+    return isOpen
+      ? {
+          opacity: 1,
+          transform: 'translateY(0px)',
+          transition: `opacity 200ms ${delay}ms ease-out, transform 280ms ${delay}ms ${SPRING}, color 150ms ease`,
+        }
+      : {
+          opacity: 0,
+          transform: 'translateY(6px)',
+          transition: 'opacity 80ms ease, transform 80ms ease, color 150ms ease',
+        };
+  };
 
   return (
     <div
@@ -113,12 +152,20 @@ export function FloatingNav() {
       onMouseLeave={scheduleClose}
     >
       <div
-        className={[
-          'mb-3 bg-white rounded-2xl shadow-xl border border-gray-100',
-          'overflow-hidden transition-all duration-200 origin-bottom-right',
-          isOpen ? 'opacity-100 scale-100 pointer-events-auto' : 'opacity-0 scale-95 pointer-events-none',
-        ].join(' ')}
-        style={{ minWidth: '196px' }}
+        className="mb-3 bg-white rounded-2xl border border-gray-100 overflow-hidden"
+        style={{
+          minWidth: '196px',
+          transformOrigin: 'bottom right',
+          opacity: isOpen ? 1 : 0,
+          transform: isOpen ? 'scale(1) translateY(0px)' : 'scale(0.78) translateY(10px)',
+          pointerEvents: isOpen ? 'auto' : 'none',
+          boxShadow: isOpen
+            ? '0 24px 64px -12px rgba(45,72,189,0.18), 0 8px 24px -6px rgba(0,0,0,0.08)'
+            : '0 4px 12px rgba(0,0,0,0.04)',
+          transition: isOpen
+            ? `opacity 280ms ${SPRING}, transform 380ms ${SPRING}, box-shadow 320ms ease`
+            : `opacity 160ms ${FAST}, transform 160ms ${FAST}, box-shadow 160ms ease`,
+        }}
         onMouseEnter={openPanel}
       >
         <div className="px-4 pt-4 pb-2 border-b border-gray-50">
@@ -135,8 +182,9 @@ export function FloatingNav() {
                 <button
                   key={item.id}
                   onClick={() => scrollTo(item.id)}
+                  style={itemStyle()}
                   className={[
-                    'w-full text-left px-4 py-1.5 flex items-center gap-2.5 text-sm transition-colors duration-150',
+                    'w-full text-left px-4 py-1.5 flex items-center gap-2.5 text-base',
                     isActive ? 'text-[#2d48bd] font-semibold' : 'text-gray-500 hover:text-gray-800',
                   ].join(' ')}
                 >
@@ -155,8 +203,9 @@ export function FloatingNav() {
               <div key={item.id}>
                 <button
                   onClick={() => scrollTo('projects')}
+                  style={itemStyle()}
                   className={[
-                    'w-full text-left px-4 py-1.5 flex items-center gap-2.5 text-sm transition-colors duration-150',
+                    'w-full text-left px-4 py-1.5 flex items-center gap-2.5 text-base',
                     isAnyProjectActive ? 'text-[#2d48bd] font-semibold' : 'text-gray-500 hover:text-gray-800',
                   ].join(' ')}
                 >
@@ -176,8 +225,9 @@ export function FloatingNav() {
                       <button
                         key={child.id}
                         onClick={() => scrollTo(child.id)}
+                        style={itemStyle()}
                         className={[
-                          'w-full text-left py-1 flex items-center gap-2 text-xs transition-colors duration-150',
+                          'w-full text-left py-1 flex items-center gap-2 text-sm',
                           isActive ? 'text-[#2d48bd] font-semibold' : 'text-gray-400 hover:text-gray-700',
                         ].join(' ')}
                       >
@@ -201,11 +251,17 @@ export function FloatingNav() {
       <button
         onClick={handleFabClick}
         onMouseEnter={openPanel}
+        style={{
+          boxShadow: isOpen || isLocked
+            ? '0 8px 28px -4px rgba(45,72,189,0.55), 0 4px 10px -3px rgba(45,72,189,0.3)'
+            : '0 4px 16px -3px rgba(45,72,189,0.4)',
+          transition: 'background-color 200ms ease, box-shadow 300ms ease',
+        }}
         className={[
-          'flex items-center gap-2 px-4 py-2.5 rounded-full shadow-lg transition-all duration-200 select-none',
+          'flex items-center gap-2 px-4 py-2.5 rounded-full transition-colors duration-200 select-none',
           isLocked
-            ? 'bg-[#2d48bd] text-white shadow-blue-200'
-            : 'bg-white text-gray-700 border border-gray-100 hover:shadow-md',
+            ? 'bg-[#1e3491] text-white'
+            : 'bg-[#2d48bd] text-white hover:bg-[#1e3491]',
         ].join(' ')}
       >
         {isLocked ? <X className="w-4 h-4" /> : <AlignJustify className="w-4 h-4" />}

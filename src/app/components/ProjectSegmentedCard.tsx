@@ -60,7 +60,7 @@ export function ProjectSegmentedCard({
 
   const textBlock = (
     <div className="flex flex-col gap-6">
-      <h3 className="text-3xl md:text-4xl font-black text-[#111111] leading-tight">
+      <h3 data-nav-title className="text-3xl md:text-4xl font-black text-[#111111] leading-tight">
         {title}
       </h3>
 
@@ -152,3 +152,4 @@ export function ProjectSegmentedCard({
     </div>
   );
 }
+
