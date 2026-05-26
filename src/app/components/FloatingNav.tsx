@@ -256,16 +256,22 @@ export function FloatingNav() {
             ? '0 8px 28px -4px rgba(45,72,189,0.55), 0 4px 10px -3px rgba(45,72,189,0.3)'
             : '0 4px 16px -3px rgba(45,72,189,0.4)',
           transition: 'background-color 200ms ease, box-shadow 300ms ease',
+          padding: '12px 22px',
+          gap: '10px',
+          fontSize: '16px',
         }}
         className={[
-          'flex items-center gap-2.5 px-5 py-3 rounded-full transition-colors duration-200 select-none',
+          'flex items-center rounded-full transition-colors duration-200 select-none',
           isLocked
             ? 'bg-[#1e3491] text-white'
             : 'bg-[#2d48bd] text-white hover:bg-[#1e3491]',
         ].join(' ')}
       >
-        {isLocked ? <X className="w-5 h-5" /> : <AlignJustify className="w-5 h-5" />}
-        <span className="text-base font-medium">{language === 'en' ? 'Navigate' : 'Navegar'}</span>
+        {isLocked
+          ? <X style={{ width: '20px', height: '20px' }} />
+          : <AlignJustify style={{ width: '20px', height: '20px' }} />}
+        <span style={{ fontWeight: 500 }}>{language === 'en' ? 'Navigate' : 'Navegar'}</span>
       </button>
     </div>
   );
+}
