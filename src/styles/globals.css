@@ -281,22 +281,3 @@ html {
 .sales-mobile-drag::-webkit-scrollbar {
   display: none; /* WebKit browsers */
 }
-
-/* Sweep animation no título do projeto ao navegar via FAB
-   Gradiente: dark → blue → dark (simétrico)
-   A onda azul entra da esquerda, fica, e sai pela direita */
-@keyframes navTitleSweep {
-  0%   { background-position: 100% center; } /* dark (lado direito do gradiente) */
-  25%  { background-position: 50% center; }  /* blue (centro do gradiente) */
-  72%  { background-position: 50% center; }  /* hold blue */
-  100% { background-position: 0% center; }   /* dark (lado esquerdo) — azul saiu à direita */
-}
-
-.nav-sweep {
-  background: linear-gradient(90deg, #111111, #2d48bd 50%, #111111);
-  background-size: 300% auto;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: navTitleSweep 2400ms ease-in-out;
-}

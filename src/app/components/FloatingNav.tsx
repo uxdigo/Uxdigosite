@@ -258,15 +258,14 @@ export function FloatingNav() {
           transition: 'background-color 200ms ease, box-shadow 300ms ease',
         }}
         className={[
-          'flex items-center gap-2 px-4 py-2.5 rounded-full transition-colors duration-200 select-none',
+          'flex items-center gap-2.5 px-5 py-3 rounded-full transition-colors duration-200 select-none',
           isLocked
             ? 'bg-[#1e3491] text-white'
             : 'bg-[#2d48bd] text-white hover:bg-[#1e3491]',
         ].join(' ')}
       >
-        {isLocked ? <X className="w-4 h-4" /> : <AlignJustify className="w-4 h-4" />}
-        <span className="text-sm font-medium">{language === 'en' ? 'Navigate' : 'Navegar'}</span>
+        {isLocked ? <X className="w-5 h-5" /> : <AlignJustify className="w-5 h-5" />}
+        <span className="text-base font-medium">{language === 'en' ? 'Navigate' : 'Navegar'}</span>
       </button>
     </div>
   );
-}
