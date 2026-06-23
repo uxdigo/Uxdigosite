@@ -3,6 +3,8 @@ import imgUxdigoFavicon from "figma:asset/78b0abff2f6aea46477ad1cc6e1336a3449097
 import imgRodrigoAvatar from "figma:asset/536348351d2b6fffb0be4983d10057d66341cb73.png";
 import { useNavigate } from 'react-router';
 import { useLanguage } from '../contexts/LanguageContext';
+
+declare function gtag(...args: unknown[]): void;
 import { ImageWithFallback } from '../components/figma/ImageWithFallback';
 import { LanguageSelector } from '../components/LanguageSelector';
 import { Button } from '../components/Button';
@@ -36,6 +38,7 @@ function WinkingEmoji() {
 function Header() {
   const { t } = useLanguage();
   const scrollToContact = () => {
+    gtag('event', 'nav_click', { section: 'contact', source: 'header' });
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
   return (
@@ -67,9 +70,11 @@ function Header() {
 function HeroSection() {
   const { t } = useLanguage();
   const scrollToProjects = () => {
+    gtag('event', 'nav_click', { section: 'projects', source: 'hero' });
     document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
   };
   const scrollToContact = () => {
+    gtag('event', 'nav_click', { section: 'contact', source: 'hero' });
     document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
   };
   return (

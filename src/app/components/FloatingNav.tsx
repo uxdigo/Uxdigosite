@@ -2,6 +2,8 @@ import { useState, useEffect, useRef, useCallback } from 'react';
 import { useLanguage } from '../contexts/LanguageContext';
 import { AlignJustify, X } from 'lucide-react';
 
+declare function gtag(...args: unknown[]): void;
+
 type NavItem =
   | { type: 'section'; id: string; label: string }
   | { type: 'group'; id: string; label: string; children: { id: string; label: string }[] };
@@ -100,6 +102,13 @@ export function FloatingNav() {
   }, [isLocked]);
 
   const scrollTo = (id: string) => {
+    // GA tracking
+    if (id === 'contact') {
+      gtag('event', 'nav_click', { section: 'contact' });
+    } else if (id === 'projects' || id.startsWith('project-')) {
+      gtag('event', 'nav_click', { section: 'projects', project: id });
+    }
+
     const el = document.getElementById(id);
     if (el) {
       if (id.startsWith('project-')) {
